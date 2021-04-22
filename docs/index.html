@@ -14,10 +14,10 @@
         rel="stylesheet">
 </head>
 
-<body style="font-family: Montserrat, sans-serif;">
+<body id="body" style="font-family: Montserrat, sans-serif;">
 
-    <header x-data="{ mobileMenuOpen : false }"
-        class="backdrop-filter backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
+    <header id="header" x-data="{ mobileMenuOpen : false }"
+        class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
         <a href="#" class="block">
             <span class="sr-only">Léo Corporation</span>
             <img class="h-6 md:h-8" src="/docs/img/logo.png" alt="Logo" title=" Logo">
@@ -139,6 +139,7 @@
     </footer>
 
     <script src="/docs/scripts/copyright.js"></script>
+    <script src="/docs/scripts/scroll.js"></script>
 
 </body>
 
