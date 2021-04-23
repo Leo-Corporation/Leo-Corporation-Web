@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store | Léo Corporation</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="favicon.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="body" style="font-family: Montserrat, sans-serif;">
+
+    <header id="header" x-data="{ mobileMenuOpen : false }"
+        class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
+        <a href="index" class="block">
+            <span class="sr-only">Léo Corporation</span>
+            <img class="h-6 md:h-8" src="img/logo.png" alt="Logo" title=" Logo">
+        </a>
+        <button @click="mobileMenuOpen = !mobileMenuOpen"
+            class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
+            :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
+            <a href="index" class="block py-1 text-gray-600 hover:underline transition">Home</a>
+            <a href="#" class="block py-1 text-indigo-600 hover:underline transition">Store</a>
+            <a href="#" class="block py-1 text-gray-600 hover:underline transition">Popular</a>
+            <a href="#" class="block py-1 text-gray-600 hover:underline transition">LABS</a>
+            <a href="#" class="block py-1 text-gray-600 hover:underline transition">Blog</a>
+            <a href="#" class="block py-1 text-gray-600 hover:underline transition">Contact</a>
+        </nav>
+    </header>
+
+    <div id="slide-header"
+        style="background-image: url('img/xalyusbanner.webp'); background-repeat: none; background-size: cover;"
+        class="flex flex-col text-center items-center justify-center text-white h-auto py-24 sm:py-48">
+        <h1 class="font-bold text-7xl">Xalyus Store</h1>
+        <p class="font-semibold">The new Store.</p>
+        <a class="text-white text-2xl py-2 px-5 m-5 rounded-full font-bold border-solid hover:bg-indigo-600 bg-indigo-500 ring-offset-4 ring-indigo-400 focus:ring-2 transition"
+            href="#">Learn more</a>
+    </div>
+
+    <div id="store-items" class="flex flex-col items-center mx-2 lg:mx-16">
+        <div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/InternetTest.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">InternetTest</h1>
+                    <p>InternetTest is a modern connection utility for Windows.</p>
+                </div>
+                <a href="https://bit.ly/DownloadInternetTest"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/Passliss.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">Passliss</h1>
+                    <p>A modern password generator for Windows.</p>
+                </div>
+                <a href="https://bit.ly/DownloadPassliss"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/ColorPicker.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">ColorPicker</h1>
+                    <p>A modern color picking tool for developers.</p>
+                </div>
+                <a href="https://bit.ly/DownloadColorPicker"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/Gavilya.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">Gavilya</h1>
+                    <p>Gavilya brings all your video games together in one place.</p>
+                </div>
+                <a href="https://bit.ly/Gavilya"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/Gerayis.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">Gerayis</h1>
+                    <p>A modern Bar/QR Code generator for Windows.</p>
+                </div>
+                <a href="https://bit.ly/DownloadGerayis"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/Xalyus Store Logo.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">Xalyus Store</h1>
+                    <p>Xalyus Store brings all our software together in one place.</p>
+                </div>
+                <a href="http://bit.ly/DownloadXalyusStore"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/EM2021.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">Educ'Maths 2021</h1>
+                    <p class="max-w-screen-sm">Educ'Maths 2021 is an educational game that allows you to learn or
+                        exercise your knowledge in
+                        math. Age required: 10 years old, maximum difficulty level: 5th grade/Year 6.</p>
+                </div>
+                <a href="https://bit.ly/DownloadEM2021"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/EM2020.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">Educ'Maths 2020</h1>
+                    <p class="max-w-screen-sm">Educ'Maths 2020 is an educational game that allows you to learn or
+                        exercise your knowledge in
+                        math. Age required: 10 years old, maximum difficulty level: 5th grade/Year 6.</p>
+                </div>
+                <a href="http://bit.ly/39zlQTG"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/Gestion Biblio.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">GestionBiblio X, Basic edition</h1>
+                    <p class="max-w-screen-sm">GestionBiblio X, Basic edition allows you to easily manage book
+                        databases.</p>
+                </div>
+                <a href="http://bit.ly/GestionBiblioX"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/Gestion Biblio.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">GestionBiblio X, Ultra edition</h1>
+                    <p class="max-w-screen-sm">GestionBiblio X, Ultra edition allows you to easily manage book
+                        databases. Compatible with GestionPerso X</p>
+                </div>
+                <a href="https://bit.ly/GBXUltra"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 m-5">
+                <img class="h-32 md:mr-16" src="img/Gestion Perso.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">GestionPerso X</h1>
+                    <p class="max-w-screen-sm">GestionPerso X allows you to manage databases of people. It is necessary
+                        to be able to use GestionBiblio X, Ultra edition.</p>
+                </div>
+                <a href="http://bit.ly/GestionPersoX"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 bg-indigo-600 text-white">
+        <p id="copyright">© Léo Corporation</p>
+        <div id="social-networks" class="grid grid-rows-3 mt-4 sm:mt-0">
+            <a href="https://github.com/Leo-Corporation/" class="flex flex-row items-center">
+                <img class="h-6 mr-5" src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/github.png" />
+                <p class="font-semibold">GitHub</p>
+            </a>
+            <a href="https://twitter.com/LeoCorpNews" class="flex flex-row items-center">
+                <img class="h-6 mr-5" src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/twitter.png" />
+                <p class="font-semibold">Twitter</p>
+            </a>
+            <a href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg" class="flex flex-row items-center">
+                <img class="h-6 mr-5" src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/youtube.png" />
+                <p class="font-semibold">YouTube</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/copyright.js"></script>
+    <script src="scripts/scroll.js"></script>
+
+</body>
+
+</html>
