@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Léo Corporation</title>
+    <title>Popular | Léo Corporation</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +29,7 @@
 
     <header id="header" x-data="{ mobileMenuOpen : false }"
         class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
-        <a href="#" class="block">
+        <a href="index" class="block">
             <span class="sr-only">Léo Corporation</span>
             <img class="h-6 md:h-8" src="img/logo.png" alt="Logo" title=" Logo">
         </a>
@@ -43,80 +43,59 @@
         </button>
         <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
             :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
-            <a href="#" class="block py-1 text-indigo-600 hover:text-indigo-600 transition">Home</a>
+            <a href="#" class="block py-1 text-gray-600 hover:text-indigo-600 transition">Home</a>
             <a href="store" class="block py-1 text-gray-600 hover:text-indigo-600 transition">Store</a>
-            <a href="popular" class="block py-1 text-gray-600 hover:text-indigo-600 transition">Popular</a>
+            <a href="popular" class="block py-1 text-indigo-600 hover:text-indigo-600 transition">Popular</a>
             <a href="labs" class="block py-1 text-gray-600 hover:text-indigo-600 transition">LABS</a>
             <a href="#" class="block py-1 text-gray-600 hover:text-indigo-600 transition">Blog</a>
             <a href="#" class="block py-1 text-gray-600 hover:text-indigo-600 transition">Contact</a>
         </nav>
     </header>
 
-
-    <div class="justify-center flex items-center flex-col" id="content">
-        <img style="max-height: 300px;" src="img/banner.png" />
-        <p class="mx-6 sm:mx-48 my-16">
-            Léo Corporation aims to create Windows software that allows everyone to improve productivity, help with
-            mundane tasks and simplify the user experience. To complete this mission, Léo Corporation has always pushed
-            the boundaries, while listening to the feedback of its users.
-            Today, Léo Corporation actively maintains nine specialized software in very different fields compared to the
-            others.
-        </p>
-    </div>
-
-    <div id="popular">
-        <h2 class="text-3xl font-bold ml-8">Our popular software</h2>
-        <div class="flex flex-col items-center">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:mx-60">
-                <a href="https://bit.ly/DownloadInternetTest" style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
-                    <img style="height: 100px;" src="img/InternetTest.png" />
-                    <h3 class="font-bold text-2xl">InternetTest</h3>
-                </a>
-                <a href="https://bit.ly/DownloadColorPicker" style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
-                    <img style="height: 100px;" src="img/ColorPicker.png" />
-                    <h3 class="font-bold text-2xl">ColorPicker</h3>
-                </a>
-                <a href="https://bit.ly/DownloadPassliss" style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
-                    <img style="height: 100px;" src="img/Passliss.png" />
-                    <h3 class="font-bold text-2xl">Passliss</h3>
-                </a>
+    <div id="store-items" class="flex flex-col items-center mx-2 lg:mx-16">
+        <h1 class="text-3xl font-bold">Popular</h1>
+        <p>Find here all the software that is currently popular.</p>
+        <div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+                <img class="h-32 md:mr-16" src="img/InternetTest.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">InternetTest</h1>
+                    <p>InternetTest is a modern connection utility for Windows.</p>
+                </div>
+                <a href="https://bit.ly/DownloadInternetTest"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
             </div>
-            <a class="text-white text-2xl py-2 px-5 m-5 rounded-full font-bold border-solid hover:bg-indigo-600 bg-indigo-500 ring-offset-4 ring-indigo-400 focus:ring-2 transition"
-                href="#">See more</a>
-        </div>
-    </div>
-
-    <div id="open-source">
-        <h2 class="text-3xl font-bold ml-8">Open source</h2>
-        <p class="ml-8 mr-8 lg:mr-24">Léo Corporation has since 2019 put eleven open source software on GitHub, and
-            regularly
-            contributes to the
-            improvement of these. Among the software put into Open Source, some are software from LABS, the organization
-            aimed at testing functionalities before implementing them in our software. Here are some of our Open Source
-            software.</p>
-        <div class="flex flex-col items-center">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:mx-60">
-                <a href="https://github.com/Leo-Corporation/Gavilya" style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
-                    <img style="height: 100px;" src="img/Gavilya.png" />
-                    <h3 class="font-bold text-2xl">Gavilya</h3>
-                </a>
-                <a href="https://github.com/Leo-Corporation/Gerayis" style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
-                    <img style="height: 100px;" src="img/Gerayis.png" />
-                    <h3 class="font-bold text-2xl">Gerayis</h3>
-                </a>
-                <a href="https://github.com/Leo-Corporation/Passliss" style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
-                    <img style="height: 100px;" src="img/Passliss.png" />
-                    <h3 class="font-bold text-2xl">Passliss</h3>
-                </a>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+                <img class="h-32 md:mr-16" src="img/Passliss.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">Passliss</h1>
+                    <p>A modern password generator for Windows.</p>
+                </div>
+                <a href="https://bit.ly/DownloadPassliss"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
             </div>
-            <a class="text-white text-2xl py-2 px-5 m-5 rounded-full font-bold border-solid hover:bg-indigo-600 bg-indigo-500 ring-offset-4 ring-indigo-400 focus:ring-2 transition"
-                href="https://github.com/Leo-Corporation/">Learn more</a>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+                <img class="h-32 md:mr-16" src="img/Gavilya.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">Gavilya</h1>
+                    <p>Gavilya brings all your video games together in one place.</p>
+                </div>
+                <a href="https://bit.ly/Gavilya"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+                <img class="h-32 md:mr-16" src="img/Gerayis.png" />
+                <div class="md:mr-16">
+                    <h1 class="font-bold text-3xl">Gerayis</h1>
+                    <p>A modern Bar/QR Code generator for Windows.</p>
+                </div>
+                <a href="https://bit.ly/DownloadGerayis"
+                    class="text-indigo-500 text-center py-2 shadow-lg px-7 m-5 rounded-full border-indigo-500 border-2 font-bold border-solid hover:bg-indigo-600 hover:text-white bg-white ring-offset-4 ring-indigo-400 focus:ring-2 transition">Download</a>
+            </div>
         </div>
     </div>
 
