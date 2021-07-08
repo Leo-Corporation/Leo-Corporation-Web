@@ -75,7 +75,7 @@
 
 
     <div class="justify-center flex items-center flex-col" id="content">
-        <img alt="Image" style="max-height: 300px;" src="img/banner.png" />
+        <img class="fadeIn" alt="Image" style="max-height: 300px;" src="img/banner.png" />
         <h1 class="mx-6 sm:mx-48 my-16">
             Léo Corporation aims to create Windows software that allows everyone to improve productivity, help with
             mundane tasks and simplify the user experience. To complete this mission, Léo Corporation has always pushed
@@ -84,6 +84,24 @@
             others.
             </p>
     </div>
+
+    <style>
+        .fadeIn {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 
     <div id="popular">
         <h2 class="text-3xl font-bold ml-8">Our popular software</h2>
