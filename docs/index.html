@@ -46,7 +46,7 @@
 </head>
 
 <body id="body" style="font-family: Montserrat, sans-serif;">
-    <header id="header" x-data="{ mobileMenuOpen : false }"
+    <header id="header" x-data="{ mobileMenuOpen : false }" style="z-index: 1000;"
         class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
         <a href="#" class="block">
             <span class="sr-only">Léo Corporation</span>
@@ -77,11 +77,13 @@
     <div class="justify-center flex items-center flex-col" id="content">
         <img class="fadeIn" alt="Image" style="max-height: 300px;" src="img/banner.png" />
         <h1 class="mx-6 sm:mx-48 my-16">
-            Léo Corporation aims to create Windows software that allows everyone to improve productivity, help with
-            mundane tasks and simplify the user experience. To complete this mission, Léo Corporation has always pushed
-            the boundaries, while listening to the feedback of its users.
-            Today, Léo Corporation actively maintains nine specialized software in very different fields compared to the
-            others.
+            Léo Corporation is a Windows software creator since 2017. The purpose of its products is to improve
+            everyone’s productivity by helping people with basic and complex tasks while offering an intuitive and
+            simple user experience. Over the years, Léo Corporation has acquired skills that are today constantly reused
+            in our softwares, to always push the limit of the possible for our users. We are living in an era where our
+            computers have never been that important before and therefore Léo Corporation is putting all its efforts to
+            offer the best softwares to its users. We are currently maintaining lots of softwares specialized in
+            different fields: From simple user tasks to daily developers’ workflow, and even database management.
             </p>
     </div>
 
@@ -103,8 +105,11 @@
         }
     </style>
 
-    <div id="popular">
-        <h2 class="text-3xl font-bold ml-8">Our popular software</h2>
+    <div id="popular" class=" flex items-center flex-col">
+        <h2 class="text-3xl font-bold text-center">Our popular software</h2>
+        <p class="mx-8 mb-16">
+            We have selected the most popular softwares that might be helpful for you.
+        </p>
         <div class="flex flex-col items-center">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:mx-60">
                 <a href="https://bit.ly/DownloadInternetTest" target="_blank" rel="noopener noreferrer"
@@ -131,14 +136,17 @@
         </div>
     </div>
 
-    <div id="open-source">
-        <h2 class="text-3xl font-bold ml-8">Open source</h2>
-        <p class="ml-8 mr-8 lg:mr-24">Léo Corporation has since 2019 put eleven open source software on GitHub, and
-            regularly
-            contributes to the
-            improvement of these. Among the software put into Open Source, some are software from LABS, the organization
-            aimed at testing functionalities before implementing them in our software. Here are some of our Open Source
-            software.</p>
+    <div id="open-source" class=" flex items-center flex-col mt-16">
+        <h2 class="text-3xl font-bold text-center">Open source</h2>
+        <p class="mx-6 sm:mx-48 mb-16">
+            Since 2019, Léo Corporation is contributing to make the code of most of its apps available to everyone by
+            making our softwares Open-Sourced on <a class="underline" target="_blank" rel="noopener noreferrer"
+                href="https://github.com/Leo-Corporation">GitHub</a>. This is how we
+            are improving our softwares, by contributing
+            regularly to them on GitHub. Thanks to this, we can push an update to all our Open-Sourced projects once a
+            month, and even more! You can find some of our Open-Sourced projects below. Don’t hesitate to help us by
+            contributing to these projects!
+        </p>
         <div class="flex flex-col items-center">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:mx-60">
                 <a href="https://github.com/Leo-Corporation/Gavilya" target="_blank" rel="noopener noreferrer"
