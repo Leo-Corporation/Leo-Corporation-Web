@@ -103,6 +103,31 @@
                 opacity: 1;
             }
         }
+
+        .slideInUp {
+            animation-name: slideInUp;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes slideInUp {
+            0% {
+                transform: translateY(25%);
+                visibility: visible;
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .delay-1 {
+            animation-delay: 0.12s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.25s;
+        }
     </style>
 
     <div id="popular" class=" flex items-center flex-col">
@@ -114,19 +139,19 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:mx-60">
                 <a href="https://bit.ly/DownloadInternetTest" target="_blank" rel="noopener noreferrer"
                     style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
+                    class="slideInUp rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
                     <img alt="Image" style="height: 100px;" src="img/InternetTest.png" />
                     <h3 class="font-bold text-2xl">InternetTest</h3>
                 </a>
                 <a href="https://bit.ly/DownloadColorPicker" target="_blank" rel="noopener noreferrer"
                     style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
+                    class="slideInUp delay-1 rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
                     <img alt="Image" style="height: 100px;" src="img/ColorPicker.png" />
                     <h3 class="font-bold text-2xl">ColorPicker</h3>
                 </a>
                 <a href="https://bit.ly/DownloadPassliss" target="_blank" rel="noopener noreferrer"
                     style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
+                    class="slideInUp delay-2 rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
                     <img alt="Image" style="height: 100px;" src="img/Passliss.png" />
                     <h3 class="font-bold text-2xl">Passliss</h3>
                 </a>
@@ -151,19 +176,19 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:mx-60">
                 <a href="https://github.com/Leo-Corporation/Gavilya" target="_blank" rel="noopener noreferrer"
                     style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
+                    class="slideInUp rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
                     <img alt="Image" style="height: 100px;" src="img/Gavilya.png" />
                     <h3 class="font-bold text-2xl">Gavilya</h3>
                 </a>
                 <a href="https://github.com/Leo-Corporation/Gerayis" target="_blank" rel="noopener noreferrer"
                     style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
+                    class="slideInUp delay-1 rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
                     <img alt="Image" style="height: 100px;" src="img/Gerayis.png" />
                     <h3 class="font-bold text-2xl">Gerayis</h3>
                 </a>
                 <a href="https://github.com/Leo-Corporation/Passliss" target="_blank" rel="noopener noreferrer"
                     style="min-width: 250px;"
-                    class="rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
+                    class="slideInUp delay-2 rounded-lg m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition">
                     <img alt="Image" style="height: 100px;" src="img/Passliss.png" />
                     <h3 class="font-bold text-2xl">Passliss</h3>
                 </a>
