@@ -63,14 +63,14 @@
         </button>
         <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
             :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
-            <a href="#" class="block py-1 text-indigo-600 hover:text-indigo-600 transition">Home</a>
-            <a href="store" class="block py-1 text-gray-600 hover:text-indigo-600 transition">Store</a>
-            <a href="popular" class="block py-1 text-gray-600 hover:text-indigo-600 transition">Popular</a>
-            <a href="labs" class="block py-1 text-gray-600 hover:text-indigo-600 transition">LABS</a>
+            <a href="#" class="block py-1 text-blue-600 hover:text-blue-600 transition">Home</a>
+            <a href="store" class="block py-1 text-gray-600 hover:text-blue-600 transition">Store</a>
+            <a href="popular" class="block py-1 text-gray-600 hover:text-blue-600 transition">Popular</a>
+            <a href="labs" class="block py-1 text-gray-600 hover:text-blue-600 transition">LABS</a>
             <a href="https://blog.leocorporation.dev/"
-                class="block py-1 text-gray-600 hover:text-indigo-600 transition">Blog</a>
+                class="block py-1 text-gray-600 hover:text-blue-600 transition">Blog</a>
             <a href="mailto:leopeyronnet.corp@hotmail.com"
-                class="block py-1 text-gray-600 hover:text-indigo-600 transition">Contact</a>
+                class="block py-1 text-gray-600 hover:text-blue-600 transition">Contact</a>
         </nav>
     </header>
 
@@ -166,12 +166,12 @@
                     <h3 class="font-bold text-2xl">Passliss</h3>
                 </a>
             </div>
-            <a class="text-white text-2xl py-2 px-5 m-5 rounded-full font-bold border-solid hover:bg-indigo-600 bg-indigo-500 ring-offset-4 ring-indigo-400 focus:ring-2 transition"
+            <a class="text-white text-2xl py-2 px-5 m-5 shadow-md hover:shadow-lg rounded-xl font-bold border-solid hover:bg-blue-600 bg-blue-500 ring-offset-4 ring-blue-400 focus:ring-2 transition"
                 href="popular">See more</a>
         </div>
     </div>
 
-    <div id="popular" class=" flex items-center flex-col">
+    <div id="new-soft" class=" flex items-center flex-col">
         <h2 class="text-3xl font-bold text-center mt-16">New softwares</h2>
         <p class="mx-8 mb-16">
             We often release new softwares. You can see our latest ones below.
@@ -197,7 +197,7 @@
                     <h3 class="font-bold text-2xl">ColorPicker</h3>
                 </a>
             </div>
-            <a class="text-white text-2xl py-2 px-5 m-5 rounded-full font-bold border-solid hover:bg-indigo-600 bg-indigo-500 ring-offset-4 ring-indigo-400 focus:ring-2 transition"
+            <a class="text-white text-2xl py-2 px-5 m-5 shadow-md hover:shadow-lg rounded-xl font-bold border-solid hover:bg-blue-600 bg-blue-500 ring-offset-4 ring-blue-400 focus:ring-2 transition"
                 href="popular">See more</a>
         </div>
     </div>
@@ -234,7 +234,7 @@
                     <h3 class="font-bold text-2xl">Passliss</h3>
                 </a>
             </div>
-            <a class="text-white text-2xl py-2 px-5 m-5 rounded-full font-bold border-solid hover:bg-indigo-600 bg-indigo-500 ring-offset-4 ring-indigo-400 focus:ring-2 transition"
+            <a class="text-white text-2xl py-2 px-5 m-5 shadow-md hover:shadow-lg rounded-xl font-bold border-solid hover:bg-blue-600 bg-blue-500 ring-offset-4 ring-blue-400 focus:ring-2 transition"
                 href="https://github.com/Leo-Corporation/" target="_blank" rel="noopener noreferrer">Learn more</a>
         </div>
     </div>
@@ -254,34 +254,41 @@
         <p class="text-center mb-8">Xalyus Store brings all our software together in one place.</p>
         <div class="flex flex-col sm:flex-row items-center">
             <a target="_blank" rel="noopener noreferrer"
-                class="transition font-bold p-2 hover:bg-white hover:text-indigo-600 rounded-full ring-1 ring-offset-2 ring-white"
+                class="transition font-bold p-2 hover:bg-white hover:text-indigo-600 rounded-xl ring-1 ring-offset-2 ring-white"
                 href="http://bit.ly/DownloadNewXalyusStore">Download</a>
             <a class="p-5" href="xalyus-store">Learn more</a>
         </div>
     </div>
 
-    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 bg-indigo-600 text-white">
-        <div class="grid grid-rows-3">
+    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 bg-gray-100 text-gray-500">
+        <div class="flex flex-col">
+            <h3 class="font-bold mb-5">
+                ABOUT
+            </h3>
             <p id="copyright">© Léo Corporation</p>
             <a href="https://privacy.leocorporation.dev/" class="hover:underline">Privacy Policy</a>
+            <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
         </div>
-        <div id="social-networks" class="grid grid-rows-3 mt-4 sm:mt-0">
+        <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+            <h3 class="font-bold mb-5">
+                SOCIAL
+            </h3>
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/"
                 class="flex flex-row items-center">
                 <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/github.png" />
+                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
                 <p class="font-semibold">GitHub</p>
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews"
                 class="flex flex-row items-center">
                 <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/twitter.png" />
+                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
                 <p class="font-semibold">Twitter</p>
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg"
                 class="flex flex-row items-center">
                 <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluent-systems-filled/48/FFFFFF/youtube.png" />
+                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/youtube.png" />
                 <p class="font-semibold">YouTube</p>
             </a>
         </div>
