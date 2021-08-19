@@ -11,19 +11,20 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://leocorporation.dev/img/social.png">
     <meta name="twitter:description" content="Léo Corporation's official website. Software creation for Windows.">
-    <meta name="twitter:title" content="Popular | Léo Corporation">
+    <meta name="twitter:title" content="Léo Corporation">
 
     <!-- Facebook/Linkedin -->
     <meta property="og:description" content="Léo Corporation's official website. Software creation for Windows.">
     <meta property="og:image" content="https://leocorporation.dev/img/social.png">
-    <meta property="og:title" content="Popular | Léo Coporation">
+    <meta property="og:title" content="Léo Coporation">
 
     <meta name="description" content="Léo Corporation's official website. Software creation for Windows.">
-    <title>Popular | Léo Corporation</title>
+    <title>Léo Corporation</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/animations.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY3K4MZKXB"></script>
     <script>
@@ -44,14 +45,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
 
-
 </head>
 
 <body id="body" style="font-family: Montserrat, sans-serif;">
-
     <header id="header" x-data="{ mobileMenuOpen : false }" style="z-index: 1000;"
         class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
-        <a href="index" class="block">
+        <a href="#" class="block">
             <span class="sr-only">Léo Corporation</span>
             <img alt="Image" class="h-6 md:h-8" src="img/logo.png" alt="Logo" title=" Logo">
         </a>
@@ -67,79 +66,52 @@
             :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
             <a href="index" class="block py-1 text-gray-600 hover:text-blue-600 transition">Home</a>
             <a href="store" class="block py-1 text-gray-600 hover:text-blue-600 transition">Store</a>
-            <a href="popular" class="block py-1 text-blue-600 hover:text-blue-600 transition">Popular</a>
+            <a href="popular" class="block py-1 text-gray-600 hover:text-blue-600 transition">Popular</a>
             <a href="labs" class="block py-1 text-gray-600 hover:text-blue-600 transition">LABS</a>
             <a href="https://blog.leocorporation.dev/"
                 class="block py-1 text-gray-600 hover:text-blue-600 transition">Blog</a>
-            <a href="contact" class="block py-1 text-gray-600 hover:text-blue-600 transition">Contact</a>
+            <a href="#" class="block py-1 text-blue-600 hover:text-blue-600 transition">Contact</a>
         </nav>
     </header>
 
-    <div id="store-items" class="flex flex-col items-center mx-2 lg:mx-16">
-        <h2 class="text-3xl font-bold">Popular</h2>
-        <h1>Find here all the software that is currently popular.</h1>
-        <div>
-            <div style="grid-template-columns: 144px auto 200px;"
-                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-                <img alt="Image" class="h-32 md:mr-16" src="img/InternetTest.png" />
-                <div class="md:mr-16">
-                    <h2 class="font-bold text-3xl">InternetTest</h2>
-                    <p>InternetTest is a modern connection utility for Windows.</p>
-                </div>
-                <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/DownloadInternetTest"
-                    class="text-white text-center py-2 shadow-lg px-7 m-5 rounded-xl shadow-md hover:shadow-lg bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
-            </div>
-            <div style="grid-template-columns: 144px auto 200px;"
-                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-                <img alt="Image" class="h-32 md:mr-16" src="img/Passliss.png" />
-                <div class="md:mr-16">
-                    <h2 class="font-bold text-3xl">Passliss</h2>
-                    <p>A modern password generator for Windows.</p>
-                </div>
-                <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/DownloadPassliss"
-                    class="text-white text-center py-2 shadow-lg px-7 m-5 rounded-xl shadow-md hover:shadow-lg bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
-            </div>
-            <div style="grid-template-columns: 144px auto 200px;"
-                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-                <img alt="Image" class="h-32 md:mr-16" src="img/Gavilya.png" />
-                <div class="md:mr-16">
-                    <h2 class="font-bold text-3xl">Gavilya</h2>
-                    <p>Gavilya brings all your video games together in one place.</p>
-                </div>
-                <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/Gavilya"
-                    class="text-white text-center py-2 shadow-lg px-7 m-5 rounded-xl shadow-md hover:shadow-lg bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
-            </div>
-            <div style="grid-template-columns: 144px auto 200px;"
-                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-                <img alt="Image" class="h-32 md:mr-16" src="img/Gerayis.png" />
-                <div class="md:mr-16">
-                    <h2 class="font-bold text-3xl">Gerayis</h2>
-                    <p>A modern Bar/QR Code generator for Windows.</p>
-                </div>
-                <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/DownloadGerayis"
-                    class="text-white text-center py-2 shadow-lg px-7 m-5 rounded-xl shadow-md hover:shadow-lg bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
-            </div>
-            <script async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
-                crossorigin="anonymous"></script>
-            <!-- LeoCorpDevAd5 -->
-            <ins class="adsbygoogle flex justify-center" data-ad-client="ca-pub-7416572564791547"
-                data-ad-slot="8817787857" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+    <div class="flex items-center justify-center">
+        <img class="fadeIn" alt="Image" style="max-height: 300px;" src="img/banner.png" />
     </div>
-
-    <div id="xalyus-ad" style="max-width: 700px;"
-        class="bg-indigo-600 text-white p-5 mx-4 sm:mx-auto my-8 flex flex-col rounded-xl justify-center items-center text-center">
-        <h2 class="text-4xl font-bold">Xalyus Store</h2>
-        <p class="text-center mb-8">Xalyus Store brings all our software together in one place.</p>
-        <div class="flex flex-col sm:flex-row items-center">
-            <a target="_blank" rel="noopener noreferrer"
-                class="transition font-bold p-2 hover:bg-white hover:text-indigo-600 rounded-xl ring-1 ring-offset-2 ring-white"
-                href="http://bit.ly/DownloadNewXalyusStore">Download</a>
-            <a class="p-5" href="xalyus-store">Learn more</a>
+    <h1 class="font-bold text-3xl mx-5 mt-8">Contact us</h1>
+    <p class="mx-5">Get in touch with us</p>
+    <div class="my-5 mx-5 sm:mx-16 md:mx-32 lg:mx-80 xl:mx-96 space-y-4">
+        <div
+            class="slideInUp text-white p-4 rounded-lg flex sm:flex-row flex-col items-center justify-between bg-blue-400">
+            <div class="flex flex-row">
+                <img alt="Image" class="h-7 mr-5"
+                    src="https://img.icons8.com/fluent-systems-filled/96/ffffff/twitter.png" />
+                <h1 class="font-bold text-xl">Twitter</h1>
+            </div>
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews"
+                class="shadow rounded-lg p-2 my-4 mx-2 bg-blue-500 transition hover:bg-blue-600 font-bold">Get in
+                touch</a>
+        </div>
+        <div
+            class="slideInUp delay-1 text-white p-4 rounded-lg flex sm:flex-row flex-col items-center justify-between bg-blue-600">
+            <div class="flex flex-row">
+                <img alt="Image" class="h-7 mr-5"
+                    src="https://img.icons8.com/fluency-systems-filled/96/ffffff/facebook-new.png" />
+                <h1 class="font-bold text-xl">Facebook</h1>
+            </div>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LeoCorporationSoftwares/"
+                class="shadow rounded-lg p-2 my-4 mx-2 bg-blue-700 transition hover:bg-blue-800 font-bold">Get in
+                touch</a>
+        </div>
+        <div
+            class="slideInUp delay-2 text-white p-4 rounded-lg flex sm:flex-row flex-col items-center justify-between bg-red-500">
+            <div class="flex flex-row">
+                <img alt="Image" class="h-7 mr-5"
+                    src="https://img.icons8.com/fluency-systems-filled/48/ffffff/new-post.png" />
+                <h1 class="font-bold text-xl">Email</h1>
+            </div>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:leopeyronnet.corp@hotmail.com"
+                class="shadow rounded-lg p-2 my-4 mx-2 bg-red-600 transition hover:bg-red-700 font-bold">Get in
+                touch</a>
         </div>
     </div>
 
@@ -179,6 +151,7 @@
 
     <script src="scripts/copyright.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/animations.js"></script>
 
 </body>
 
