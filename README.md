@@ -20,6 +20,7 @@ There are currently 5 subdomains for [leocorporation.dev](https://leocorporation
 - [blog.leocorporation.dev](https://blog.leocorporation.dev)
 - [datalya.leocorporation.dev](https://datalya.leocorporation.dev/)
 - [gavilya.leocorporation.dev](https://gavilya.leocorporation.dev)
+- [leocorplibrary.leocorporation.dev](https://leocorplibrary.leocorporation.dev/)
 - [privacy.leocorporation.dev](https://privacy.leocorporation.dev)
 - [status.leocorporation.dev](https://status.leocorporation.dev)
 
