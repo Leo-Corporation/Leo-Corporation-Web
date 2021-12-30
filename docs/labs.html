@@ -47,181 +47,177 @@
 
 </head>
 
-<body id="body" style="font-family: Montserrat, sans-serif;">
+<body id="body" style="font-family: Montserrat, sans-serif;"
+    class="bg-white text-black dark:text-white dark:bg-[#000014]"></body>
 
-    <header id="header" x-data="{ mobileMenuOpen : false }" style="z-index: 1000;"
-        class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
-        <a href="index" class="block">
-            <span class="sr-only">Léo Corporation</span>
-            <img alt="Image" class="h-6 md:h-8" src="img/logo.png" alt="Logo" title=" Logo">
+<header id="header" x-data="{ mobileMenuOpen : false }" style="z-index: 1000;"
+    class="backdrop-filter transition backdrop-blur-lg flex flex-wrap flex-row justify-between md:items-center md:space-x-4 sticky top-0 w-full py-6 px-6">
+    <a href="index" class="block">
+        <span class="sr-only">Léo Corporation</span>
+        <img alt="Image" class="h-6 md:h-8" src="img/logo.png" alt="Logo" title=" Logo">
+    </a>
+    <button @click="mobileMenuOpen = !mobileMenuOpen"
+        class="inline-block md:hidden w-8 h-8 bg-transparent dark:text-gray-300 text-gray-600 p-1">
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+        </svg>
+    </button>
+    <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto dark:bg-gray-900 dark:text-gray-400 bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
+        :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
+        <a href="index" class="block py-1 dark:text-gray-400 text-gray-600 hover:text-blue-600 transition">Home</a>
+        <a href="store" class="block py-1 dark:text-gray-400 text-gray-600 hover:text-blue-600 transition">Store</a>
+        <a href="popular" class="block py-1 dark:text-gray-400 text-gray-600 hover:text-blue-600 transition">Popular</a>
+        <a href="labs" class="block py-1 text-blue-600 hover:text-blue-600 transition">LABS</a>
+        <a href="https://blog.leocorporation.dev/"
+            class="block py-1 dark:text-gray-400 text-gray-600 hover:text-blue-600 transition">Blog</a>
+        <a href="contact" class="block py-1 dark:text-gray-400 text-gray-600 hover:text-blue-600 transition">Contact</a>
+    </nav>
+</header>
+
+
+<div class="flex justify-center items-center">
+    <img alt="Image" src="img/labs.webp" class="h-24" />
+</div>
+<div id="labs-header" class="flex flex-col m-5">
+    <h2 class="text-4xl font-bold ml-2 sm:ml-8 m-5">Experiences</h2>
+    <h1 class="max-w-screen-lg ml-2 sm:ml-8">
+        LABS manages several experimental projects allowing the creation
+        and
+        improvement of software. We would like to release everything that has been tested internally so far.
+        <br />
+        Currently, there are mostly "console" type projects, where we are testing software in console form.
+    </h1>
+</div>
+
+<div id="store-items" class="flex flex-col items-center mx-2 lg:mx-16">
+    <div>
+        <div style="grid-template-columns: 144px auto 200px;"
+            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+            <img alt="Image" class="h-32 md:mr-16" src="img/LABS Logo.webp" />
+            <div class="md:mr-16">
+                <h2 class="font-bold text-3xl">LABS Experiences</h2>
+                <p>LABS Experiences is where our diverse experiences are gathered.</p>
+            </div>
+            <div class="flex flex-col justify-center">
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/Leo-Corporation/LABS-Experiences/releases"
+                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/LABS-Experiences/"
+                    class="dark:text-gray-300 dark:bg-gray-800 dark:border-0 dark:hover:bg-gray-700 text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
+            </div>
+        </div>
+        <div style="grid-template-columns: 144px auto 200px;"
+            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+            <img alt="Image" class="h-32 md:mr-16" src="img/LABS Logo.webp" />
+            <div class="md:mr-16">
+                <h2 class="font-bold text-3xl">LABS Experimental Console</h2>
+                <p>LABS Experimental Console (formerly LPC Experimental Console) is an experiment to test
+                    commands
+                    and functions</p>
+            </div>
+            <div class="flex flex-col justify-center">
+                <a target="_blank" rel="noopener noreferrer"
+                    href="http://www.mediafire.com/file/pjkg3aupj0ha28u/LABS_Experimental_Console.zip/file"
+                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://github.com/Leo-Corporation/LABS-ExperimentalConsole"
+                    class="dark:text-gray-300 dark:bg-gray-800 dark:border-0 dark:hover:bg-gray-700 text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
+    crossorigin="anonymous"></script>
+<!-- LeoCorpDevAd6 -->
+<ins class="adsbygoogle flex justify-center" data-ad-client="ca-pub-7416572564791547" data-ad-slot="3925581497"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div id="lib-header" class="flex flex-col m-5">
+    <h2 class="text-4xl font-bold ml-2 sm:ml-8 m-5">Library</h2>
+    <p class="max-w-screen-lg ml-2 sm:ml-8">
+        Some LABS projects have been moved to the .NET library, LeoCorpLibrary. This library allows developers
+        to
+        simply use functions of certain experiments / projects of LABS.
+    </p>
+</div>
+
+<div id="lib-items" class="flex flex-col items-center mx-2 lg:mx-16">
+    <div>
+        <div style="grid-template-columns: 144px auto 200px;"
+            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+            <img alt="Image" class="h-32 md:mr-16" src="img/LeoCorpLibrary 2.webp" />
+            <div class="md:mr-16">
+                <h2 class="font-bold text-3xl">LeoCorpLibrary</h2>
+                <p>LeoCorpLibrary is a free .NET Open-Source library. It includes many useful functions for
+                    developers.</p>
+            </div>
+            <div class="flex flex-col justify-center">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.nuget.org/packages/LeoCorpLibrary/"
+                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-700 font-bold border-solid hover:bg-blue-800 hover:text-white bg-white ring-offset-4 ring-blue-800 focus:ring-2 transition">NuGet</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/LeoCorpLibrary"
+                    class="dark:text-gray-300 dark:bg-gray-800 dark:border-0 dark:hover:bg-gray-700 text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
+            </div>
+        </div>
+        <div style="grid-template-columns: 144px auto 200px;"
+            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+            <img alt="Image" class="h-32 md:mr-16" src="img/LeoCorpLibrary 2.webp" />
+            <div class="md:mr-16">
+                <h2 class="font-bold text-3xl">LeoCorpLibrary.Core</h2>
+                <p>LeoCorpLibrary.Core is a free cross-platforms .NET Open-Source library. It includes many
+                    useful
+                    functions for developers.</p>
+            </div>
+            <div class="flex flex-col justify-center">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.nuget.org/packages/LeoCorpLibrary.Core/"
+                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-700 font-bold border-solid hover:bg-blue-800 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">NuGet</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/LeoCorpLibrary"
+                    class="dark:text-gray-300 dark:bg-gray-800 dark:border-0 dark:hover:bg-gray-700 text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-900 dark:text-gray-300 bg-gray-100 text-gray-500">
+    <div class="flex flex-col">
+        <h3 class="font-bold mb-5">
+            ABOUT
+        </h3>
+        <p id="copyright">© Léo Corporation</p>
+        <a href="https://privacy.leocorporation.dev/" class="hover:underline">Privacy Policy</a>
+        <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
+    </div>
+    <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+        <h3 class="font-bold mb-5">
+            SOCIAL
+        </h3>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/"
+            class="flex flex-row items-center">
+            <img alt="Image" class="h-6 mr-5" src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
+            <p class="font-semibold">GitHub</p>
         </a>
-        <button @click="mobileMenuOpen = !mobileMenuOpen"
-            class="inline-block md:hidden w-8 h-8 bg-transparent dark:text-gray-300 text-gray-600 p-1">
-            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
-            </svg>
-        </button>
-        <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
-            :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
-            <a href="index" class="block py-1 text-gray-600 hover:text-blue-600 transition">Home</a>
-            <a href="store" class="block py-1 text-gray-600 hover:text-blue-600 transition">Store</a>
-            <a href="popular" class="block py-1 text-gray-600 hover:text-blue-600 transition">Popular</a>
-            <a href="labs" class="block py-1 text-blue-600 hover:text-blue-600 transition">LABS</a>
-            <a href="https://blog.leocorporation.dev/"
-                class="block py-1 text-gray-600 hover:text-blue-600 transition">Blog</a>
-            <a href="contact" class="block py-1 text-gray-600 hover:text-blue-600 transition">Contact</a>
-        </nav>
-    </header>
-
-
-    <div class="flex justify-center items-center">
-        <img alt="Image" src="img/labs.webp" class="h-24" />
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews"
+            class="flex flex-row items-center">
+            <img alt="Image" class="h-6 mr-5"
+                src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
+            <p class="font-semibold">Twitter</p>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg"
+            class="flex flex-row items-center">
+            <img alt="Image" class="h-6 mr-5"
+                src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
+            <p class="font-semibold">YouTube</p>
+        </a>
     </div>
-    <div id="labs-header" class="flex flex-col m-5">
-        <h2 class="text-4xl font-bold ml-2 sm:ml-8 m-5">Experiences</h2>
-        <h1 class="max-w-screen-lg ml-2 sm:ml-8">
-            LABS manages several experimental projects allowing the creation
-            and
-            improvement of software. We would like to release everything that has been tested internally so far.
-            <br />
-            Currently, there are mostly "console" type projects, where we are testing software in console form.
-        </h1>
-    </div>
+</footer>
 
-    <div id="store-items" class="flex flex-col items-center mx-2 lg:mx-16">
-        <div>
-            <div style="grid-template-columns: 144px auto 200px;"
-                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-                <img alt="Image" class="h-32 md:mr-16" src="img/LABS Logo.webp" />
-                <div class="md:mr-16">
-                    <h2 class="font-bold text-3xl">LABS Experiences</h2>
-                    <p>LABS Experiences is where our diverse experiences are gathered.</p>
-                </div>
-                <div class="flex flex-col justify-center">
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/Leo-Corporation/LABS-Experiences/releases"
-                        class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/Leo-Corporation/LABS-Experiences/"
-                        class="text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
-                </div>
-            </div>
-            <div style="grid-template-columns: 144px auto 200px;"
-                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-                <img alt="Image" class="h-32 md:mr-16" src="img/LABS Logo.webp" />
-                <div class="md:mr-16">
-                    <h2 class="font-bold text-3xl">LABS Experimental Console</h2>
-                    <p>LABS Experimental Console (formerly LPC Experimental Console) is an experiment to test
-                        commands
-                        and functions</p>
-                </div>
-                <div class="flex flex-col justify-center">
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="http://www.mediafire.com/file/pjkg3aupj0ha28u/LABS_Experimental_Console.zip/file"
-                        class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/Leo-Corporation/LABS-ExperimentalConsole"
-                        class="text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
-        crossorigin="anonymous"></script>
-    <!-- LeoCorpDevAd6 -->
-    <ins class="adsbygoogle flex justify-center" data-ad-client="ca-pub-7416572564791547" data-ad-slot="3925581497"
-        data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <div id="lib-header" class="flex flex-col m-5">
-        <h2 class="text-4xl font-bold ml-2 sm:ml-8 m-5">Library</h2>
-        <p class="max-w-screen-lg ml-2 sm:ml-8">
-            Some LABS projects have been moved to the .NET library, LeoCorpLibrary. This library allows developers
-            to
-            simply use functions of certain experiments / projects of LABS.
-        </p>
-    </div>
-
-    <div id="lib-items" class="flex flex-col items-center mx-2 lg:mx-16">
-        <div>
-            <div style="grid-template-columns: 144px auto 200px;"
-                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-                <img alt="Image" class="h-32 md:mr-16" src="img/LeoCorpLibrary 2.webp" />
-                <div class="md:mr-16">
-                    <h2 class="font-bold text-3xl">LeoCorpLibrary</h2>
-                    <p>LeoCorpLibrary is a free .NET Open-Source library. It includes many useful functions for
-                        developers.</p>
-                </div>
-                <div class="flex flex-col justify-center">
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.nuget.org/packages/LeoCorpLibrary/"
-                        class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-700 font-bold border-solid hover:bg-blue-800 hover:text-white bg-white ring-offset-4 ring-blue-800 focus:ring-2 transition">NuGet</a>
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/Leo-Corporation/LeoCorpLibrary"
-                        class="text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
-                </div>
-            </div>
-            <div style="grid-template-columns: 144px auto 200px;"
-                class="w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-                <img alt="Image" class="h-32 md:mr-16" src="img/LeoCorpLibrary 2.webp" />
-                <div class="md:mr-16">
-                    <h2 class="font-bold text-3xl">LeoCorpLibrary.Core</h2>
-                    <p>LeoCorpLibrary.Core is a free cross-platforms .NET Open-Source library. It includes many
-                        useful
-                        functions for developers.</p>
-                </div>
-                <div class="flex flex-col justify-center">
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="https://www.nuget.org/packages/LeoCorpLibrary.Core/"
-                        class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-700 font-bold border-solid hover:bg-blue-800 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">NuGet</a>
-                    <a target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/Leo-Corporation/LeoCorpLibrary"
-                        class="text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 bg-gray-100 text-gray-500">
-        <div class="flex flex-col">
-            <h3 class="font-bold mb-5">
-                ABOUT
-            </h3>
-            <p id="copyright">© Léo Corporation</p>
-            <a href="https://privacy.leocorporation.dev/" class="hover:underline">Privacy Policy</a>
-            <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
-        </div>
-        <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
-            <h3 class="font-bold mb-5">
-                SOCIAL
-            </h3>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/"
-                class="flex flex-row items-center">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
-                <p class="font-semibold">GitHub</p>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews"
-                class="flex flex-row items-center">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
-                <p class="font-semibold">Twitter</p>
-            </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg"
-                class="flex flex-row items-center">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
-                <p class="font-semibold">YouTube</p>
-            </a>
-        </div>
-    </footer>
-
-    <script src="scripts/copyright.js"></script>
-    <script src="scripts/scroll.js"></script>
+<script src="scripts/copyright.js"></script>
+<script src="scripts/scroll.js"></script>
 
 </body>
 
