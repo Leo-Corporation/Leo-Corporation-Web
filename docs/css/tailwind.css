@@ -495,10 +495,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -599,6 +595,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.25rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -629,10 +629,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .block {
@@ -691,10 +687,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: auto;
 }
 
-.h-16 {
-  height: 4rem;
-}
-
 .max-h-96 {
   max-height: 24rem;
 }
@@ -717,46 +709,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4 {
   width: 1rem;
-}
-
-.w-max {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.min-w-fit {
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-}
-
-.min-w-max {
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
-}
-
-.min-w-full {
-  min-width: 100%;
 }
 
 .max-w-screen-xl {
@@ -1065,6 +1017,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1078,11 +1035,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-semibold {
@@ -1536,14 +1488,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-48 {
-    width: 12rem;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:w-96 {
