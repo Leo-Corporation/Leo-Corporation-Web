@@ -200,6 +200,62 @@
         </div>
     </div>
 
+    <style>
+        #experience-creator {
+            background: url('img/mesh.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            #experience-creator {
+                background: url('img/mesh_dark.png') no-repeat center center;
+                background-size: cover;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .software-desc {
+                display: none;
+            }
+
+            .software-item:hover .software-desc {
+                display: block;
+            }
+        }
+    </style>
+
+    <div id="experience-creator" class="flex flex-col items-center text-black dark:text-white px-16 py-32">
+        <h2 class="font-bold text-6xl text-center">Experience creator</h2>
+        <p class="font-semibold text-center text-xl">Léo Corporation maintains various applications and services.</p>
+
+        <div class="mx-auto flex lg:flex-nowrap flex-wrap justify-center">
+            <a
+                class="software-item flex flex-col sm:flex-row items-center max-w-sm hover:bg-white dark:hover:bg-gray-600 rounded-md hover:shadow-lg p-6 m-6 transition">
+                <img class="h-32" src="img/Passliss.png">
+                <div class="software-desc transition sm:text-left text-center">
+                    <h3 class="font-bold">Passliss</h3>
+                    <p>A simple and modern password generator for Windows.</p>
+                </div>
+            </a>
+            <a
+                class="software-item flex flex-col sm:flex-row items-center max-w-sm hover:bg-white dark:hover:bg-gray-600 rounded-md hover:shadow-lg p-6 m-6 transition">
+                <img class="h-32" src="img/InternetTest.png">
+                <div class="software-desc transition sm:text-left text-center">
+                    <h3 class="font-bold">InternetTest</h3>
+                    <p>A modern utility to perform checks on the Internet for Windows.</p>
+                </div>
+            </a>
+            <a
+                class="software-item flex flex-col sm:flex-row items-center max-w-sm hover:bg-white dark:hover:bg-gray-600 rounded-md hover:shadow-lg p-6 m-6 transition">
+                <img class="h-32" src="img/ColorPicker.png">
+                <div class="software-desc transition sm:text-left text-center">
+                    <h3 class="font-bold">ColorPicker</h3>
+                    <p>A modern color picking tool for Windows.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
     <div id="datalya-ad"
         class="text-white mx-8 my-8 md:mx-auto p-8 bg-gradient-to-r from-blue-700 to-blue-600 rounded-2xl flex md:flex-row justify-between flex-col max-w-screen-md">
         <div>
@@ -208,22 +264,6 @@
         </div>
         <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/DownloadDatalya"
             class="p-3 mt-5 mb-0 md:mb-5 text-center bg-white text-blue-600 font-bold rounded-xl hover:text-white hover:bg-blue-700 transition">Download</a>
-    </div>
-
-    <div class="justify-center flex items-center flex-col" id="content">
-        <img class="fadeIn dark:hidden block" alt="Logo in light mode" style="max-height: 300px;"
-            src="img/banner.png" />
-        <img class="fadeIn dark:block hidden" alt="Logo in dark mode" style="max-height: 300px;"
-            src="img/banner_dark.png" />
-        <h1 class="mx-6 sm:mx-48 my-16">
-            Léo Corporation is a Windows software creator since 2017. The purpose of its products is to improve
-            everyone’s productivity by helping people with basic and complex tasks while offering an intuitive and
-            simple user experience. Over the years, Léo Corporation has acquired skills that are today constantly reused
-            in our softwares, to always push the limit of the possible for our users. We are living in an era where our
-            computers have never been that important before and therefore Léo Corporation is putting all its efforts to
-            offer the best softwares to its users. We are currently maintaining lots of softwares specialized in
-            different fields: From simple user tasks to daily developers’ workflow, and even database management.
-            </p>
     </div>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
