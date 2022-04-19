@@ -26,3 +26,15 @@
         display: block;
     }
 }
+
+.btn-arrow:hover .btn-p-arw {
+    transform: translateX(16px);
+}
+
+.btn-p-arw {
+    transform: translateX(8px);
+}
+
+.btn-arrow div {
+    transform: translateX(8px);
+}
