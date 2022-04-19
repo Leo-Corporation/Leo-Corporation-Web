@@ -24,6 +24,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/animations.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY3K4MZKXB"></script>
     <script>
@@ -206,8 +207,13 @@
     class="flex flex-col text-center items-center justify-center text-white h-auto py-24 sm:py-48">
     <h1 class="font-bold text-7xl">The new Xalyus Store</h1>
     <p class="font-semibold mt-8">Modern app store.</p>
-    <a class="text-white text-2xl py-2 px-5 m-5 rounded-xl shadow-md hover:shadow-lg font-bold border-solid hover:bg-blue-600 bg-blue-700 ring-offset-2 ring-blue-400 focus:ring-1 transition"
-        href="xalyus-store">Learn more</a>
+    <a class="btn-arrow p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
+        href="xalyus-store">
+        <div class="flex justify-center items-center">
+            <p>Learn more</p>
+            <p class="btn-p-arw transition" style="font-family: FluentIconsRegular;"></p>
+        </div>
+    </a>
 </div>
 
 <div id="store-items" class="flex flex-col items-center mx-2 lg:mx-16">
