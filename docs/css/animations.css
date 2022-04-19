@@ -20,9 +20,26 @@
     animation-fill-mode: both;
 }
 
+.slideInUpX {
+    animation-name: slideInUpX;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
 @keyframes slideInUp {
     0% {
         transform: translateY(25%);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUpX {
+    0% {
+        transform: translateY(100%);
         visibility: visible;
     }
 
