@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social networks meta -->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://leocorporation.dev/img/social.png">
+    <meta name="twitter:description" content="Léo Corporation's official website. Software creation for Windows.">
+    <meta name="twitter:title" content="LABS | Léo Corporation">
+
+    <!-- Facebook/Linkedin -->
+    <meta property="og:description" content="Léo Corporation's official website. Software creation for Windows.">
+    <meta property="og:image" content="https://leocorporation.dev/img/social.png">
+    <meta property="og:title" content="LABS | Léo Coporation">
+
+    <meta name="description" content="Léo Corporation's official website. Software creation for Windows.">
+
+    <title>Passliss | Léo Corporation</title>
+    <link href="../css/tailwind.css" rel="stylesheet">
+    <link href="../css/animations.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="../favicon.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY3K4MZKXB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DY3K4MZKXB');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
+        crossorigin="anonymous"></script>
+
+    <!-- Clarity tracking code for https://leocorporation.dev/ -->
+    <script>    (function (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) }; t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt"; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, document, "clarity", "script", "6pcasplsmw");</script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body id="body" style="font-family: Montserrat, sans-serif;"
+    class="bg-white text-black dark:text-white dark:bg-[#000014]"></body>
+
+<div id="header" style="z-index: 1000;"
+    class="w-full sticky top-0 text-gray-700 dark:bg-gray-800 bg-white dark:text-gray-200 dark:bg-gray-800">
+    <style>
+        @font-face {
+            font-family: "FluentIconsRegular";
+            src: url("../fonts/FluentSystemIcons-Regular.ttf");
+        }
+    </style>
+    <div x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+            <a href="#"
+                class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center">
+                <img src="../img/logo.png" alt="Léo Corporation" class="h-10 w-10">
+                <p>Léo Corporation</p>
+            </a>
+            <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}"
+            class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex  md:flex-row">
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                <button @click="open = !open"
+                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                    <span>Apps</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
+                    <div class="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="https://gavilya.leocorporation.dev/">
+                            <div class="flex flex-row items-center">
+                                <img class="h-10 w-10" src="../img/Gavilya.png" alt="Gavilya Logo">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold">Gavilya</h2>
+                                    <p class="font-normal text-sm">Gavilya gathers all your video games in one
+                                        place.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="#">
+                            <div class="flex flex-row items-center">
+                                <img class="h-10 w-10" src="../img/Passliss.png" alt="Passliss Logo">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold">Passliss</h2>
+                                    <p class="font-normal text-sm">A modern password generator for Windows.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="https://datalya.leocorporation.dev/">
+                            <div class="flex flex-row items-center">
+                                <img class="h-10 w-10" src="../img/Datalya.png" alt="Datalya Logo">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold">Datalya</h2>
+                                    <p class="font-normal text-sm">A modern and simple database manager.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="../store">
+                            <div class="flex flex-row items-center">
+                                <p class="text-4xl" style="font-family: FluentIconsRegular;"></p>
+                                <div class="ml-4">
+                                    <h2 class="font-semibold">Apps</h2>
+                                    <p class="font-normal text-sm">See all of our apps.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                <button @click="open = !open" style="z-index: 1;"
+                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                    <span>LABS</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
+                    <div class="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="labs">
+                            <div class="flex flex-row items-center">
+                                <img class="h-10 w-10" src="../img/LABS Logo.webp" alt="LABS Logo">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold">LABS Experiences</h2>
+                                    <p class="font-normal text-sm">LABS Experiences is where our diverse experiments
+                                        are
+                                        gathered.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="block px-4 py-2 mt-2 bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="https://leocorplibrary.leocorporation.dev/">
+                            <div class="flex flex-row items-center text-base">
+                                <img class="h-10 w-10" src="../img/LeoCorpLibrary 2.webp" alt="LeoCorpLibrary Logo">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold">LeoCorpLibrary</h2>
+                                    <p class="font-normal text-sm">A C# library with useful features for .NET
+                                        Applications.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="https://blog.leocorporation.dev/">Blog</a>
+            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="contact">Contact</a>
+
+        </nav>
+    </div>
+</div>
+
+
+<div class="flex items-center justify-center min-h-[75vh]">
+    <div>
+        <h2 class="font-bold text-3xl m-8 fadeIn">Meet <span class="text-[#007FFF]">Passliss</span>, a simple yet
+            modern
+            password
+            generator.</h2>
+        <a class="btn-arrow p-3 pr-8 ml-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-[#007FFF] hover:bg-blue-600 transition inline-block"
+            href="https://bit.ly/DownloadPassliss">
+            <div class="flex items-center">
+                <p>Download</p>
+                <p class="btn-p-arw transition" style="font-family: FluentIconsRegular;"></p>
+            </div>
+        </a>
+    </div>
+    <img src="../img/Passliss.png" class="fadeIn delay-1 max-h-72 sm:block hidden">
+</div>
+
+<div class="flex sm:flex-row flex-col items-center py-10">
+    <h2 class="sm:w-[50%] font-bold text-xl m-4 text-center rotate" id="passwordTxt">kEùmiOç?5èKP*§5JECgd</h2>
+    <div class="m-4 sm:w-[50%]">
+        <h3 class="font-bold text-2xl text-center mb-2">Generate strong passwords</h3>
+        <p>Passliss is a simple yet modern password generator. It generates passwords with a strong and efficient
+            algorithm.
+            It is also easy to use and intuitive. Your passwords will be safe and secure.</p>
+    </div>
+</div>
+
+<style>
+    .uppercase-red {
+        color: #FF2929;
+    }
+
+    .lowercase-blue {
+        color: #3B8AFF;
+    }
+
+    .number-green {
+        color: #007F5F;
+    }
+
+    .special-purple {
+        color: #991EF9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .number-green {
+            color: #91FA49;
+        }
+    }
+
+    @media (prefers-reduced-motion) {
+        .treed {
+            transform: none !important;
+        }
+    }
+</style>
+
+<div class="flex sm:flex-row flex-col items-center py-10">
+    <div class="m-4 sm:w-[50%]">
+        <h3 class="font-bold text-2xl text-center mb-2">Test the safety of existing passwords</h3>
+        <p>If you have a doubt about the safety of one of your passwords, you can test its strength using Passliss. It
+            will give you an estimate of the strength of your password between "low" and "very good". Passliss can also
+            give you the color syntax of your password, so you can see the upper/lower cases, numbers, and special
+            characters.</p>
+    </div>
+    <div class="slideInRight sm:w-[50%] font-semibold rounded-lg p-5 mr-8 dark:bg-gray-800 bg-white shadow-md">
+        <h2 class="font-bold text-xl m-4 text-center" id="pxrStrengthTxt"></h2>
+        <div class="grid grid-cols-2">
+            <p class="uppercase-red">Uppercase</p>
+            <p class="uppercase-red" id="uppercaseTxt"></p>
+            <p class="lowercase-blue">Lowercase</p>
+            <p class="lowercase-blue" id="lowercaseTxt"></p>
+            <p class="number-green">Numbers</p>
+            <p class="number-green" id="numbersTxt"></p>
+            <p class="special-purple">Special characters</p>
+            <p class="special-purple" id="specialCharsTxt"></p>
+            <p>Length</p>
+            <p id="lengthTxt"></p>
+        </div>
+        <div class="flex justify-center">
+            <button onclick="colorSyntaxPassword(generatePassword(20))"
+                class="text-center mt-4 relative font-bold mx-auto px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 hover:dark:bg-gray-700">Refresh</button>
+        </div>
+    </div>
+</div>
+
+<div class="m-4 flex flex-col justify-center">
+    <h3 class="font-bold text-2xl text-center mb-2">Encrypt your secrets</h3>
+    <p class="text-center">You can encrypt your secrets using a strong key that will be used to decrypt the encrypted
+        content.</p>
+    <div class="flex items-center justify-center">
+        <img class="treed p-3 rounded-md dark:hidden block bg-white dark:bg-black max-h-[425px] w-auto shadow-md"
+            src="../img/passliss_screen1.png">
+        <img class="treed-d p-3 rounded-md dark:block hidden bg-white dark:bg-[#0a0a1e] max-h-[425px] w-auto shadow-md"
+            src="../img/passliss_screen2.png">
+    </div>
+
+</div>
+
+<div class="flex flex-col items-center">
+    <h3 class="font-bold text-2xl text-center mb-2">Increase your security on the web</h3>
+    <p class="text-center">Download Passliss now</p>
+    <a class="btn-arrow p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-[#007FFF] hover:bg-blue-600 transition"
+        href="https://bit.ly/DownloadPassliss">
+        <div class="flex items-center">
+            <p>Download</p>
+            <p class="btn-p-arw transition" style="font-family: FluentIconsRegular;"></p>
+        </div>
+    </a>
+</div>
+
+<footer class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-900 dark:text-gray-300 bg-gray-100 text-gray-500">
+    <div class="flex flex-col">
+        <h3 class="font-bold mb-5">
+            ABOUT
+        </h3>
+        <p id="copyright">© Léo Corporation</p>
+        <a href="https://privacy.leocorporation.dev/" class="hover:underline">Privacy Policy</a>
+        <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
+    </div>
+    <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+        <h3 class="font-bold mb-5">
+            SOCIAL
+        </h3>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/"
+            class="flex flex-row items-center">
+            <img alt="Image" class="h-6 mr-5" src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
+            <p class="font-semibold">GitHub</p>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews"
+            class="flex flex-row items-center">
+            <img alt="Image" class="h-6 mr-5"
+                src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
+            <p class="font-semibold">Twitter</p>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg"
+            class="flex flex-row items-center">
+            <img alt="Image" class="h-6 mr-5"
+                src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
+            <p class="font-semibold">YouTube</p>
+        </a>
+    </div>
+</footer>
+
+<script src="../scripts/copyright.js"></script>
+<script src="../scripts/scroll.js"></script>
+<script src="../scripts/passliss.js"></script>
+
+</body>
+
+</html>

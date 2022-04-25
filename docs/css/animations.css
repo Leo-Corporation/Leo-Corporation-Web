@@ -26,6 +26,22 @@
     animation-fill-mode: both;
 }
 
+.slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 @keyframes slideInUp {
     0% {
         transform: translateY(25%);
