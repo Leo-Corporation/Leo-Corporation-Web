@@ -47,11 +47,16 @@
 
 </head>
 
-<body id="body" style="font-family: Montserrat, sans-serif;"
-    class="bg-white text-black dark:text-white dark:bg-[#000014]"></body>
+<body id="body" style="font-family: Montserrat, sans-serif;" class="text-white"></body>
+<style>
+    body {
+        background-color: #000014;
+        background-image: url('img/Cross.svg');
+        background-attachment: fixed;
+    }
+</style>
 
-<div id="header" style="z-index: 1000;"
-    class="w-full sticky top-0 text-gray-700 dark:bg-gray-800 bg-white dark:text-gray-200 dark:bg-gray-800">
+<div id="header" style="z-index: 1000;" class="w-full sticky top-0 text-gray-200 bg-gray-800">
     <style>
         @font-face {
             font-family: "FluentIconsRegular";
@@ -62,7 +67,7 @@
         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
             <a href="index"
-                class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center">
+                class="text-lg font-bold  flex rounded-lg text-white focus:outline-none focus:shadow-outline items-center">
                 <img src="img/Logo.svg" alt="Léo Corporation" class="h-10 w-10">
                 <p>Léo Corporation</p>
             </a>
@@ -81,7 +86,7 @@
             class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex  md:flex-row">
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button @click="open = !open"
-                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg focus:text-white hover:text-white focus:bg-gray-600 hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover: focus: focus:outline-none focus:shadow-outline">
                     <span>Apps</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -97,8 +102,8 @@
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
                     class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                    <div class="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    <div class="px-2 py-2  rounded-md shadow bg-gray-800">
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0  focus:outline-none focus:shadow-outline"
                             href="https://gavilya.leocorporation.dev/">
                             <div class="flex flex-row items-center">
                                 <img class="h-10 w-10" src="img/Gavilya.svg" alt="Gavilya Logo">
@@ -110,7 +115,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline"
                             href="store/passliss">
                             <div class="flex flex-row items-center">
                                 <img class="h-10 w-10" src="img/Passliss.svg" alt="Passliss Logo">
@@ -120,7 +125,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline"
                             href="https://datalya.leocorporation.dev/">
                             <div class="flex flex-row items-center">
                                 <img class="h-10 w-10" src="img/Datalya.svg" alt="Datalya Logo">
@@ -130,7 +135,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline"
                             href="store">
                             <div class="flex flex-row items-center">
                                 <p class="text-4xl" style="font-family: FluentIconsRegular;"></p>
@@ -145,7 +150,7 @@
             </div>
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button @click="open = !open" style="z-index: 1;"
-                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-gray-200 dark:bg-gray-600 rounded-lg dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-gray-600 rounded-lg focus:text-white hover:text-white focus:bg-gray-600 hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover: focus:  focus:outline-none focus:shadow-outline">
                     <span>LABS</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -161,11 +166,11 @@
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
                     class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                    <div class="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    <div class="px-2 py-2  rounded-md shadow bg-gray-800">
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 hover: focus:  focus:outline-none focus:shadow-outline"
                             href="labs">
                             <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="img/LABS Logo.webp" alt="LABS Logo">
+                                <img class="h-10 w-10" src="img/LABS S.svg" alt="LABS Logo">
                                 <div class="ml-4">
                                     <h2 class="font-semibold">LABS Experiences</h2>
                                     <p class="font-normal text-sm">LABS Experiences is where our diverse experiments
@@ -175,7 +180,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="block px-4 py-2 mt-2 bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        <a class="block px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 hover: focus:  focus:outline-none focus:shadow-outline"
                             href="https://leocorplibrary.leocorporation.dev/">
                             <div class="flex flex-row items-center text-base">
                                 <img class="h-10 w-10" src="img/LeoCorpLibrary 2.webp" alt="LeoCorpLibrary Logo">
@@ -190,9 +195,9 @@
                     </div>
                 </div>
             </div>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 md:ml-4 hover: focus:  focus:outline-none focus:shadow-outline"
                 href="https://blog.leocorporation.dev/">Blog</a>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 md:ml-4 hover: focus:  focus:outline-none focus:shadow-outline"
                 href="contact">Contact</a>
 
         </nav>
@@ -201,7 +206,7 @@
 
 
 <div class="flex justify-center items-center">
-    <img alt="Image" src="img/labs.webp" class="h-24" />
+    <img alt="Image" src="img/LABS.svg" class="h-24" />
 </div>
 <div id="labs-header" class="flex flex-col m-5">
     <h2 class="text-4xl font-bold ml-2 sm:ml-8 m-5">Experiences</h2>
@@ -217,8 +222,8 @@
 <div id="store-items" class="flex flex-col items-center mx-2 lg:mx-16">
     <div>
         <div style="grid-template-columns: 144px auto 200px;"
-            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-            <img alt="Image" class="h-32 md:mr-16" src="img/LABS Logo.webp" />
+            class="bg-gray-900  w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+            <img alt="Image" class="h-32 md:mr-16" src="img/LABS S.svg" />
             <div class="md:mr-16">
                 <h2 class="font-bold text-3xl">LABS Experiences</h2>
                 <p>LABS Experiences is where our diverse experiences are gathered.</p>
@@ -226,14 +231,14 @@
             <div class="flex flex-col justify-center">
                 <a target="_blank" rel="noopener noreferrer"
                     href="https://github.com/Leo-Corporation/LABS-Experiences/releases"
-                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
+                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white  ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/LABS-Experiences/"
-                    class="dark:text-gray-300 dark:bg-gray-800 dark:border-0 dark:hover:bg-gray-700 text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
+                    class="text-gray-300 bg-gray-800 border-0 hover:bg-gray-700  text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl font-bold border-solid hover:text-white  ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
             </div>
         </div>
         <div style="grid-template-columns: 144px auto 200px;"
-            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-            <img alt="Image" class="h-32 md:mr-16" src="img/LABS Logo.webp" />
+            class="bg-gray-900  w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+            <img alt="Image" class="h-32 md:mr-16" src="img/LABS S.svg" />
             <div class="md:mr-16">
                 <h2 class="font-bold text-3xl">LABS Experimental Console</h2>
                 <p>LABS Experimental Console (formerly LPC Experimental Console) is an experiment to test
@@ -243,10 +248,10 @@
             <div class="flex flex-col justify-center">
                 <a target="_blank" rel="noopener noreferrer"
                     href="http://www.mediafire.com/file/pjkg3aupj0ha28u/LABS_Experimental_Console.zip/file"
-                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
+                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-500 font-bold border-solid hover:bg-blue-600 hover:text-white  ring-offset-4 ring-blue-400 focus:ring-2 transition">Download</a>
                 <a target="_blank" rel="noopener noreferrer"
                     href="https://github.com/Leo-Corporation/LABS-ExperimentalConsole"
-                    class="dark:text-gray-300 dark:bg-gray-800 dark:border-0 dark:hover:bg-gray-700 text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
+                    class="text-gray-300 bg-gray-800 border-0 hover:bg-gray-700  text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl font-bold border-solid hover:text-white  ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
             </div>
         </div>
     </div>
@@ -273,7 +278,7 @@
 <div id="lib-items" class="flex flex-col items-center mx-2 lg:mx-16">
     <div>
         <div style="grid-template-columns: 144px auto 200px;"
-            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+            class="bg-gray-900  w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
             <img alt="Image" class="h-32 md:mr-16" src="img/LeoCorpLibrary 2.webp" />
             <div class="md:mr-16">
                 <h2 class="font-bold text-3xl">LeoCorpLibrary</h2>
@@ -282,13 +287,13 @@
             </div>
             <div class="flex flex-col justify-center">
                 <a target="_blank" rel="noopener noreferrer" href="https://www.nuget.org/packages/LeoCorpLibrary/"
-                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-700 font-bold border-solid hover:bg-blue-800 hover:text-white bg-white ring-offset-4 ring-blue-800 focus:ring-2 transition">NuGet</a>
+                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-700 font-bold border-solid hover:bg-blue-800 hover:text-white  ring-offset-4 ring-blue-800 focus:ring-2 transition">NuGet</a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/LeoCorpLibrary"
-                    class="dark:text-gray-300 dark:bg-gray-800 dark:border-0 dark:hover:bg-gray-700 text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
+                    class="text-gray-300 bg-gray-800 border-0 hover:bg-gray-700  text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl font-bold border-solid hover:text-white  ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
             </div>
         </div>
         <div style="grid-template-columns: 144px auto 200px;"
-            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+            class="bg-gray-900  w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
             <img alt="Image" class="h-32 md:mr-16" src="img/LeoCorpLibrary 2.webp" />
             <div class="md:mr-16">
                 <h2 class="font-bold text-3xl">LeoCorpLibrary.Core</h2>
@@ -298,15 +303,15 @@
             </div>
             <div class="flex flex-col justify-center">
                 <a target="_blank" rel="noopener noreferrer" href="https://www.nuget.org/packages/LeoCorpLibrary.Core/"
-                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-700 font-bold border-solid hover:bg-blue-800 hover:text-white bg-white ring-offset-4 ring-blue-400 focus:ring-2 transition">NuGet</a>
+                    class="text-white text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl bg-blue-700 font-bold border-solid hover:bg-blue-800 hover:text-white  ring-offset-4 ring-blue-400 focus:ring-2 transition">NuGet</a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/LeoCorpLibrary"
-                    class="dark:text-gray-300 dark:bg-gray-800 dark:border-0 dark:hover:bg-gray-700 text-black text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl border-black border-2 font-bold border-solid hover:bg-black hover:text-white bg-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
+                    class="text-gray-300 bg-gray-800 border-0 hover:bg-gray-700 font-bold text-center py-2 shadow-lg px-7 my-1 mx-5 rounded-xl hover:text-white ring-offset-4 ring-black focus:ring-2 transition">GitHub</a>
             </div>
         </div>
     </div>
 </div>
 
-<footer class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-900 dark:text-gray-300 bg-gray-100 text-gray-500">
+<footer class="grid grid-cols-1 sm:grid-cols-2 p-16 bg-gray-900 text-gray-300">
     <div class="flex flex-col">
         <h3 class="font-bold mb-5">
             ABOUT
