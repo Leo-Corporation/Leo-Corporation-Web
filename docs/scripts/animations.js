@@ -17,9 +17,6 @@ function animateOnView(elementId, classToApply) {
     observer.observe(document.getElementById(elementId));
 }
 
-animateOnView("popular-item-1", "slideInUp");
-animateOnView("popular-item-2", "slideInUp");
-animateOnView("popular-item-3", "slideInUp");
 animateOnView("new-soft-item-1", "slideInUp");
 animateOnView("new-soft-item-2", "slideInUp");
 animateOnView("new-soft-item-3", "slideInUp");

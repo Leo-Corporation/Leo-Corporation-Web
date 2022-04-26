@@ -17,19 +17,19 @@
 .slideInUp {
     animation-name: slideInUp;
     animation-duration: 1s;
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
 }
 
 .slideInUpX {
     animation-name: slideInUpX;
     animation-duration: 1s;
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
 }
 
 .slideInRight {
     animation-name: slideInRight;
     animation-duration: 1s;
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
 }
 
 @keyframes slideInRight {
