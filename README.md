@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Leo-Corporation/Leo-Corporation-Web">
-    <img src=".github/images/Logo.svg" alt="Logo" width="80" height="80">
+    <img src=".github/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Léo Corporation Web</h3>
