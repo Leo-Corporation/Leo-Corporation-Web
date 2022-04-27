@@ -25,4 +25,8 @@
     .software-item:hover .software-desc {
         display: block;
     }
+
+    #learn-more-btn1 {
+        display: block;
+    }
 }
