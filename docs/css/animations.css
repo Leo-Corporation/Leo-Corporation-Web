@@ -107,7 +107,10 @@
     transform: translateX(8px);
 }
 
-.btn-arrow,
+.btn-arrow div {
+    transform: translateX(8px);
+}
+
 .btn-dw div {
     transform: translateX(8px);
 }
