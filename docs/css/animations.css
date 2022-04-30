@@ -99,16 +99,33 @@
     transform: translateX(16px);
 }
 
+.btn-dw:hover .btn-download {
+    animation: bounce ease-in-out 0.5s;
+}
+
 .btn-p-arw {
     transform: translateX(8px);
 }
 
-.btn-arrow div {
+.btn-arrow,
+.btn-dw div {
     transform: translateX(8px);
 }
 
 .rotate {
     animation: rotate 5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 @keyframes rotate {
