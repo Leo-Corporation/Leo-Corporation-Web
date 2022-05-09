@@ -11,6 +11,7 @@ module.exports = {
       },
       animation: {
         'move-bg': 'move-bg 8s infinite linear',
+        'move-bg-l': 'move-bg 16s infinite linear',
       },
     },
   },
