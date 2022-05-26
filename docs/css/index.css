@@ -15,6 +15,10 @@
         background: url('/img/mesh_dark.png') no-repeat center center;
         background-size: cover;
     }
+
+    html {
+        color-scheme: dark;
+    }
 }
 
 @media (min-width: 1024px) {
