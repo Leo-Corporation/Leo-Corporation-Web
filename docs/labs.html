@@ -56,10 +56,8 @@
         background-attachment: fixed;
     }
 
-    @media (prefers-color-scheme: dark) {
-        html {
-            color-scheme: dark;
-        }
+    html {
+        color-scheme: dark;
     }
 </style>
 
@@ -212,8 +210,13 @@
 </div>
 
 
-<div class="flex justify-center items-center">
-    <img alt="Image" src="img/LABS.svg" class="h-24" />
+<div class="flex flex-col justify-center items-center min-h-[90vh]">
+    <img alt="Image" src="img/LABS.svg" class="max-h-96" />
+    <h2 class="font-bold text-2xl text-center italic">Where the future is built.</h2>
+    <button type="button" id="learn-more-btn1" onclick="scrollFunction1()" style="font-family: FluentIconsRegular;"
+        class="text-center w-[48px] h-[48px] p-3 my-6 m-3 text-black dark:text-white hover:-translate-y-2 font-semibold rounded-full shadow-md bg-white dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+        
+    </button>
 </div>
 <div id="labs-header" class="flex flex-col m-5">
     <h2 class="text-4xl font-bold ml-2 sm:ml-8 m-5">Experiences</h2>
@@ -398,6 +401,16 @@
 
 <script src="scripts/copyright.js"></script>
 <script src="scripts/scroll.js"></script>
+<script>
+    function scrollFunction1() {
+        let e = document.getElementById("labs-header");
+        e.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth',
+            inline: 'start'
+        });
+    }
+</script>
 
 </body>
 
