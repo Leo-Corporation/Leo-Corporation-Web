@@ -5,17 +5,7 @@
     background-position: center;
 }
 
-#experience-creator {
-    background: url('/img/mesh.png') no-repeat center center;
-    background-size: cover;
-}
-
 @media (prefers-color-scheme: dark) {
-    #experience-creator {
-        background: url('/img/mesh_dark.png') no-repeat center center;
-        background-size: cover;
-    }
-
     html {
         color-scheme: dark;
     }
@@ -41,6 +31,20 @@
 
     #learn-more-btn1 {
         display: block;
+    }
+}
+
+@media (min-width: 640px) {
+    #experience-creator {
+        background: url('/img/mesh.png') no-repeat center center;
+        background-size: cover;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        #experience-creator {
+            background: url('/img/mesh_dark.png') no-repeat center center;
+            background-size: cover;
+        }
     }
 }
 
