@@ -24,7 +24,8 @@
         border-color: rgba(255, 255, 255, .1);
     }
 
-    .software-item:hover {
+    .software-item:hover,
+    .brdr-t:hover {
         background-color: rgba(75, 85, 99, 0.1);
     }
 }
@@ -43,10 +44,15 @@
     }
 }
 
-.software-item:hover {
+.software-item:hover,
+.brdr-t:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 .software-item {
     border-color: rgba(255, 255, 255, 0.1);
+}
+
+.brdr-t {
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
