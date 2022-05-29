@@ -34,7 +34,7 @@
     }
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
     #experience-creator {
         background: url('/img/mesh.png') no-repeat center center;
         background-size: cover;
