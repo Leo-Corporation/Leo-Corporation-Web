@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg width="1920px" height="1920px" viewBox="0 0 1920 1920" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="841.10376" y1="367.94684" x2="233.38045" y2="1081.1631" id="gradient_1">
+    <linearGradient gradientUnits="userSpaceOnUse" x1="1029.4957" y1="450.36026" x2="285.65344" y2="1323.324" id="gradient_1">
       <stop offset="0%" stop-color="#AC40FF" />
       <stop offset="38.88889%" stop-color="#5D00FF" />
       <stop offset="75.92593%" stop-color="#2F54FF" />
@@ -17,7 +17,7 @@
       <use xlink:href="#artboard_1" clip-rule="evenodd" />
     </clipPath>
   </defs>
-  <g id="Full-HD" clip-path="url(#clip_1)">
-    <path d="M297.02 960C297.02 593.835 593.855 297 960.02 297C1326.18 297 1623.02 593.835 1623.02 960C1623.02 1326.16 1326.18 1623 960.02 1623C593.855 1623 297.02 1326.16 297.02 960Z" id="Ellipse" fill="url(#gradient_1)" fill-rule="evenodd" stroke="url(#gradient_1)" stroke-width="93" stroke-linejoin="round" filter="url(#filter_1)" />
+  <g id="Full-HD-Copy-4" clip-path="url(#clip_1)">
+    <path d="M149.02 960.5C149.02 512.321 512.34 149 960.52 149C1408.7 149 1772.02 512.321 1772.02 960.5C1772.02 1408.68 1408.7 1772 960.52 1772C512.34 1772 149.02 1408.68 149.02 960.5Z" id="Ellipse" fill="url(#gradient_1)" fill-rule="evenodd" stroke="url(#gradient_1)" stroke-width="93" stroke-linejoin="round" filter="url(#filter_1)" />
   </g>
 </svg>
