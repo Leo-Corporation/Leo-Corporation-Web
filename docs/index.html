@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY3K4MZKXB"></script>
@@ -51,7 +52,7 @@
 <body id="body" style="font-family: Montserrat, sans-serif;"
     class="bg-white text-black dark:text-white dark:bg-[#000014] overflow-x-hidden">
     <div id="header" style="z-index: 1000;"
-        class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] backdrop-blur-lg dark:text-gray-200">
+        class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200">
         <style>
             @font-face {
                 font-family: "FluentIconsRegular";
@@ -97,7 +98,8 @@
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                        <div class="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
+                        <div class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg"
+                            style="z-index: 2000;">
                             <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="https://gavilya.leocorporation.dev/">
                                 <div class="flex flex-row items-center">
@@ -161,7 +163,8 @@
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                        <div class="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
+                        <div
+                            class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg">
                             <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                 href="labs">
                                 <div class="flex flex-row items-center">

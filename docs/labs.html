@@ -23,6 +23,7 @@
     <title>LABS | Léo Corporation</title>
     <link href="css/tailwind.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" href="favicon.png" />
@@ -61,7 +62,7 @@
     }
 </style>
 
-<div id="header" style="z-index: 1000;" class="w-full sticky top-0 text-gray-200 bg-gray-800">
+<div id="header" style="z-index: 1000;" class="w-full sticky top-0 text-gray-200 bg-[rgba(31,41,55,0.5)]">
     <style>
         @font-face {
             font-family: "FluentIconsRegular";
@@ -107,7 +108,7 @@
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
                     class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                    <div class="px-2 py-2  rounded-md shadow bg-gray-800">
+                    <div class="px-2 py-2 rounded-md shadow bg-[rgba(31,41,55,0.5)] backdrop-blur-lg">
                         <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0  focus:outline-none focus:shadow-outline"
                             href="https://gavilya.leocorporation.dev/">
                             <div class="flex flex-row items-center">
@@ -171,7 +172,7 @@
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
                     class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                    <div class="px-2 py-2  rounded-md shadow bg-gray-800">
+                    <div class="px-2 py-2 rounded-md shadow bg-[rgba(31,41,55,0.5)] backdrop-blur-lg">
                         <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 hover: focus:  focus:outline-none focus:shadow-outline"
                             href="labs">
                             <div class="flex flex-row items-center">
