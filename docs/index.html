@@ -49,7 +49,7 @@
 </head>
 
 <body id="body" style="font-family: Montserrat, sans-serif;"
-    class="bg-white text-black dark:text-white dark:bg-[#000014]">
+    class="bg-white text-black dark:text-white dark:bg-[#000014] overflow-x-hidden">
     <div id="header" style="z-index: 1000;"
         class="w-full sticky top-0 text-gray-700 dark:bg-gray-800 bg-white dark:text-gray-200">
         <style>
@@ -199,19 +199,38 @@
         </div>
     </div>
 
+    <div class="bg-transparent overflow-x-hidden">
+        <img id="circle"
+            style="animation: full-rotation 60s ease 2s infinite; z-index: -1000; width: 1920px; height: 1920px;"
+            src="img/CircleW.svg" class="absolute sm:-top-[100%] hidden sm:block bg-transparent">
+    </div>
+
+    <script>
+        // Get if the user is using dark theme
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        // Set the src of the "circle" img
+        const circle = document.getElementById('circle');
+        if (!prefersDark.matches) {
+            circle.src = 'img/CircleW.svg';
+        } else {
+            circle.src = 'img/Circle.svg';
+        }
+    </script>
+
     <div id="experience-creator"
-        class="flex flex-col justify-center items-center text-black dark:text-white px-16 py-32 min-h-screen">
+        class="flex flex-col justify-center items-center text-black dark:text-white px-16 py-32 min-h-screen z-2">
         <h2
-            class="animate-move-bg bg-gradient-to-r from-violet-600 via-red-500 to-violet-600 bg-[length:400%] bg-clip-text text-transparent font-bold text-6xl text-center">
+            class="animate-move-bg bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 bg-[length:400%] bg-clip-text text-transparent font-bold text-6xl text-center">
             Experience creator</h2>
         <p class="font-semibold text-center text-xl">Léo Corporation maintains various <a
-                class="hover-underline-animation font-bold bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent"
+                class="hover-underline-animation font-bold bg-gradient-to-r from-violet-200 to-blue-300 dark:from-green-600 dark:to-lime-500 bg-clip-text text-transparent"
                 href="store">applications</a>
             and services.</p>
 
         <div class="mx-auto flex lg:flex-nowrap flex-wrap justify-center">
             <a target="_blank" rel="noopener noreferrer" href="store/passliss"
-                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm hover:bg-white dark:hover:bg-gray-600 rounded-md hover:shadow-lg p-6 m-6 transition">
+                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl hover:shadow-lg p-6 m-6 transition">
                 <img class="h-32" src="img/Passliss.svg" alt="Passliss logo">
                 <div class="software-desc transition sm:text-left text-center">
                     <h3 class="font-bold">Passliss</h3>
@@ -219,7 +238,7 @@
                 </div>
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://tinyurl.com/DownloadInternetTest"
-                class="slideInUpX delay-1 software-item flex flex-col sm:flex-row items-center max-w-sm hover:bg-white dark:hover:bg-gray-600 rounded-md hover:shadow-lg p-6 m-6 transition">
+                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl hover:shadow-lg p-6 m-6 transition">
                 <img class="h-32" src="img/InternetTest.svg" alt="InternetTest logo">
                 <div class="software-desc transition sm:text-left text-center">
                     <h3 class="font-bold">InternetTest</h3>
@@ -227,7 +246,7 @@
                 </div>
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://tinyurl.com/DownloadColorPicker"
-                class="slideInUpX delay-2 software-item flex flex-col sm:flex-row items-center max-w-sm hover:bg-white dark:hover:bg-gray-600 rounded-md hover:shadow-lg p-6 m-6 transition">
+                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl hover:shadow-lg p-6 m-6 transition">
                 <img class="h-32" src="img/ColorPicker.svg" alt="ColorPicker logo">
                 <div class="software-desc transition sm:text-left text-center">
                     <h3 class="font-bold">ColorPicker</h3>

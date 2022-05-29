@@ -85,9 +85,19 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, rgb(59 130 246), rgb(139 92 246));
+    background: linear-gradient(to right, rgb(22 163 74), rgb(132 204 22));
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:after {
+    background: linear-gradient(to right, rgb(221 214 254), rgb(147 197 253));
+}
+
+@media (prefers-color-scheme: dark) {
+    .hover-underline-animation:after {
+        background: linear-gradient(to right, rgb(22 163 74), rgb(132 204 22));
+    }
 }
 
 .hover-underline-animation:hover:after {
@@ -142,5 +152,15 @@
 
     100% {
         transform: rotate(12deg);
+    }
+}
+
+@keyframes full-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
