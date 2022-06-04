@@ -2,10 +2,10 @@
 <svg width="1920px" height="1920px" viewBox="0 0 1920 1920" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient gradientUnits="userSpaceOnUse" x1="1029.4957" y1="450.36026" x2="285.65344" y2="1323.324" id="gradient_1">
-      <stop offset="0%" stop-color="#E979FF" />
-      <stop offset="38.271606%" stop-color="#9F8FFF" />
-      <stop offset="70.987656%" stop-color="#7790FF" />
-      <stop offset="100%" stop-color="#51ABFB" />
+      <stop offset="0%" stop-color="#EC8BFF" />
+      <stop offset="38.271606%" stop-color="#B3A7FF" />
+      <stop offset="70.987656%" stop-color="#9FB1FF" />
+      <stop offset="100%" stop-color="#75BEFF" />
     </linearGradient>
     <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
       <feFlood flood-opacity="0" result="BackgroundImageFix" />

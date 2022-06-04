@@ -85,7 +85,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, rgb(22 163 74), rgb(132 204 22));
+    background: linear-gradient(to right, rgb(241 245 249), rgb(103 232 249));
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -96,7 +96,7 @@
 
 @media (prefers-color-scheme: dark) {
     .hover-underline-animation:after {
-        background: linear-gradient(to right, rgb(22 163 74), rgb(132 204 22));
+        background: linear-gradient(to right, rgb(241 245 249), rgb(103 232 249));
     }
 }
 

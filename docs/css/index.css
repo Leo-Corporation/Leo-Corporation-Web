@@ -34,20 +34,6 @@
     }
 }
 
-@media (max-width: 640px) {
-    #experience-creator {
-        background: url('/img/mesh.png') no-repeat center center;
-        background-size: cover;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        #experience-creator {
-            background: url('/img/mesh_dark.png') no-repeat center center;
-            background-size: cover;
-        }
-    }
-}
-
 .software-item:hover,
 .brdr-t:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -62,5 +48,5 @@
 }
 
 #circle {
-    filter: blur(125px);
+    filter: blur(250px);
 }
