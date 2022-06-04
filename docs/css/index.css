@@ -5,6 +5,13 @@
     background-position: center;
 }
 
+#circle {
+    filter: blur(250px);
+    background-image: url('/docs/img/CircleW.svg');
+    background-position: center;
+    background-size: cover;
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
@@ -17,6 +24,10 @@
     .software-item:hover,
     .brdr-t:hover {
         background-color: rgba(75, 85, 99, 0.1);
+    }
+
+    #circle {
+        background-image: url('/docs/img/Circle.svg');
     }
 }
 
@@ -45,8 +56,4 @@
 
 .brdr-t {
     border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#circle {
-    filter: blur(250px);
 }

@@ -202,24 +202,11 @@
         </div>
     </div>
 
-    <div class="bg-transparent overflow-x-hidden">
-        <img id="circle"
-            style="animation: full-rotation 30s ease 1s infinite; z-index: -1000; width: 1920px; height: 1920px;"
-            src="img/Circle.svg" alt="Circle" class="absolute sm:-top-[100%] bg-transparent">
+    <div class="bg-transparent overflow-x-hidden flex justify-center">
+        <span id="circle"
+            style="animation: full-rotation 30s ease 1s infinite; z-index: -1000; width: max(100vw, 100vh); height: max(100vw, 100vh);"
+            class="absolute  bg-transparent">
     </div>
-
-    <script>
-        // Get if the user is using dark theme
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-        // Set the src of the "circle" img
-        const circle = document.getElementById('circle');
-        if (!prefersDark.matches) {
-            circle.src = 'img/CircleW.svg';
-        } else {
-            circle.src = 'img/Circle.svg';
-        }
-    </script>
 
     <div id="experience-creator"
         class="flex flex-col justify-center items-center text-black dark:text-white px-16 py-32 min-h-screen z-2">
