@@ -7,7 +7,7 @@
 
 #circle {
     filter: blur(250px);
-    background-image: url('/docs/img/CircleW.svg');
+    background-image: url('/img/CircleW.svg');
     background-position: center;
     background-size: cover;
 }
@@ -27,7 +27,7 @@
     }
 
     #circle {
-        background-image: url('/docs/img/Circle.svg');
+        background-image: url('/img/Circle.svg');
     }
 }
 
