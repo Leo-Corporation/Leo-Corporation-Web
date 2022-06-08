@@ -32,6 +32,12 @@
     animation-fill-mode: backwards;
 }
 
+.slideAndFade {
+    animation-name: slideAndFade;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
 @keyframes slideAndFade {
     0% {
         transform: translateX(100%);
