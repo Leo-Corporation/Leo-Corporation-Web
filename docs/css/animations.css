@@ -32,6 +32,18 @@
     animation-fill-mode: backwards;
 }
 
+@keyframes slideAndFade {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 @keyframes slideInRight {
     0% {
         transform: translateX(100%);
