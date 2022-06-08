@@ -102,7 +102,8 @@
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                        <div class="px-2 py-2 rounded-md shadow bg-[rgba(31,41,55,0.5)] backdrop-blur-lg">
+                        <div
+                            class="px-2 py-2 rounded-md shadow bg-[rgba(31,41,55,0.5)] backdrop-blur-lg backdrop-saturate-[180%]">
                             <a class="block px-4 py-2 mt-2 text-sm rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0"
                                 href="https://gavilya.leocorporation.dev/">
                                 <div class="flex flex-row items-center">
@@ -115,9 +116,8 @@
                                     </div>
                                 </div>
                             </a>
-                            <!-- This part will be visible in a future update -->
-                            <!-- <a class="block px-4 py-2 mt-2 text-sm rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0"
-                                href="#">
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="store/passliss">
                                 <div class="flex flex-row items-center">
                                     <img class="h-10 w-10" src="img/Passliss.svg" alt="Passliss Logo">
                                     <div class="ml-4">
@@ -125,7 +125,7 @@
                                         <p class="font-normal text-sm">A modern password generator for Windows.</p>
                                     </div>
                                 </div>
-                            </a> -->
+                            </a>
                             <a class="block px-4 py-2 mt-2 text-sm rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0"
                                 href="https://datalya.leocorporation.dev/">
                                 <div class="flex flex-row items-center">
@@ -167,7 +167,8 @@
                         x-transition:leave-start="transform opacity-100 scale-100"
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                        <div class="px-2 py-2 rounded-md shadow bg-[rgba(31,41,55,0.5)] backdrop-blur-lg">
+                        <div
+                            class="px-2 py-2 rounded-md shadow bg-[rgba(31,41,55,0.5)] backdrop-blur-lg backdrop-saturate-[180%]">
                             <a class="block px-4 py-2 mt-2 text-sm rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0"
                                 href="labs">
                                 <div class="flex flex-row items-center">
@@ -215,69 +216,70 @@
             href="https://tinyurl.com/DownloadXalyusStore">Download</a>
     </div>
 
-    <div id="software-one-place" class="opacity-0 text-white flex flex-col items-center justify-center m-5">
-        <h2 class="text-4xl font-bold">Our softwares in one place</h2>
-        <div class="flex flex-col lg:flex-row items-center">
-            <img alt="Image" class="max-h-96 sm:m-16" src="img/xalyus-1.png" />
-            <p class="max-w-screen-sm">
-                You can now find all our softwares in one place: Xalyus Store.
-                ​<br /> <br />
-                With the new Xalyus Store, we made it easier for you to install and download our apps.
-                ​<br />​<br />
-                With a brand new modern design, the new Xalyus Store offers you the best experience possible, now
-                with
-                live updates.
-            </p>
+    <div class="overflow-x-hidden">
+        <div id="software-one-place"
+            class=" text-[#e2b7f5] bg-gradient-to-b from-[#1d1d4e] to-[#141b6a] flex flex-col items-center justify-center p-5 min-h-screen">
+            <h2 class="text-4xl font-bold">Our apps, in one place</h2>
+            <div class="flex flex-col lg:flex-row items-center">
+                <img alt="Image" class="max-h-96 sm:m-16" src="img/xalyus-1.png" />
+                <p class="max-w-screen-sm">
+                    You can now find all our softwares in one place: Xalyus Store.
+                    <br /> <br />
+                    With the new Xalyus Store, we made it easier for you to install and download our apps.
+                    <br /><br />
+                    With a brand new modern design, the new Xalyus Store offers you the best experience possible, now
+                    with
+                    live updates.
+                </p>
+            </div>
         </div>
-    </div>
-
-    <div id="keep-control-data" class="opacity-0 text-white flex flex-col items-center justify-center m-5">
-        <h2 class="text-4xl font-bold">Completely autonomous</h2>
-        <div class="flex flex-col lg:flex-row items-center">
-            <img alt="Image" class="max-h-96 sm:m-16" src="img/xalyus-2.png" />
-            <p class="max-w-screen-sm">
-                The new Xalyus Store is now completely autonomous. Indeed, with the old Xalyus Store, to see new
-                content
-                and new softwares, you needed to update to a new version. Whereas now, everything is now automatic,
-                you
-                don't need to update Xalyus Store to see new content anymore.
-                ​<br />
-                ​<br />
-                You only need an Internet connection.
-            </p>
+        <div id="keep-control-data"
+            class="text-[#6aa7df] bg-gradient-to-b from-[#141b6a] to-[#461bc6] flex flex-col items-center justify-center p-5 min-h-screen">
+            <h2 class="text-4xl font-bold">Completely autonomous</h2>
+            <div class="flex flex-col lg:flex-row items-center">
+                <img alt="Image" class="max-h-96 sm:m-16" src="img/xalyus-2.png" />
+                <p class="max-w-screen-sm">
+                    The new Xalyus Store is now completely autonomous. Indeed, with the old Xalyus Store, to see new
+                    content
+                    and new softwares, you needed to update to a new version. Whereas now, everything is now automatic,
+                    you
+                    don't need to update Xalyus Store to see new content anymore.
+                    ​<br />
+                    ​<br />
+                    You only need an Internet connection.
+                </p>
+            </div>
         </div>
-    </div>
-
-    <div id="discover" class="opacity-0 text-white flex flex-col items-center justify-center m-5">
-        <h2 class="text-4xl font-bold">Explore</h2>
-        <div class="flex flex-col lg:flex-row items-center">
-            <img alt="Image" class="max-h-96 sm:m-16" src="img/xalyus-3.png" />
-            <p class="max-w-screen-sm">
-                You can freely explore all our softwares and learn more about them directly in Xalyus Store. You can
-                check which softwares are popular, explore different categories and discover new apps.
-            </p>
+        <div id="discover"
+            class=" text-[#debbf4] bg-gradient-to-b from-[#461bc6] flex flex-col items-center justify-center p-5 min-h-screen">
+            <h2 class="text-4xl font-bold">Explore</h2>
+            <div class="flex flex-col lg:flex-row items-center">
+                <img alt="Image" class="max-h-96 sm:m-16" src="img/xalyus-3.png" />
+                <p class="max-w-screen-sm">
+                    You can freely explore all our softwares and learn more about them directly in Xalyus Store. You can
+                    check which softwares are popular, explore different categories and discover new apps.
+                </p>
+            </div>
         </div>
-    </div>
-
-    <div id="trust" class="opacity-0 text-white flex flex-col items-center justify-center m-5">
-        <h2 class="text-4xl font-bold">Trust and secure</h2>
-        <div class="flex flex-col lg:flex-row items-center">
-            <img alt="Image" class="max-h-96 sm:m-16" src="img/xalyus-4.png" />
-            <p class="max-w-screen-sm">
-                Most of our softwares are Open-Source, and malicious people can infect them with a virus. Thanks to
-                Xalyus Store, this is no longer a threat for your security and privacy. Indeed, Xalyus Store is best
-                way
-                to be sure that you download our softwares and not a modified copy of them.
-            </p>
+        <div id="trust" class=" text-white flex flex-col items-center justify-center p-5 min-h-screen">
+            <h2 class="text-4xl font-bold">Trust and secure</h2>
+            <div class="flex flex-col lg:flex-row items-center">
+                <img alt="Image" class="max-h-96 sm:m-16" src="img/xalyus-4.png" />
+                <p class="max-w-screen-sm">
+                    Most of our softwares are Open-Source, and malicious people can infect them with a virus. Thanks to
+                    Xalyus Store, this is no longer a threat for your security and privacy. Indeed, Xalyus Store is best
+                    way
+                    to be sure that you download our softwares and not a modified copy of them.
+                </p>
+            </div>
         </div>
-    </div>
-
-    <div id="download" class="text-white flex flex-col items-center justify-center m-5">
-        <h2 class="text-4xl font-bold">Download</h2>
-        <p>What are you waiting for? Download the new Xalyus Store now!</p>
-        <a target="_blank" rel="noopener noreferrer"
-            class="text-white text-2xl py-2 px-5 m-5 rounded-xl shadow-md hover:shadow-lg font-bold border-solid hover:bg-white hover:text-indigo-600 ring-1 ring-white ring-offset-2 focus:ring-1 transition"
-            href="https://tinyurl.com/DownloadXalyusStore">Download</a>
+        <div id="download" class="text-white flex flex-col items-center justify-center p-5 min-h-screen">
+            <h2 class="text-4xl font-bold">Download</h2>
+            <p>What are you waiting for? Download the new Xalyus Store now!</p>
+            <a target="_blank" rel="noopener noreferrer"
+                class="text-white text-2xl py-2 px-5 m-5 rounded-xl shadow-md hover:shadow-lg font-bold border-solid hover:bg-white hover:text-indigo-600 ring-1 ring-white ring-offset-2 focus:ring-1 transition"
+                href="https://tinyurl.com/DownloadXalyusStore">Download</a>
+        </div>
     </div>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
@@ -345,10 +347,10 @@
             observer.observe(document.getElementById(elementId));
         }
 
-        animateOnView("software-one-place", "fadeIn");
-        animateOnView("keep-control-data", "fadeIn");
-        animateOnView("discover", "fadeIn");
-        animateOnView("trust", "fadeIn");
+        animateOnView("software-one-place", "slideAndFade");
+        animateOnView("keep-control-data", "slideAndFade");
+        animateOnView("discover", "slideAndFade");
+        animateOnView("trust", "slideAndFade");
     </script>
 
 </body>
