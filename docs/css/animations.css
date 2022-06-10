@@ -109,7 +109,7 @@
 }
 
 .hover-underline-animation:after {
-    background: linear-gradient(to right, rgb(221 214 254), rgb(147 197 253));
+    background: linear-gradient(to right, rgb(167 139 250), rgb(75 85 99));
 }
 
 @media (prefers-color-scheme: dark) {
