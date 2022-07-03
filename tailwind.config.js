@@ -13,6 +13,9 @@ module.exports = {
         'move-bg': 'move-bg 8s infinite linear',
         'move-bg-l': 'move-bg 16s infinite linear',
       },
+      fontWeight: {
+        bold: 900,
+      },
     },
   },
   plugins: [],
