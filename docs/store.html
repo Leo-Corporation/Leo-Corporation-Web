@@ -245,6 +245,21 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div id="xalyus-store-slide"
+                style="background-image: url('img/itbanner.png'); background-repeat: none; background-size: cover; background-attachment: fixed; background-position: center;"
+                class="flex flex-col text-center items-center justify-center text-black h-auto py-24 sm:py-48">
+                <h1 class="font-bold text-7xl">Introducing <span class="text-[#2153E0]">InternetTest</span> Pro</h1>
+                <p class="font-semibold mt-8">Taking you to another level.</p>
+                <a class="btn-arrow p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
+                    href="https://blog.leocorporation.dev/2022/08/introducing-internettest-pro/">
+                    <div class="flex justify-center items-center">
+                        <p>Learn more</p>
+                        <p class="btn-p-arw transition" style="font-family: FluentIconsRegular;"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div id="xalyus-store-slide"
                 style="background-image: url('img/xalyusbanner.png'); background-repeat: none; background-size: cover; background-attachment: fixed; background-position: center;"
                 class="flex flex-col text-center items-center justify-center text-white h-auto py-24 sm:py-48">
                 <h1 class="font-bold text-7xl">The new Xalyus Store</h1>
@@ -260,27 +275,11 @@
         </div>
         <style>
             #passliss-slide {
-                position: relative;
-            }
-
-            #passliss-slide::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
                 background-image: url('img/passlissbanner.png');
-                filter: blur(4px);
                 background-repeat: none;
                 background-size: cover;
                 background-attachment: fixed;
                 background-position: center;
-            }
-
-            .passliss-slide-inside {
-                /* This will make it stack on top of the ::before */
-                position: relative;
             }
         </style>
         <div class="swiper-slide">
@@ -379,12 +378,19 @@
             class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
             <img alt="Image" class="h-32 md:mr-16" src="img/InternetTest.svg" />
             <div class="md:mr-16">
-                <h2 class="font-bold text-3xl">InternetTest</h2>
-                <p>InternetTest is a modern connection utility for Windows.</p>
+                <div class="flex sm:flex-row flex-col items-center">
+                    <h2 class="font-bold text-3xl">InternetTest</h2>
+                    <p
+                        class="bg-gradient-to-r px-3 from-[#2153E0] to-blue-500 rounded-xl sm:ml-4 ml-0 my-2 text-white font-bold text-center">
+                        Pro
+                    </p>
+                </div>
+                <p>Taking you to another level. InternetTest can locate IP addresses, send ping request, recover your
+                    WiFi passwords and more!</p>
             </div>
             <a target="_blank" rel="noopener noreferrer"
                 class="btn-dw p-2 pr-8 m-2 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
-                href="https://tinyurl.com/DownloadInternetTest">
+                href="https://tinyurl.com/DownloadITP7">
                 <div class="flex items-center justify-center">
                     <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
                     <p>Download</p>
