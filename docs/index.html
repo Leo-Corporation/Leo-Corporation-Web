@@ -225,27 +225,50 @@
         </div>
     </div>
 
-    <div class="bg-transparent overflow-x-clip">
-        <div class="relative" style="overflow-x: clip;">
-            <span id="circle"
-                style="animation: full-rotation 30s ease 1s infinite; z-index: -1000; width: max(100vw, 100vh); height: max(100vw, 100vh);"
-                class="absolute bg-transparent">
+    <div id="experience-creator" class="grid grid-cols-1 md:grid-cols-2">
+        <div id="title" class="p-10 flex flex-col justify-center">
+            <h2 class="text-6xl font-bold bg-gradient-to-r from-[#da23e7] to-[#8121ff] text-transparent bg-clip-text">
+                Experience Creator
+            </h2>
+            <h3 class="text-2xl font-semibold ">We create apps that will make you more productive.</h3>
+            <div class="flex mt-5">
+                <a class="block btn-arrow p-3 pr-8 my-3 mr-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
+                    href="https://leocorporation.dev/store">
+                    <div class="flex justify-center items-center">
+                        <p>Browse all apps</p>
+                        <p class="btn-p-arw transition" style="font-family: FluentIconsRegular;"></p>
+                    </div>
+                </a>
+                <button onclick="scrollFunction1()"
+                    class="block btn-arrow p-3 pr-8 my-3 mr-3 dark:text-white hover:-translate-y-2 font-semibold rounded-md shadow-md text-black bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700 transition">
+                    <div class="flex justify-center items-center">
+                        <p>Learn More</p>
+                        <p class="btn-p-arw transition" style="font-family: FluentIconsRegular;"></p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="exp-apps-container" class="hidden md:flex flex-col justify-center">
+            <img src="img/Home.png" class="dark:hidden" alt="InternetTest Pro Status page.">
+            <img src="img/HomeDark.png" class="hidden dark:block" alt="InternetTest Pro Status page.">
         </div>
     </div>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
+        crossorigin="anonymous"></script>
+    <!-- LeoCorpDevAd1 -->
+    <ins class="adsbygoogle flex justify-center" data-ad-client="ca-pub-7416572564791547" data-ad-slot="3325502618"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 
-    <div id="experience-creator"
-        class="flex flex-col justify-center items-center text-black dark:text-white px-16 py-32 min-h-screen z-2">
+    <div id="showcase" class="pb-20">
         <h2
-            class="animate-move-bg bg-gradient-to-r from-yellow-600 via-red-500 to-yellow-600 bg-[length:400%] bg-clip-text text-transparent font-bold text-6xl text-center">
-            Experience creator</h2>
-        <p class="font-semibold text-center text-xl">Léo Corporation maintains various <a
-                class="hover-underline-animation font-bold bg-gradient-to-r from-violet-400 to-gray-600 dark:from-slate-100 dark:to-cyan-300 bg-clip-text text-transparent"
-                href="https://leocorporation.dev/store">applications</a>
-            and services.</p>
-
+            class="mt-8 animate-move-bg bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 bg-[length:400%] bg-clip-text text-transparent font-black text-4xl text-center">
+            Our best apps</h2>
         <div class="mx-auto flex lg:flex-nowrap flex-wrap justify-center">
             <a target="_blank" rel="noopener noreferrer" href="https://leocorporation.dev/store/passliss"
-                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl hover:shadow-lg p-6 m-6 transition">
+                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl shadow-md hover:shadow-lg p-6 m-6 transition">
                 <img class="h-32" src="img/Passliss.svg" alt="Passliss logo">
                 <div class="software-desc transition sm:text-left text-center">
                     <h3 class="font-bold">Passliss</h3>
@@ -253,7 +276,7 @@
                 </div>
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://tinyurl.com/DownloadITP7"
-                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl hover:shadow-lg p-6 m-6 transition">
+                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl shadow-md hover:shadow-lg p-6 m-6 transition">
                 <img class="h-32" src="img/InternetTest.svg" alt="InternetTest logo">
                 <div class="software-desc transition sm:text-left text-center">
                     <div class="flex sm:flex-row flex-col items-center">
@@ -267,7 +290,7 @@
                 </div>
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://tinyurl.com/DownloadColorPicker"
-                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl hover:shadow-lg p-6 m-6 transition">
+                class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl shadow-md hover:shadow-lg p-6 m-6 transition">
                 <img class="h-32" src="img/ColorPicker.svg" alt="ColorPicker logo">
                 <div class="software-desc transition sm:text-left text-center">
                     <h3 class="font-bold">ColorPicker</h3>
@@ -275,45 +298,7 @@
                 </div>
             </a>
         </div>
-
-        <div class="flex flex-col items-center justify-center">
-            <a class="btn-arrow p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
-                href="popular">
-                <div class="flex justify-center items-center">
-                    <p>See popular apps</p>
-                    <p class="btn-p-arw transition" style="font-family: FluentIconsRegular;"></p>
-                </div>
-            </a>
-            <button type="button" id="learn-more-btn1" onclick="scrollFunction1()"
-                class="text-center p-3 m-3 text-black dark:text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-white dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-700 transition animate-bounce">
-                <div class="flex justify-center items-center">
-                    <p>Learn more</p>
-                    <p class="ml-2 transition" style="font-family: FluentIconsRegular;"></p>
-                </div>
-            </button>
-        </div>
-
-
     </div>
-
-    <div id="datalya-ad"
-        class="text-white mx-8 my-8 md:mx-auto p-8 bg-gradient-to-r from-blue-700 to-blue-600 rounded-2xl flex md:flex-row justify-between flex-col max-w-screen-md">
-        <div>
-            <h2 class="font-bold text-3xl">Discover Datalya.</h2>
-            <p>A modern and simple database manager.</p>
-        </div>
-        <a target="_blank" rel="noopener noreferrer" href="https://tinyurl.com/DownloadDatalya"
-            class="p-3 mt-5 mb-0 md:mb-5 text-center bg-white text-blue-600 font-bold rounded-xl hover:text-white hover:bg-blue-700 transition">Download</a>
-    </div>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
-        crossorigin="anonymous"></script>
-    <!-- LeoCorpDevAd1 -->
-    <ins class="adsbygoogle flex justify-center" data-ad-client="ca-pub-7416572564791547" data-ad-slot="3325502618"
-        data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
 
     <div id="new-soft"
         class="min-h-screen flex items-center justify-center flex-col bg-gradient-to-r animate-move-bg-l dark:from-[#000014] dark:via-[#101032] dark:to-[#000014] bg-[length:400%] from-slate-200 via-white to-slate-200">
@@ -466,7 +451,7 @@
     <script src="scripts/animations.js"></script>
     <script>
         function scrollFunction1() {
-            let e = document.getElementById("new-soft");
+            let e = document.getElementById("showcase");
             e.scrollIntoView({
                 block: 'start',
                 behavior: 'smooth',

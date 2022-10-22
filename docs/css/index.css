@@ -12,6 +12,27 @@
     background-size: cover;
 }
 
+@media (min-width: 1024px) {
+
+    #learn-more-btn1 {
+        display: block;
+    }
+}
+
+.software-item:hover,
+.brdr-t:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.software-item {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.brdr-t {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
@@ -23,37 +44,15 @@
 
     .software-item:hover,
     .brdr-t:hover {
-        background-color: rgba(75, 85, 99, 0.1);
+        background-color: rgba(75, 85, 99, 0.3);
+    }
+
+    .brdr-t {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0);
     }
 
     #circle {
         background-image: url('/img/Circle.svg');
     }
-}
-
-@media (min-width: 1024px) {
-    .software-desc {
-        display: none;
-    }
-
-    .software-item:hover .software-desc {
-        display: block;
-    }
-
-    #learn-more-btn1 {
-        display: block;
-    }
-}
-
-.software-item:hover,
-.brdr-t:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.software-item {
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.brdr-t {
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
