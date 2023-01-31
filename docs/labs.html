@@ -179,8 +179,8 @@
             </div>
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button @click="open = !open" style="z-index: 1;"
-                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-gray-600 rounded-lg focus:text-white hover:text-white focus:bg-gray-600 hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover: focus:  focus:outline-none focus:shadow-outline">
-                    <span>Labs</span>
+                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                    <span>Devyus</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
                         <path fill-rule="evenodd"
@@ -195,20 +195,9 @@
                     x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95"
                     class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                    <div class="px-2 py-2 rounded-md shadow bg-[rgba(31,41,55,0.5)] backdrop-blur-lg">
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 hover: focus:  focus:outline-none focus:shadow-outline"
-                            href="https://leocorporation.dev/labs">
-                            <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="img/Labs S.svg" alt="Labs Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Experiments and Experiences</h2>
-                                    <p class="font-normal text-sm">Labs Experiences is where our diverse experiments
-                                        are
-                                        gathered.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
+                    <div
+                        class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]">
+
                         <a class="block px-4 py-2 mt-2 bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                             href="https://peyrsharp.leocorporation.dev/">
                             <div class="flex flex-row items-center text-base">
@@ -217,6 +206,18 @@
                                     <h2 class="font-semibold">PeyrSharp</h2>
                                     <p class="font-normal text-sm">A C# library designed to make developers' job
                                         easier.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                            href="https://synethia.leocorporation.dev">
+                            <div class="flex flex-row items-center">
+                                <img class="h-10 w-10" src="img/Synethia.svg" alt="Synethia Logo">
+                                <div class="ml-4">
+                                    <h2 class="font-semibold">Synethia</h2>
+                                    <p class="font-normal text-sm">A basic C# algorithm that can determine the
+                                        behavior of a user with an application.
                                     </p>
                                 </div>
                             </div>
@@ -458,7 +459,8 @@
             <img alt="Image" class="h-32 md:mr-16" src="img/PeyrSharp.svg" />
             <div class="md:mr-16">
                 <h2 class="font-bold text-3xl">PeyrSharp.UiHelpers</h2>
-                <p>PeyrSharp.UiHelpers includes all methods related to Windows Forms or to the Windows Presentation Framework (WPF).</p>
+                <p>PeyrSharp.UiHelpers includes all methods related to Windows Forms or to the Windows Presentation
+                    Framework (WPF).</p>
             </div>
             <div class="flex flex-col justify-center">
                 <a target="_blank" rel="noopener noreferrer"
