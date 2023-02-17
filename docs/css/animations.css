@@ -194,3 +194,37 @@
         transform: rotate(360deg);
     }
 }
+
+.ani-t:first-child {
+    animation: slider 12s infinite;
+}
+
+@keyframes slider {
+    0% {
+        margin-top: 0;
+    }
+
+    16% {
+        margin-top: -20px;
+    }
+
+    33% {
+        margin-top: -40px;
+    }
+
+    50% {
+        margin-top: -60px;
+    }
+
+    66% {
+        margin-top: -80px;
+    }
+
+    82% {
+        margin-top: -100px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
