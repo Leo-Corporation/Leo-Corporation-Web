@@ -49,310 +49,327 @@
 </head>
 
 <body id="body" style="font-family: Hauora, sans-serif;" class="bg-white text-black dark:text-white dark:bg-[#000014]">
-</body>
 
-<div id="header" style="z-index: 1000;"
-    class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200">
-    <style>
-        @font-face {
-            font-family: "FluentIconsRegular";
-            src: url("../fonts/FluentSystemIcons-Regular.ttf");
-        }
-    </style>
-    <div x-data="{ open: false }"
-        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-        <div class="p-4 flex flex-row items-center justify-between">
-            <a href="https://leocorporation.dev/"
-                class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center">
-                <img src="../img/Logo.svg" alt="Léo Corporation" class="h-10 w-10">
-                <p>Léo Corporation</p>
-            </a>
-            <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                    <path x-show="!open" fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                    <path x-show="open" fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </button>
-        </div>
-        <nav :class="{'flex': open, 'hidden': !open}"
-            class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex  md:flex-row">
-            <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                <button @click="open = !open"
-                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                    <span>Apps</span>
-                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+
+    <header id="header" style="z-index: 1000;"
+        class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200">
+        <style>
+            @font-face {
+                font-family: "FluentIconsRegular";
+                src: url("../fonts/FluentSystemIcons-Regular.ttf");
+            }
+        </style>
+        <div x-data="{ open: false }"
+            class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="p-4 flex flex-row items-center justify-between">
+                <a href="https://leocorporation.dev/"
+                    class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center">
+                    <img src="../img/Logo.svg" alt="Léo Corporation" class="h-10 w-10">
+                    <p>Léo Corporation</p>
+                </a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                             clip-rule="evenodd"></path>
                     </svg>
                 </button>
-                <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                    x-transition:enter-start="transform opacity-0 scale-95"
-                    x-transition:enter-end="transform opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-75"
-                    x-transition:leave-start="transform opacity-100 scale-100"
-                    x-transition:leave-end="transform opacity-0 scale-95"
-                    class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                    <div
-                        class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]">
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://gavilya.leocorporation.dev/">
-                            <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="../img/Gavilya.svg" alt="Gavilya Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Gavilya</h2>
-                                    <p class="font-normal text-sm">Gavilya gathers all your video games in one
-                                        place.
-                                    </p>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex  md:flex-row">
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <button @click="open = !open"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <span>Apps</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
+                        <div
+                            class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]">
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://gavilya.leocorporation.dev/">
+                                <div class="flex flex-row items-center">
+                                    <img class="h-10 w-10" src="../img/Gavilya.svg" alt="Gavilya Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Gavilya</h2>
+                                        <p class="font-normal text-sm">Gavilya gathers all your video games in one
+                                            place.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://leocorporation.dev/store/passliss">
-                            <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="../img/Passliss.svg" alt="Passliss Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Passliss</h2>
-                                    <p class="font-normal text-sm">A modern password generator for Windows.</p>
+                            </a>
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://leocorporation.dev/store/passliss">
+                                <div class="flex flex-row items-center">
+                                    <img class="h-10 w-10" src="../img/Passliss.svg" alt="Passliss Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Passliss</h2>
+                                        <p class="font-normal text-sm">A modern password generator for Windows.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://datalya.leocorporation.dev/">
-                            <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="../img/Datalya.svg" alt="Datalya Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Datalya</h2>
-                                    <p class="font-normal text-sm">A modern and simple database manager.</p>
+                            </a>
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://datalya.leocorporation.dev/">
+                                <div class="flex flex-row items-center">
+                                    <img class="h-10 w-10" src="../img/Datalya.svg" alt="Datalya Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Datalya</h2>
+                                        <p class="font-normal text-sm">A modern and simple database manager.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://leocorporation.dev/store">
-                            <div class="flex flex-row items-center">
-                                <p class="text-4xl" style="font-family: FluentIconsRegular;"></p>
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Apps</h2>
-                                    <p class="font-normal text-sm">See all of our apps.</p>
+                            </a>
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://leocorporation.dev/store">
+                                <div class="flex flex-row items-center">
+                                    <p class="text-4xl" style="font-family: FluentIconsRegular;"></p>
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Apps</h2>
+                                        <p class="font-normal text-sm">See all of our apps.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                <button @click="open = !open" style="z-index: 1;"
-                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                    <span>Devyus</span>
-                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-                <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                    x-transition:enter-start="transform opacity-0 scale-95"
-                    x-transition:enter-end="transform opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-75"
-                    x-transition:leave-start="transform opacity-100 scale-100"
-                    x-transition:leave-end="transform opacity-0 scale-95"
-                    class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                    <div
-                        class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]">
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <button @click="open = !open" style="z-index: 1;"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <span>Devyus</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
+                        <div
+                            class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]">
 
-                        <a class="block px-4 py-2 mt-2 bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://peyrsharp.leocorporation.dev/">
-                            <div class="flex flex-row items-center text-base">
-                                <img class="h-10 w-10" src="../img/PeyrSharp.svg" alt="PeyrSharp Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">PeyrSharp</h2>
-                                    <p class="font-normal text-sm">A C# library designed to make developers' job
-                                        easier.
-                                    </p>
+                            <a class="block px-4 py-2 mt-2 bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://peyrsharp.leocorporation.dev/">
+                                <div class="flex flex-row items-center text-base">
+                                    <img class="h-10 w-10" src="../img/PeyrSharp.svg" alt="PeyrSharp Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">PeyrSharp</h2>
+                                        <p class="font-normal text-sm">A C# library designed to make developers' job
+                                            easier.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://synethia.leocorporation.dev">
-                            <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="../img/Synethia.svg" alt="Synethia Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Synethia</h2>
-                                    <p class="font-normal text-sm">A basic C# algorithm that can determine the
-                                        behavior of a user with an application.
-                                    </p>
+                            </a>
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://synethia.leocorporation.dev">
+                                <div class="flex flex-row items-center">
+                                    <img class="h-10 w-10" src="../img/Synethia.svg" alt="Synethia Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Synethia</h2>
+                                        <p class="font-normal text-sm">A basic C# algorithm that can determine the
+                                            behavior of a user with an application.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="https://blog.leocorporation.dev/">Blog</a>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="https://leocorporation.dev/contact">Contact</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="https://blog.leocorporation.dev/">Blog</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="https://leocorporation.dev/contact">Contact</a>
 
-        </nav>
-    </div>
-</div>
-
-<div id="title-header" style="background: url(../img/CPMBG.png); background-size: cover;"
-    class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center">
-    <div class="m-5 fadeIn">
-        <h2 class="text-5xl font-bold">Introducing <span>
-                ColorPicker <span
-                    class="ml-2 text-base px-3 rounded-xl font-bold bg-gradient-to-r from-[#9217FF] to-[#FF3FEC] text-white">Max</span>
-            </span>
-        </h2>
-        <div class="flex items-center">
-            <p class="text-lg font-semibold">Maximize your
-            <div class="ml-2 h-5 overflow-hidden">
-                <div class="ani-t font-semibold leading-5">Creativity</div>
-                <div class="ani-t font-semibold leading-5">Productivity</div>
-                <div class="ani-t font-semibold leading-5">Efficiency</div>
-                <div class="ani-t font-semibold leading-5">Originality</div>
-                <div class="ani-t font-semibold leading-5">Variety</div>
-                <div class="ani-t font-semibold leading-5">Flexibility</div>
-            </div>
-            </p>
+            </nav>
         </div>
-    </div>
-    <div class="slideInRight">
-        <img src="../img/CPM1.svg" class="dark:hidden" alt="ColorPicker Bookmarks.">
-        <img src="../img/CPM1B.svg" class="hidden dark:block" alt="ColorPicker Bookmarks in dark mode.">
-    </div>
-</div>
+    </header>
 
-<div id="feature-selector" class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center">
-    <div>
-        <img src="../img/CPM2.svg" class="dark:hidden" alt="ColorPicker Max Selector.">
-        <img src="../img/CPM2B.svg" class="hidden dark:block" alt="ColorPicker Max Selector in dark mode.">
-    </div>
-    <div class="m-5">
-        <h2 class="font-bold text-3xl">Reimagined Selector</h2>
-        <p>The selector feature of ColorPicker enables you to choose any color from the screen by moving the cursor over
-            it
-            and pressing a keyboard shortcut. The chosen color will be shown in a preview box and its code will be
-            copied to
-            the clipboard in a desired color type.</p>
-    </div>
-</div>
-
-<div id="feature-converter" class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center grid-flow-dense">
-    <div class="md:col-[2]">
-        <img src="../img/CPM3.svg" class="dark:hidden" alt="ColorPicker Max Converter.">
-        <img src="../img/CPM3B.svg" class="hidden dark:block" alt="ColorPicker Max Converter in dark mode.">
-    </div>
-    <div class="m-5" class="md:col-end-[-1]">
-        <h2 class="font-bold text-3xl">The most powerful Converter</h2>
-        <p>The converter feature of ColorPicker allows you to convert any color type to another one. The color types are
-            RGB, HEX, HSV, HSL, CMYK, XYZ, YIQ and YUV. You can enter a color code in any of these formats and see the
-            corresponding codes in the other formats.</p>
-    </div>
-</div>
-
-<div id="feature-gradient" class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center">
-    <div>
-        <img src="../img/CPM4.svg" class="dark:hidden" alt="ColorPicker Max Gradient page.">
-        <img src="../img/CPM4B.svg" class="hidden dark:block" alt="ColorPicker Max Gradient page in dark mode.">
-    </div>
-    <div class="m-5">
-        <h2 class="font-bold text-3xl">Unleash your Creativity</h2>
-        <p>The gradient feature of ColorPicker lets you generate random two-stops gradients with a specific rotation
-            angle. You can see a preview of the gradient and its CSS code. You can also export the gradient to CSS code
-            and use it in your web design projects.</p>
-    </div>
-</div>
-
-<div id="download" class="min-h-screen text-center items-center">
-
-    <div class="m-5 flex flex-col justify-center items-center">
-        <img class="max-w-sm" src="../img/ColorPicker.svg">
-        <h2 class="font-bold text-3xl">Start Now.</h2>
-        <p>Whether you're a graphic designer, web developer, or just someone who loves playing around with colors,
-            ColorPicker Max is the perfect solution for you. With its intuitive interface and easy-to-use features,
-            you'll be able to find the perfect color for your project in no time. So why wait? Download ColorPicker Max
-            today and start exploring the world of colors like never before. </p>
-        <a target="_blank" rel="noopener noreferrer"
-            class="btn-dw p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-[#007FFF] hover:bg-blue-600 transition inline-block"
-            href="https://tinyurl.com/DownloadColorPickerMax">
-            <div class="flex items-center">
-                <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
-                <p>Download</p>
+    <main>
+        <section id="title-header" style="background: url(../img/CPMBG.png); background-size: cover;"
+            class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center">
+            <div class="m-5 fadeIn">
+                <h2 class="text-5xl font-bold">Introducing <span>
+                        ColorPicker <span
+                            class="ml-2 text-base px-3 rounded-xl font-bold bg-gradient-to-r from-[#9217FF] to-[#FF3FEC] text-white">Max</span>
+                    </span>
+                </h2>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold">Maximize your
+                    <div class="ml-2 h-5 overflow-hidden">
+                        <div class="ani-t font-semibold leading-5">Creativity</div>
+                        <div class="ani-t font-semibold leading-5">Productivity</div>
+                        <div class="ani-t font-semibold leading-5">Efficiency</div>
+                        <div class="ani-t font-semibold leading-5">Originality</div>
+                        <div class="ani-t font-semibold leading-5">Variety</div>
+                        <div class="ani-t font-semibold leading-5">Flexibility</div>
+                    </div>
+                    </p>
+                </div>
             </div>
-        </a>
-    </div>
-</div>
+            <div class="slideInRight">
+                <img src="../img/CPM1.svg" class="dark:hidden" alt="ColorPicker Bookmarks.">
+                <img src="../img/CPM1B.svg" class="hidden dark:block" alt="ColorPicker Bookmarks in dark mode.">
+            </div>
+        </section>
 
-<footer class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-900 dark:text-gray-300 bg-gray-100 text-gray-500">
-    <div class="flex flex-col">
-        <h3 class="font-bold mb-5">
-            ABOUT
-        </h3>
-        <p id="copyright">© Léo Corporation</p>
-        <a href="https://privacy.leocorporation.dev/" class="hover:underline">Privacy Policy</a>
-        <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
-    </div>
-    <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
-        <h3 class="font-bold mb-5">
-            SOCIAL
-        </h3>
-        <div class="flex">
-            <a title="GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
-            </a>
-            <a title="Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
-            </a>
-            <a title="YouTube" target="_blank" rel="noopener noreferrer"
-                href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
-            </a>
-            <a title="Instagram" target="_blank" rel="noopener noreferrer"
-                href="https://www.instagram.com/leocorporation_/">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluency-systems-filled/48/6b7280/instagram-new.png" />
-            </a>
-            <a title="Facebook" target="_blank" rel="noopener noreferrer"
-                href="https://www.facebook.com/LeoCorporationSoftwares/">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluency-systems-filled/48/6b7280/facebook-new.png" />
-            </a>
+        <section id="feature-selector" class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center">
+            <div>
+                <img src="../img/CPM2.svg" class="dark:hidden" alt="ColorPicker Max Selector.">
+                <img src="../img/CPM2B.svg" class="hidden dark:block" alt="ColorPicker Max Selector in dark mode.">
+            </div>
+            <div class="m-5">
+                <h2 class="font-bold text-3xl">Reimagined Selector</h2>
+                <p>The selector feature of ColorPicker enables you to choose any color from the screen by moving the
+                    cursor
+                    over
+                    it
+                    and pressing a keyboard shortcut. The chosen color will be shown in a preview box and its code will
+                    be
+                    copied to
+                    the clipboard in a desired color type.</p>
+            </div>
+        </section>
+
+        <section id="feature-converter"
+            class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center grid-flow-dense">
+            <div class="md:col-[2]">
+                <img src="../img/CPM3.svg" class="dark:hidden" alt="ColorPicker Max Converter.">
+                <img src="../img/CPM3B.svg" class="hidden dark:block" alt="ColorPicker Max Converter in dark mode.">
+            </div>
+            <div class="m-5" class="md:col-end-[-1]">
+                <h2 class="font-bold text-3xl">The most powerful Converter</h2>
+                <p>The converter feature of ColorPicker allows you to convert any color type to another one. The color
+                    types
+                    are
+                    RGB, HEX, HSV, HSL, CMYK, XYZ, YIQ and YUV. You can enter a color code in any of these formats and
+                    see
+                    the
+                    corresponding codes in the other formats.</p>
+            </div>
+        </section>
+
+        <section id="feature-gradient" class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center">
+            <div>
+                <img src="../img/CPM4.svg" class="dark:hidden" alt="ColorPicker Max Gradient page.">
+                <img src="../img/CPM4B.svg" class="hidden dark:block" alt="ColorPicker Max Gradient page in dark mode.">
+            </div>
+            <div class="m-5">
+                <h2 class="font-bold text-3xl">Unleash your Creativity</h2>
+                <p>The gradient feature of ColorPicker lets you generate random two-stops gradients with a specific
+                    rotation
+                    angle. You can see a preview of the gradient and its CSS code. You can also export the gradient to
+                    CSS
+                    code
+                    and use it in your web design projects.</p>
+            </div>
+        </section>
+
+        <section id="download" class="min-h-screen text-center items-center">
+
+            <div class="m-5 flex flex-col justify-center items-center">
+                <img class="max-w-sm" src="../img/ColorPicker.svg">
+                <h2 class="font-bold text-3xl">Start Now.</h2>
+                <p>Whether you're a graphic designer, web developer, or just someone who loves playing around with
+                    colors,
+                    ColorPicker Max is the perfect solution for you. With its intuitive interface and easy-to-use
+                    features,
+                    you'll be able to find the perfect color for your project in no time. So why wait? Download
+                    ColorPicker
+                    Max
+                    today and start exploring the world of colors like never before. </p>
+                <a target="_blank" rel="noopener noreferrer"
+                    class="btn-dw p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-[#007FFF] hover:bg-blue-600 transition inline-block"
+                    href="https://tinyurl.com/DownloadColorPickerMax">
+                    <div class="flex items-center">
+                        <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
+                        <p>Download</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-900 dark:text-gray-300 bg-gray-100 text-gray-500">
+        <div class="flex flex-col">
+            <h3 class="font-bold mb-5">
+                ABOUT
+            </h3>
+            <p id="copyright">© Léo Corporation</p>
+            <a href="https://privacy.leocorporation.dev/" class="hover:underline">Privacy Policy</a>
+            <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
         </div>
-    </div>
-</footer>
+        <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+            <h3 class="font-bold mb-5">
+                SOCIAL
+            </h3>
+            <div class="flex">
+                <a title="GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
+                </a>
+                <a title="Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
+                </a>
+                <a title="YouTube" target="_blank" rel="noopener noreferrer"
+                    href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
+                </a>
+                <a title="Instagram" target="_blank" rel="noopener noreferrer"
+                    href="https://www.instagram.com/leocorporation_/">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/instagram-new.png" />
+                </a>
+                <a title="Facebook" target="_blank" rel="noopener noreferrer"
+                    href="https://www.facebook.com/LeoCorporationSoftwares/">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/facebook-new.png" />
+                </a>
+            </div>
+        </div>
+    </footer>
 
-<script src="../scripts/copyright.js"></script>
-<script src="../scripts/scroll.js"></script>
-<script>
-    function animateOnView(elementId, classToApply) {
-        const observer = new IntersectionObserver(entries => {
-            // Loop over the entries
-            entries.forEach(entry => {
-                // If the element is visible
-                if (entry.isIntersecting) {
-                    // Add the animation class
-                    entry.target.classList.add(classToApply);
-                }
+    <script src="../scripts/copyright.js"></script>
+    <script src="../scripts/scroll.js"></script>
+    <script>
+        function animateOnView(elementId, classToApply) {
+            const observer = new IntersectionObserver(entries => {
+                // Loop over the entries
+                entries.forEach(entry => {
+                    // If the element is visible
+                    if (entry.isIntersecting) {
+                        // Add the animation class
+                        entry.target.classList.add(classToApply);
+                    }
+                });
             });
-        });
-        observer.observe(document.getElementById(elementId));
-    }
+            observer.observe(document.getElementById(elementId));
+        }
 
-    animateOnView("feature-selector", "slideInRight");
-    animateOnView("feature-converter", "slideInUpX");
-    animateOnView("feature-gradient", "slideInRight");
-    animateOnView("download", "fadeIn");
-</script>
+        animateOnView("feature-selector", "slideInRight");
+        animateOnView("feature-converter", "slideInUpX");
+        animateOnView("feature-gradient", "slideInRight");
+        animateOnView("download", "fadeIn");
+    </script>
 </body>
 
 </html>

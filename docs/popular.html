@@ -49,326 +49,326 @@
 </head>
 
 <body id="body" style="font-family: Hauora, sans-serif;" class="bg-white text-black dark:text-white dark:bg-[#000014]">
-</body>
 
-<div id="header" style="z-index: 1000;"
-    class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200">
-    <style>
-        @font-face {
-            font-family: "FluentIconsRegular";
-            src: url("fonts/FluentSystemIcons-Regular.ttf");
-        }
+    <div id="header" style="z-index: 1000;"
+        class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200">
+        <style>
+            @font-face {
+                font-family: "FluentIconsRegular";
+                src: url("fonts/FluentSystemIcons-Regular.ttf");
+            }
 
-        @font-face {
-            font-family: "Hauora";
-            src: url("fonts/Hauora-Regular.ttf") format("truetype");
-            font-weight: 400;
-            font-style: normal;
-        }
+            @font-face {
+                font-family: "Hauora";
+                src: url("fonts/Hauora-Regular.ttf") format("truetype");
+                font-weight: 400;
+                font-style: normal;
+            }
 
-        @font-face {
-            font-family: "Hauora";
-            src: url("fonts/Hauora-Bold.ttf") format("truetype");
-            font-weight: 700;
-        }
+            @font-face {
+                font-family: "Hauora";
+                src: url("fonts/Hauora-Bold.ttf") format("truetype");
+                font-weight: 700;
+            }
 
-        @font-face {
-            font-family: "Hauora";
-            src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
-            font-weight: 900;
-        }
+            @font-face {
+                font-family: "Hauora";
+                src: url("fonts/Hauora-ExtraBold.ttf") format("truetype");
+                font-weight: 900;
+            }
 
-        @font-face {
-            font-family: "Hauora";
-            src: url("fonts/Hauora-SemiBold.ttf") format("truetype");
-            font-weight: 600;
-        }
-    </style>
-    <div x-data="{ open: false }"
-        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-        <div class="p-4 flex flex-row items-center justify-between">
-            <a href="https://leocorporation.dev/"
-                class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center">
-                <img src="img/Logo.svg" alt="Léo Corporation" class="h-10 w-10">
-                <p>Léo Corporation</p>
-            </a>
-            <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
-                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                    <path x-show="!open" fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                    <path x-show="open" fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                </svg>
-            </button>
-        </div>
-        <nav :class="{'flex': open, 'hidden': !open}"
-            class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex  md:flex-row">
-            <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                <button @click="open = !open"
-                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                    <span>Apps</span>
-                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            @font-face {
+                font-family: "Hauora";
+                src: url("fonts/Hauora-SemiBold.ttf") format("truetype");
+                font-weight: 600;
+            }
+        </style>
+        <div x-data="{ open: false }"
+            class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="p-4 flex flex-row items-center justify-between">
+                <a href="https://leocorporation.dev/"
+                    class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center">
+                    <img src="img/Logo.svg" alt="Léo Corporation" class="h-10 w-10">
+                    <p>Léo Corporation</p>
+                </a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                             clip-rule="evenodd"></path>
                     </svg>
                 </button>
-                <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                    x-transition:enter-start="transform opacity-0 scale-95"
-                    x-transition:enter-end="transform opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-75"
-                    x-transition:leave-start="transform opacity-100 scale-100"
-                    x-transition:leave-end="transform opacity-0 scale-95"
-                    class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                    <div
-                        class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]">
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://gavilya.leocorporation.dev/">
-                            <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="img/Gavilya.svg" alt="Gavilya Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Gavilya</h2>
-                                    <p class="font-normal text-sm">Gavilya gathers all your video games in one
-                                        place.
-                                    </p>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex  md:flex-row">
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <button @click="open = !open"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <span>Apps</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
+                        <div
+                            class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]">
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://gavilya.leocorporation.dev/">
+                                <div class="flex flex-row items-center">
+                                    <img class="h-10 w-10" src="img/Gavilya.svg" alt="Gavilya Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Gavilya</h2>
+                                        <p class="font-normal text-sm">Gavilya gathers all your video games in one
+                                            place.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://leocorporation.dev/store/passliss">
-                            <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="img/Passliss.svg" alt="Passliss Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Passliss</h2>
-                                    <p class="font-normal text-sm">A modern password generator for Windows.</p>
+                            </a>
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://leocorporation.dev/store/passliss">
+                                <div class="flex flex-row items-center">
+                                    <img class="h-10 w-10" src="img/Passliss.svg" alt="Passliss Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Passliss</h2>
+                                        <p class="font-normal text-sm">A modern password generator for Windows.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://datalya.leocorporation.dev/">
-                            <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="img/Datalya.svg" alt="Datalya Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Datalya</h2>
-                                    <p class="font-normal text-sm">A modern and simple database manager.</p>
+                            </a>
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://datalya.leocorporation.dev/">
+                                <div class="flex flex-row items-center">
+                                    <img class="h-10 w-10" src="img/Datalya.svg" alt="Datalya Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Datalya</h2>
+                                        <p class="font-normal text-sm">A modern and simple database manager.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://leocorporation.dev/store">
-                            <div class="flex flex-row items-center">
-                                <p class="text-4xl" style="font-family: FluentIconsRegular;"></p>
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Apps</h2>
-                                    <p class="font-normal text-sm">See all of our apps.</p>
+                            </a>
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://leocorporation.dev/store">
+                                <div class="flex flex-row items-center">
+                                    <p class="text-4xl" style="font-family: FluentIconsRegular;"></p>
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Apps</h2>
+                                        <p class="font-normal text-sm">See all of our apps.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                <button @click="open = !open" style="z-index: 1;"
-                    class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                    <span>Devyus</span>
-                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                        <path fill-rule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-                <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                    x-transition:enter-start="transform opacity-0 scale-95"
-                    x-transition:enter-end="transform opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-75"
-                    x-transition:leave-start="transform opacity-100 scale-100"
-                    x-transition:leave-end="transform opacity-0 scale-95"
-                    class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
-                    <div
-                        class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]">
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <button @click="open = !open" style="z-index: 1;"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                        <span>Devyus</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                        x-transition:enter-start="transform opacity-0 scale-95"
+                        x-transition:enter-end="transform opacity-100 scale-100"
+                        x-transition:leave="transition ease-in duration-75"
+                        x-transition:leave-start="transform opacity-100 scale-100"
+                        x-transition:leave-end="transform opacity-0 scale-95"
+                        class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50">
+                        <div
+                            class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]">
 
-                        <a class="block px-4 py-2 mt-2 bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://peyrsharp.leocorporation.dev/">
-                            <div class="flex flex-row items-center text-base">
-                                <img class="h-10 w-10" src="img/PeyrSharp.svg" alt="PeyrSharp Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">PeyrSharp</h2>
-                                    <p class="font-normal text-sm">A C# library designed to make developers' job
-                                        easier.
-                                    </p>
+                            <a class="block px-4 py-2 mt-2 bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://peyrsharp.leocorporation.dev/">
+                                <div class="flex flex-row items-center text-base">
+                                    <img class="h-10 w-10" src="img/PeyrSharp.svg" alt="PeyrSharp Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">PeyrSharp</h2>
+                                        <p class="font-normal text-sm">A C# library designed to make developers' job
+                                            easier.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                            href="https://synethia.leocorporation.dev">
-                            <div class="flex flex-row items-center">
-                                <img class="h-10 w-10" src="img/Synethia.svg" alt="Synethia Logo">
-                                <div class="ml-4">
-                                    <h2 class="font-semibold">Synethia</h2>
-                                    <p class="font-normal text-sm">A basic C# algorithm that can determine the
-                                        behavior of a user with an application.
-                                    </p>
+                            </a>
+                            <a class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                href="https://synethia.leocorporation.dev">
+                                <div class="flex flex-row items-center">
+                                    <img class="h-10 w-10" src="img/Synethia.svg" alt="Synethia Logo">
+                                    <div class="ml-4">
+                                        <h2 class="font-semibold">Synethia</h2>
+                                        <p class="font-normal text-sm">A basic C# algorithm that can determine the
+                                            behavior of a user with an application.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="https://blog.leocorporation.dev/">Blog</a>
-            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                href="https://leocorporation.dev/contact">Contact</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="https://blog.leocorporation.dev/">Blog</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="https://leocorporation.dev/contact">Contact</a>
 
-        </nav>
+            </nav>
+        </div>
     </div>
-</div>
 
-<div id="store-items" class="flex flex-col items-center mx-2 mt-16 lg:mx-16">
-    <h2 class="text-3xl font-bold">Popular</h2>
-    <h1>Find here all the software that is currently popular.</h1>
-    <div>
-        <div style="grid-template-columns: 144px auto 200px;"
-            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-            <img alt="Image" class="h-32 md:mr-16" src="img/InternetTest.svg" />
-            <div class="md:mr-16">
-                <div class="flex sm:flex-row flex-col items-center">
-                    <h2 class="font-bold text-3xl">InternetTest</h2>
-                    <p
-                        class="bg-gradient-to-r px-3 from-[#2153E0] to-blue-500 rounded-xl sm:ml-4 ml-0 my-2 text-white font-bold text-center">
-                        Pro
-                    </p>
+    <div id="store-items" class="flex flex-col items-center mx-2 mt-16 lg:mx-16">
+        <h2 class="text-3xl font-bold">Popular</h2>
+        <h1>Find here all the software that is currently popular.</h1>
+        <div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+                <img alt="Image" class="h-32 md:mr-16" src="img/InternetTest.svg" />
+                <div class="md:mr-16">
+                    <div class="flex sm:flex-row flex-col items-center">
+                        <h2 class="font-bold text-3xl">InternetTest</h2>
+                        <p
+                            class="bg-gradient-to-r px-3 from-[#2153E0] to-blue-500 rounded-xl sm:ml-4 ml-0 my-2 text-white font-bold text-center">
+                            Pro
+                        </p>
+                    </div>
+                    <p>Taking you to another level. InternetTest can locate IP addresses, send ping request, recover
+                        your
+                        WiFi passwords and more!</p>
                 </div>
-                <p>Taking you to another level. InternetTest can locate IP addresses, send ping request, recover your
-                    WiFi passwords and more!</p>
+                <a target="_blank" rel="noopener noreferrer"
+                    class="btn-dw p-2 pr-8 m-2 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
+                    href="https://tinyurl.com/DownloadITP7">
+                    <div class="flex items-center justify-center">
+                        <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
+                        <p>Download</p>
+                    </div>
+                </a>
             </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+                <img alt="Image" class="h-32 md:mr-16" src="img/Passliss.svg" />
+                <div class="md:mr-16">
+                    <h2 class="font-bold text-3xl">Passliss</h2>
+                    <p>A modern password generator for Windows.</p>
+                </div>
+                <a target="_blank" rel="noopener noreferrer"
+                    class="btn-dw p-2 pr-8 m-2 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
+                    href="https://tinyurl.com/Passliss">
+                    <div class="flex items-center justify-center">
+                        <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
+                        <p>Download</p>
+                    </div>
+                </a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+                <img alt="Image" class="h-32 md:mr-16" src="img/Gavilya.svg" />
+                <div class="md:mr-16">
+                    <h2 class="font-bold text-3xl">Gavilya</h2>
+                    <p>Gavilya brings all your video games together in one place.</p>
+                </div>
+                <a target="_blank" rel="noopener noreferrer"
+                    class="btn-dw p-2 pr-8 m-2 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
+                    href="https://bit.ly/Gavilya">
+                    <div class="flex items-center justify-center">
+                        <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
+                        <p>Download</p>
+                    </div>
+                </a>
+            </div>
+            <div style="grid-template-columns: 144px auto 200px;"
+                class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
+                <img alt="Image" class="h-32 md:mr-16" src="img/Gerayis.svg" />
+                <div class="md:mr-16">
+                    <h2 class="font-bold text-3xl">Gerayis</h2>
+                    <p>A modern Bar/QR Code generator for Windows.</p>
+                </div>
+                <a target="_blank" rel="noopener noreferrer"
+                    class="btn-dw p-2 pr-8 m-2 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
+                    href="https://tinyurl.com/DownloadGerayis">
+                    <div class="flex items-center justify-center">
+                        <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
+                        <p>Download</p>
+                    </div>
+                </a>
+            </div>
+            <script async
+                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
+                crossorigin="anonymous"></script>
+            <!-- LeoCorpDevAd5 -->
+            <ins class="adsbygoogle flex justify-center" data-ad-client="ca-pub-7416572564791547"
+                data-ad-slot="8817787857" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <div id="xalyus-ad" style="max-width: 700px;"
+        class="text-white p-5 mx-4 sm:mx-auto my-8 flex flex-col rounded-xl justify-center items-center text-center">
+        <h2 class="text-4xl font-bold">Xalyus Store</h2>
+        <p class="text-center mb-8">Xalyus Store brings all our software together in one place.</p>
+        <div class="flex flex-col sm:flex-row items-center">
             <a target="_blank" rel="noopener noreferrer"
-                class="btn-dw p-2 pr-8 m-2 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
-                href="https://tinyurl.com/DownloadITP7">
-                <div class="flex items-center justify-center">
-                    <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
-                    <p>Download</p>
-                </div>
-            </a>
+                class="transition font-bold p-2 hover:bg-white hover:text-indigo-600 rounded-xl ring-1 ring-offset-2 ring-white"
+                href="https://tinyurl.com/DownloadXalyusStore">Download</a>
+            <a class="p-5" href="xalyus-store">Learn more</a>
         </div>
-        <div style="grid-template-columns: 144px auto 200px;"
-            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-            <img alt="Image" class="h-32 md:mr-16" src="img/Passliss.svg" />
-            <div class="md:mr-16">
-                <h2 class="font-bold text-3xl">Passliss</h2>
-                <p>A modern password generator for Windows.</p>
-            </div>
-            <a target="_blank" rel="noopener noreferrer"
-                class="btn-dw p-2 pr-8 m-2 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
-                href="https://tinyurl.com/Passliss">
-                <div class="flex items-center justify-center">
-                    <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
-                    <p>Download</p>
-                </div>
-            </a>
-        </div>
-        <div style="grid-template-columns: 144px auto 200px;"
-            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-            <img alt="Image" class="h-32 md:mr-16" src="img/Gavilya.svg" />
-            <div class="md:mr-16">
-                <h2 class="font-bold text-3xl">Gavilya</h2>
-                <p>Gavilya brings all your video games together in one place.</p>
-            </div>
-            <a target="_blank" rel="noopener noreferrer"
-                class="btn-dw p-2 pr-8 m-2 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
-                href="https://bit.ly/Gavilya">
-                <div class="flex items-center justify-center">
-                    <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
-                    <p>Download</p>
-                </div>
-            </a>
-        </div>
-        <div style="grid-template-columns: 144px auto 200px;"
-            class="dark:bg-gray-900 bg-white w-full flex flex-col text-center md:text-left md:grid md:grid-cols-3 items-center rounded-lg shadow-md p-5 my-5">
-            <img alt="Image" class="h-32 md:mr-16" src="img/Gerayis.svg" />
-            <div class="md:mr-16">
-                <h2 class="font-bold text-3xl">Gerayis</h2>
-                <p>A modern Bar/QR Code generator for Windows.</p>
-            </div>
-            <a target="_blank" rel="noopener noreferrer"
-                class="btn-dw p-2 pr-8 m-2 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
-                href="https://tinyurl.com/DownloadGerayis">
-                <div class="flex items-center justify-center">
-                    <p class="btn-download transition mr-2" style="font-family: FluentIconsRegular;"></p>
-                    <p>Download</p>
-                </div>
-            </a>
-        </div>
-        <script async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
-            crossorigin="anonymous"></script>
-        <!-- LeoCorpDevAd5 -->
-        <ins class="adsbygoogle flex justify-center" data-ad-client="ca-pub-7416572564791547" data-ad-slot="8817787857"
-            data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
     </div>
-</div>
 
-<div id="xalyus-ad" style="max-width: 700px;"
-    class="text-white p-5 mx-4 sm:mx-auto my-8 flex flex-col rounded-xl justify-center items-center text-center">
-    <h2 class="text-4xl font-bold">Xalyus Store</h2>
-    <p class="text-center mb-8">Xalyus Store brings all our software together in one place.</p>
-    <div class="flex flex-col sm:flex-row items-center">
-        <a target="_blank" rel="noopener noreferrer"
-            class="transition font-bold p-2 hover:bg-white hover:text-indigo-600 rounded-xl ring-1 ring-offset-2 ring-white"
-            href="https://tinyurl.com/DownloadXalyusStore">Download</a>
-        <a class="p-5" href="xalyus-store">Learn more</a>
-    </div>
-</div>
-
-<footer class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-900 dark:text-gray-300 bg-gray-100 text-gray-500">
-    <div class="flex flex-col">
-        <h3 class="font-bold mb-5">
-            ABOUT
-        </h3>
-        <p id="copyright">© Léo Corporation</p>
-        <a href="https://privacy.leocorporation.dev/" class="hover:underline">Privacy Policy</a>
-        <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
-    </div>
-    <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
-        <h3 class="font-bold mb-5">
-            SOCIAL
-        </h3>
-        <div class="flex">
-            <a title="GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
-            </a>
-            <a title="Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
-            </a>
-            <a title="YouTube" target="_blank" rel="noopener noreferrer"
-                href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
-            </a>
-            <a title="Instagram" target="_blank" rel="noopener noreferrer"
-                href="https://www.instagram.com/leocorporation_/">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluency-systems-filled/48/6b7280/instagram-new.png" />
-            </a>
-            <a title="Facebook" target="_blank" rel="noopener noreferrer"
-                href="https://www.facebook.com/LeoCorporationSoftwares/">
-                <img alt="Image" class="h-6 mr-5"
-                    src="https://img.icons8.com/fluency-systems-filled/48/6b7280/facebook-new.png" />
-            </a>
+    <footer class="grid grid-cols-1 sm:grid-cols-2 p-16 dark:bg-gray-900 dark:text-gray-300 bg-gray-100 text-gray-500">
+        <div class="flex flex-col">
+            <h3 class="font-bold mb-5">
+                ABOUT
+            </h3>
+            <p id="copyright">© Léo Corporation</p>
+            <a href="https://privacy.leocorporation.dev/" class="hover:underline">Privacy Policy</a>
+            <a href="https://status.leocorporation.dev/" class="hover:underline">Status</a>
         </div>
-    </div>
-</footer>
+        <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+            <h3 class="font-bold mb-5">
+                SOCIAL
+            </h3>
+            <div class="flex">
+                <a title="GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation/">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png" />
+                </a>
+                <a title="Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/LeoCorpNews">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluent-systems-filled/48/6b7280/twitter.png" />
+                </a>
+                <a title="YouTube" target="_blank" rel="noopener noreferrer"
+                    href="https://www.youtube.com/channel/UC283Dtf6EJ8eKfRoo0ISmqg">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png" />
+                </a>
+                <a title="Instagram" target="_blank" rel="noopener noreferrer"
+                    href="https://www.instagram.com/leocorporation_/">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/instagram-new.png" />
+                </a>
+                <a title="Facebook" target="_blank" rel="noopener noreferrer"
+                    href="https://www.facebook.com/LeoCorporationSoftwares/">
+                    <img alt="Image" class="h-6 mr-5"
+                        src="https://img.icons8.com/fluency-systems-filled/48/6b7280/facebook-new.png" />
+                </a>
+            </div>
+        </div>
+    </footer>
 
-<script src="scripts/copyright.js"></script>
-<script src="scripts/scroll.js"></script>
+    <script src="scripts/copyright.js"></script>
+    <script src="scripts/scroll.js"></script>
 
 </body>
 
