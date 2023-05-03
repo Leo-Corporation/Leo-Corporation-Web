@@ -1,1 +1,2 @@
-document.getElementById("copyright").innerText = "© " + new Date().getFullYear() + " Léo Corporation";
+document.getElementById("copyright").innerText =
+  "© " + new Date().getFullYear() + " Peyronnet Group and Léo Corporation";
