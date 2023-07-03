@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1" id="gradient_1">
+      <stop offset="0%" stop-color="#9DFF00" />
+      <stop offset="100%" stop-color="#11F814" />
+    </linearGradient>
+    <path d="M1000 0L1000 0L1000 1000L0 1000L0 0L1000 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="DayBar" clip-path="url(#clip_1)">
+    <path d="M1000 0L1000 0L1000 1000L0 1000L0 0L1000 0Z" id="DayBar" fill="none" stroke="none" />
+    <path d="M114 500.5C114 287.042 287.042 114 500.5 114C713.958 114 887 287.042 887 500.5C887 713.958 713.958 887 500.5 887C287.042 887 114 713.958 114 500.5Z" id="Oval" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <path d="M501 192C517.018 192 530 204.982 530 221L530 521C530 537.018 517.018 550 501 550L501 550C484.981 550 472 537.018 472 521L472 221C472 204.982 484.981 192 501 192Z" id="Rectangle" fill="#FFFFFF" stroke="none" />
+    <path d="M830 521C830 537.018 817.018 550 801 550L501 550C484.981 550 472 537.018 472 521L472 521C472 504.982 484.981 492 501 492L801 492C817.018 492 830 504.982 830 521Z" id="Rectangle-Copy" fill="#FFFFFF" stroke="none" />
+  </g>
+</svg>
