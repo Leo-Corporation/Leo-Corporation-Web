@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1" id="gradient_1">
+      <stop offset="0%" stop-color="#E72DD5" />
+      <stop offset="100%" stop-color="#8400FF" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1" id="gradient_2">
+      <stop offset="0%" stop-color="#E02AD8" />
+      <stop offset="100%" stop-color="#8400FF" />
+    </linearGradient>
+    <path d="M1000 0L1000 0L1000 1000L0 1000L0 0L1000 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Logo Copy 2" clip-path="url(#clip_1)">
+    <path d="M1000 0L1000 0L1000 1000L0 1000L0 0L1000 0Z" id="Logo-Copy-2" fill="none" stroke="none" />
+    <g id="Group-Copy" transform="translate(73.46216 73.46216)">
+      <path d="M611.076 0C745.299 0 854.076 108.777 854.076 243L854.076 611.076C854.076 745.299 745.299 854.076 611.076 854.076L243 854.076C108.777 854.076 0 745.299 0 611.076L0 243C0 108.777 108.777 0 243 0L611.076 0Z" id="Rectangle-2" fill="none" stroke="url(#gradient_1)" stroke-width="88" />
+      <path d="M232.047 508.21C258.852 508.21 280.574 529.933 280.574 556.737L280.574 629.087C280.574 655.891 258.852 677.614 232.047 677.614L232.047 677.614C205.243 677.614 183.52 655.891 183.52 629.087L183.52 556.737C183.52 529.933 205.243 508.21 232.047 508.21Z" id="Rectangle-3" fill="url(#gradient_2)" stroke="none" />
+      <path d="M427.92 508.21C454.725 508.21 476.447 529.933 476.447 556.737L476.447 629.087C476.447 655.891 454.725 677.614 427.92 677.614L427.92 677.614C401.116 677.614 379.393 655.891 379.393 629.087L379.393 556.737C379.393 529.933 401.116 508.21 427.92 508.21Z" id="Rectangle-3-Copy" fill="url(#gradient_2)" stroke="none" />
+      <path d="M623.793 176.462C650.597 176.462 672.32 198.184 672.32 224.989L672.32 629.087C672.32 655.891 650.597 677.614 623.793 677.614L623.793 677.614C596.988 677.614 575.266 655.891 575.266 629.087L575.266 224.989C575.266 198.184 596.988 176.462 623.793 176.462Z" id="Rectangle-3-Copy-2" fill="url(#gradient_2)" stroke="none" />
+      <path d="M404.427 176.436C444.197 176.436 476.427 208.666 476.427 248.436L476.427 397.363C476.427 437.133 444.197 469.363 404.427 469.363L255.501 469.363C215.731 469.363 183.501 437.133 183.501 397.363L183.501 248.436C183.501 208.666 215.731 176.436 255.501 176.436L404.427 176.436Z" id="Rectangle-4" fill="url(#gradient_2)" stroke="none" />
+    </g>
+  </g>
+</svg>
