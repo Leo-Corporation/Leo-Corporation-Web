@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Social networks meta -->
+    <!-- X (Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://leocorporation.dev/img/InternetTest/social.png"
+    />
+    <meta
+      name="twitter:description"
+      content="InternetTest Pro - Taking you to another level. A network utility tool for Windows."
+    />
+    <meta name="twitter:title" content="InternetTest Pro | Léo Corporation" />
+
+    <!-- Facebook/Linkedin -->
+    <meta
+      property="og:description"
+      content="InternetTest Pro - Taking you to another level. A network utility tool for Windows."
+    />
+    <meta
+      property="og:image"
+      content="https://leocorporation.dev/img/InternetTest/social.png"
+    />
+    <meta property="og:title" content="InternetTest Pro | Léo Corporation" />
+
+    <meta
+      name="description"
+      content="InternetTest Pro - Taking you to another level. A network utility tool for Windows."
+    />
+
+    <title>InternetTest Pro | Léo Corporation</title>
+    <link href="../css/tailwind.css" rel="stylesheet" />
+    <link href="../css/animations.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/global.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="../favicon.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DY3K4MZKXB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DY3K4MZKXB");
+    </script>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Clarity tracking code for https://leocorporation.dev/ -->
+    <script>
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "6pcasplsmw");
+    </script>
+  </head>
+
+  <body
+    id="body"
+    style="font-family: Hauora, sans-serif"
+    class="bg-white text-black dark:text-white dark:bg-[#000014]"
+  >
+    <header
+      id="header"
+      style="z-index: 1000"
+      class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200"
+    >
+      <style>
+        @font-face {
+          font-family: "FluentIconsRegular";
+          src: url("../fonts/FluentSystemIcons-Regular.ttf");
+        }
+      </style>
+      <div
+        x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+      >
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a
+            href="https://leocorporation.dev/"
+            class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center"
+          >
+            <img
+              src="../img/Logo.svg"
+              alt="Léo Corporation"
+              class="h-10 w-10"
+            />
+            <p>Léo Corporation</p>
+          </a>
+          <button
+            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+            @click="open = !open"
+          >
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path
+                x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <nav
+          :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:flex-row"
+        >
+          <div
+            @click.away="open = false"
+            class="relative"
+            x-data="{ open: false }"
+          >
+            <button
+              @click="open = !open"
+              class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              <span>Apps</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              x-show="open"
+              x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
+              x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-75"
+              x-transition:leave-start="transform opacity-100 scale-100"
+              x-transition:leave-end="transform opacity-0 scale-95"
+              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
+            >
+              <div
+                class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]"
+              >
+                <a
+                  class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="https://gavilya.leocorporation.dev/"
+                >
+                  <div class="flex flex-row items-center">
+                    <img
+                      class="h-10 w-10"
+                      src="../img/Gavilya.svg"
+                      alt="Gavilya Logo"
+                    />
+                    <div class="ml-4">
+                      <h2 class="font-semibold">Gavilya</h2>
+                      <p class="font-normal text-sm">
+                        Gavilya gathers all your video games in one place.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="https://leocorporation.dev/store/colorpickermax"
+                >
+                  <div class="flex flex-row items-center">
+                    <img
+                      class="h-10 w-10"
+                      src="../img/ColorPicker.svg"
+                      alt="ColorPicker Max Logo"
+                    />
+                    <div class="ml-4">
+                      <h2 class="font-semibold">ColorPicker Max</h2>
+                      <p class="font-normal text-sm">
+                        An app that enables you to pick, create and convert
+                        colors, and more.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="https://datalya.leocorporation.dev/"
+                >
+                  <div class="flex flex-row items-center">
+                    <img
+                      class="h-10 w-10"
+                      src="../img/Datalya.svg"
+                      alt="Datalya Logo"
+                    />
+                    <div class="ml-4">
+                      <h2 class="font-semibold">Datalya</h2>
+                      <p class="font-normal text-sm">
+                        A modern and simple database manager.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="https://leocorporation.dev/store"
+                >
+                  <div class="flex flex-row items-center">
+                    <p class="text-4xl" style="font-family: FluentIconsRegular">
+                      
+                    </p>
+                    <div class="ml-4">
+                      <h2 class="font-semibold">Apps</h2>
+                      <p class="font-normal text-sm">See all of our apps.</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            @click.away="open = false"
+            class="relative"
+            x-data="{ open: false }"
+          >
+            <button
+              @click="open = !open"
+              style="z-index: 1"
+              class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            >
+              <span>Try now</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                :class="{'rotate-180': open, 'rotate-0': !open}"
+                class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div
+              x-show="open"
+              x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
+              x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-75"
+              x-transition:leave-start="transform opacity-100 scale-100"
+              x-transition:leave-end="transform opacity-0 scale-95"
+              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
+            >
+              <div
+                class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]"
+              >
+                <a
+                  class="block px-4 py-2 mt-2 bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="https://passliss.leocorporation.dev/"
+                >
+                  <div class="flex flex-row items-center text-base">
+                    <img
+                      class="h-10 w-10"
+                      src="../img/Passliss.svg"
+                      alt="Passliss Logo"
+                    />
+                    <div class="ml-4">
+                      <h2 class="font-semibold">Passliss</h2>
+                      <p class="font-normal text-sm">
+                        A simple and useful password generator powered by AI.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  class="block px-4 py-2 mt-2 text-smbg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="https://qrix.leocorporation.dev"
+                >
+                  <div class="flex flex-row items-center">
+                    <img
+                      class="h-10 w-10"
+                      src="../img/Qrix.svg"
+                      alt="Qrix Logo"
+                    />
+                    <div class="ml-4">
+                      <h2 class="font-semibold">Qrix</h2>
+                      <p class="font-normal text-sm">
+                        A simple yet powerful Bar Code and QR Code generator.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="https://blog.leocorporation.dev/"
+            >Blog</a
+          >
+          <a
+            class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="https://leocorporation.dev/contact"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section style="background: url('../img/InternetTest/InternetTestBanner.svg'); background-size: cover; background-position: top; min-height: calc(100vh - 72px);" class="flex flex-col justify-end items-center">
+        <div class="p-6 bg-white dark:bg-slate-800 m-5 rounded-lg shadow-md sm:grid space-y-2 flex flex-col grid-cols-[auto,1fr,auto] space-x-2 sm:items-start items-center max-w-[1200px]">
+            <img height="75px" width="75px" alt="InternetTest Pro Logo" src="../img/InternetTest.svg">
+          <div class="text-center sm:text-left">
+            <div class="flex flex-row items-center justify-center sm:justify-start space-x-2">
+                <h2 class="font-bold text-3xl">InternetTest</h2>
+                <p class="bg-gradient-to-r px-3 from-[#2153E0] to-blue-500 rounded-xl sm:ml-4 ml-0 my-2 text-white font-bold text-center">
+                  Pro
+                </p>
+              </div>
+              <p>InternetTest is a versatile network utility for Windows. It can do many things, such as locating IP addresses, sending ping requests, recovering WiFi passwords, displaying DNS info, tracing routes, and more.</p>
+          </div>
+          <a href="https://tinyurl.com/DownloadITP7" class="px-4 py-2 m-2 bg-gradient-to-tr from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-lg font-bold sm:self-center text-white">Download</a>
+        </div>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col items-center">
+        <picture>
+            <source srcset="../img/InternetTest/1B.png" media="(prefers-color-scheme: dark)">
+            <img src="../img/InternetTest/1.png" alt="A screenshot of the 'Home' page of InternetTest Pro">
+        </picture>
+        <div class="m-2 p-2 sm:text-left text-center">
+            <p class="text-[#2153E0] text-4xl" style="font-family: FluentIconsRegular"></p>
+            <h3 class="font-bold text-xl">A new and improved user interface</h3>
+            <p>InternetTest Pro, also called InternetTest 7, offers a new user interface; you will notice a brand-new side bar with “pinned” actions and different menus. You can access your favorite functionalities using this new side bar, or by using the “Home” dashboard; it is a place specially made for you where you can quickly find useful actions and features. We have added subtle animations as well.</p>
+        </div>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col-reverse items-center">
+          <div class="m-2 p-2 sm:text-left text-center">
+              <p class="text-[#2153E0] text-4xl" style="font-family: FluentIconsRegular"></p>
+            <h3 class="font-bold text-xl">IP Locator</h3>
+            <p>InternetTest Pro IP Locator is a feature that allows you to find out more information about any IP address or website URL. You can enter an IP or a website URL in the search box and get the approximate location and details of the IP, such as the country, region, city, and ISP. You can also see the approximate location of the IP on a map.</p>
+        </div>
+        <picture>
+            <source srcset="../img/InternetTest/2B.png" media="(prefers-color-scheme: dark)">
+            <img src="../img/InternetTest/2.png" alt="A screenshot of the 'Locate IP' page of InternetTest Pro">
+        </picture>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col items-center">
+        <picture>
+            <source srcset="../img/InternetTest/3B.png" media="(prefers-color-scheme: dark)">
+            <img src="../img/InternetTest/3.png" alt="A screenshot of the 'WiFi Passwords' page of InternetTest Pro">
+        </picture>
+        <div class="m-2 p-2 sm:text-left text-center">
+            <p class="text-[#2153E0] text-4xl" style="font-family: FluentIconsRegular"></p>
+            <h3 class="font-bold text-xl">Recover your WiFi Passwords</h3>
+            <p>InternetTest Pro also lets you recover the passwords of the wifi networks you have connected to in the past. You can also view basic information about each network, such as the protocol and the SSID. You will see a list of all the wifi networks you have ever connected to. Tap on any network to see its password and details. You can also copy the password to your clipboard.</p>
+        </div>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col-reverse items-center">
+        <div class="m-2 p-2 sm:text-left text-center">
+            <p class="text-[#2153E0] text-4xl" style="font-family: FluentIconsRegular"></p>
+          <h3 class="font-bold text-xl">Ping Feature</h3>
+          <p>InternetTest Pro Ping feature is a useful tool for testing the connectivity and latency of your network. It lets you run a ping command from your device and see the results in real time. You can choose the target host, the number of packets, and the interval between them. You can also view the statistics of the ping test, such as the minimum, maximum, and average round-trip time, and the packet loss rate.</p>
+        </div>
+        <picture>
+          <source srcset="../img/InternetTest/4B.png" media="(prefers-color-scheme: dark)">
+          <img src="../img/InternetTest/4.png" alt="A screenshot of the 'Ping' page of InternetTest Pro">
+        </picture>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col items-center">
+        <picture>
+            <source srcset="../img/InternetTest/5B.png" media="(prefers-color-scheme: dark)">
+            <img src="../img/InternetTest/5.png" alt="A screenshot of the 'Trace Route' page of InternetTest Pro">
+        </picture>
+        <div class="m-2 p-2 sm:text-left text-center">
+            <p class="text-[#2153E0] text-4xl" style="font-family: FluentIconsRegular"></p>
+            <h3 class="font-bold text-xl">Trace route command</h3>
+            <p>The Trace Route feature allows you to execute a tracert command and get the results. A tracert command shows you the route that your data packets take from your device to a destination server. It also displays the time it takes for each hop along the way. This can help you identify and troubleshoot any network issues or bottlenecks that may affect your internet experience.</p>
+        </div>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col-reverse items-center">
+        <div class="m-2 p-2 sm:text-left text-center">
+            <p class="text-[#2153E0] text-4xl" style="font-family: FluentIconsRegular"></p>
+          <h3 class="font-bold text-xl">Get your IP Config</h3>
+          <p>The IP Config feature is a useful tool that lets you run the ipconfig command and see the output. This command shows you the configuration of your network interfaces, such as IP address, subnet mask, default gateway, and more. You can use this feature to troubleshoot network problems or to check your connection details.</p>
+        </div>
+        <picture>
+          <source srcset="../img/InternetTest/6B.png" media="(prefers-color-scheme: dark)">
+          <img src="../img/InternetTest/6.png" alt="A screenshot of the 'IP Config' page of InternetTest Pro">
+        </picture>
+      </section>
+      <section class="min-h-screen flex flex-col justify-center items-center">
+        <h3 class="font-bold text-center text-3xl">Get the app</h3>
+        <p class="text-center">By the download InternetTest Pro, you acknowledge that the app can have these permissions:</p>
+        <div class="grid sm:grid-cols-[auto,auto] grid-cols-1 m-2 justify-center">
+            <p class="flex items-center"><span class="mx-2" style="font-family: FluentIconsRegular;"></span>Read the registry</p>
+            <p class="flex items-center"><span class="mx-2" style="font-family: FluentIconsRegular;"></span>Display notifications</p>
+            <p class="flex items-center"><span class="mx-2" style="font-family: FluentIconsRegular;"></span>Connect to the Internet</p>
+            <p class="flex items-center"><span class="mx-2" style="font-family: FluentIconsRegular;"></span>Download updates with your consent</p>
+            <p class="flex items-center"><span class="mx-2" style="font-family: FluentIconsRegular;"></span>Access your file system</p>
+            <p class="flex items-center"><span class="mx-2" style="font-family: FluentIconsRegular;"></span>Execute Windows commands</p>
+        </div>
+        <a href="https://tinyurl.com/DownloadITP7" class="px-4 py-2 m-2 bg-gradient-to-tr from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-lg font-bold sm:self-center text-white">Download</a>
+
+      </section>
+    </main>
+
+    <footer
+      class="grid grid-cols-1 sm:grid-cols-3 p-16 dark:bg-gray-800 bg-gray-100 dark:text-gray-300 text-gray-500"
+    >
+      <div class="flex items-center justify-center sm:justify-normal">
+        <a href="https://peyronnet.group"
+          ><svg width="256" height="64" viewBox="0 0 1437 355" version="1.1">
+            <defs>
+              <path d="M0 0L1437 0L1437 355L0 355L0 0Z" id="path_1"></path>
+              <clipPath id="clip_1"><use href="#path_1"></use></clipPath>
+            </defs>
+            <g id="Long Logo Light" clip-path="url(#clip_1)">
+              <path
+                d="M0 0L1437 0L1437 355L0 355L0 0Z"
+                id="Long-Logo-Light"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="none"
+              ></path>
+              <g id="Group" transform="translate(181 65)">
+                <g class="fill-gray-500 dark:fill-gray-300" id="PEYRONNET">
+                  <path
+                    d="M574.8 91.9917Q578.52 84.1317 578.52 75.0117Q578.52 65.8917 574.8 58.0317Q571.08 50.1717 564.24 44.2917Q557.4 38.4117 548.16 35.1117Q538.92 31.8117 527.76 31.8117Q516.6 31.8117 507.3 35.1117Q498 38.4117 491.22 44.2917Q484.44 50.1717 480.72 58.0317Q477 65.8917 477 75.0117Q477 84.1317 480.72 91.9917Q484.44 99.8517 491.22 105.732Q498 111.612 507.3 114.912Q516.6 118.212 527.76 118.212Q538.92 118.212 548.16 114.912Q557.4 111.612 564.24 105.732Q571.08 99.8517 574.8 91.9917ZM70.92 33.0117Q78.36 33.0117 84.54 36.4317Q90.72 39.8517 94.44 45.6717Q98.16 51.4917 98.16 58.8117Q98.16 66.3717 94.08 72.5517Q90 78.7317 83.28 82.3917Q76.56 86.0517 68.52 86.0517L34.8 86.0517L34.8 117.012L21.84 117.012L21.84 33.0117L70.92 33.0117ZM136.2 117.012L136.2 33.0117L205.92 33.0117L205.92 45.4917L149.16 45.4917L149.16 67.6917L199.32 67.6917L199.32 80.1717L149.16 80.1717L149.16 104.532L205.92 104.532L205.92 117.012L136.2 117.012ZM290.4 84.7317L330.72 33.0117L314.64 33.0117L284.04 73.5717L252.72 33.0117L234.72 33.0117L277.44 85.6917L277.44 117.012L290.4 117.012L290.4 84.7317ZM438.48 58.8117Q438.48 64.8117 435.9 69.9117Q433.32 75.0117 428.88 78.7917Q424.44 82.5717 418.8 84.4917L443.4 117.132L427.2 117.012L403.92 86.0517L375.12 86.0517L375.12 117.012L362.16 117.012L362.16 33.0117L411.24 33.0117Q418.68 33.0117 424.86 36.4317Q431.04 39.8517 434.76 45.6717Q438.48 51.4917 438.48 58.8117ZM693.6 33.0117L706.56 33.0117L706.56 117.012L693.48 117.012L626.4 51.0117Q627.12 58.8117 627.9 66.5517Q628.68 74.2917 628.68 82.0917L628.68 117.012L615.72 117.012L615.72 33.0117L628.56 33.0117L695.64 100.692Q694.8 94.8117 694.38 87.8517Q693.96 80.8917 693.78 73.8717Q693.6 66.8517 693.6 60.6117L693.6 33.0117ZM841.08 33.0117L828.12 33.0117L828.12 60.6117Q828.12 66.8517 828.3 73.8717Q828.48 80.8917 828.9 87.8517Q829.32 94.8117 830.16 100.692L763.08 33.0117L750.24 33.0117L750.24 117.012L763.2 117.012L763.2 82.0917Q763.2 74.2917 762.42 66.5517Q761.64 58.8117 760.92 51.0117L828 117.012L841.08 117.012L841.08 33.0117ZM884.76 33.0117L954.48 33.0117L954.48 45.4917L897.72 45.4917L897.72 67.6917L947.88 67.6917L947.88 80.1717L897.72 80.1717L897.72 104.532L954.48 104.532L954.48 117.012L884.76 117.012L884.76 33.0117ZM1017.6 45.4917L1017.6 117.012L1030.56 117.012L1030.56 45.4917L1063.2 45.4917L1063.2 33.0117L985.68 33.0117L985.68 45.4917L1017.6 45.4917ZM560.52 59.3517Q565.32 66.2517 565.32 75.0117Q565.32 83.6517 560.52 90.6117Q555.72 97.5717 547.26 101.592Q538.8 105.612 527.76 105.612Q516.6 105.612 508.14 101.592Q499.68 97.5717 494.94 90.6717Q490.2 83.7717 490.2 75.0117Q490.2 66.2517 494.94 59.3517Q499.68 52.4517 508.14 48.4317Q516.6 44.4117 527.76 44.4117Q538.8 44.4117 547.26 48.4317Q555.72 52.4517 560.52 59.3517ZM67.32 73.5717Q72 73.5717 75.84 71.5317Q79.68 69.4917 82.02 66.1317Q84.36 62.7717 84.36 58.8117Q84.36 55.0917 82.02 52.0917Q79.68 49.0917 75.84 47.2917Q72 45.4917 67.32 45.4917L34.8 45.4917L34.8 73.5717L67.32 73.5717ZM407.64 45.4917L375.12 45.4917L375.12 73.5717L407.64 73.5717Q412.32 73.5717 416.16 71.5317Q420 69.4917 422.34 66.1317Q424.68 62.7717 424.68 58.8117Q424.68 55.0917 422.34 52.0917Q420 49.0917 416.16 47.2917Q412.32 45.4917 407.64 45.4917Z"
+                  ></path>
+                </g>
+                <g
+                  class="fill-gray-500 dark:fill-gray-300"
+                  id="GROUP"
+                  transform="translate(381 150)"
+                >
+                  <path
+                    d="M182.16 45.9959Q184.02 42.0659 184.02 37.5059Q184.02 32.9459 182.16 29.0159Q180.3 25.0859 176.88 22.1459Q173.46 19.2059 168.84 17.5559Q164.22 15.9059 158.64 15.9059Q153.06 15.9059 148.41 17.5559Q143.76 19.2059 140.37 22.1459Q136.98 25.0859 135.12 29.0159Q133.26 32.9459 133.26 37.5059Q133.26 42.0659 135.12 45.9959Q136.98 49.9259 140.37 52.8659Q143.76 55.8059 148.41 57.4559Q153.06 59.1059 158.64 59.1059Q164.22 59.1059 168.84 57.4559Q173.46 55.8059 176.88 52.8659Q180.3 49.9259 182.16 45.9959ZM33.6 16.1459Q38.16 16.1459 42.03 17.1659Q45.9 18.1859 48.87 19.8059Q51.84 21.4259 53.52 23.2859L49.32 28.0259Q46.08 25.5659 42.12 24.0059Q38.16 22.4459 33.6 22.4459Q28.26 22.4459 23.94 24.4259Q19.62 26.4059 17.1 29.7959Q14.58 33.1859 14.58 37.5059Q14.58 41.5259 16.11 44.4059Q17.64 47.2859 20.28 49.1459Q22.92 51.0059 26.25 51.9059Q29.58 52.8059 33.18 52.8059Q37.92 52.8059 41.76 51.6659Q45.6 50.5259 47.94 48.5159Q50.28 46.5059 50.52 43.8659L33.48 43.8659L33.48 37.5659L57.48 37.5659Q57.6 38.2259 57.66 38.9459Q57.72 39.6659 57.72 40.3259Q57.72 43.5659 56.67 46.4459Q55.62 49.3259 54.06 51.2459Q51.06 54.9659 45.54 57.0359Q40.02 59.1059 32.64 59.1059Q27.66 59.1059 23.16 57.7259Q18.66 56.3459 15.18 53.6459Q11.7 50.9459 9.69 46.8959Q7.68 42.8459 7.68 37.5059Q7.68 32.9459 9.66 29.0759Q11.64 25.2059 15.18 22.2959Q18.72 19.3859 23.43 17.7659Q28.14 16.1459 33.6 16.1459ZM244.14 16.4459L244.14 38.4059Q244.14 44.3459 241.53 48.9659Q238.92 53.5859 234.18 56.2259Q229.44 58.8659 223.02 58.8659Q216.66 58.8659 211.89 56.2259Q207.12 53.5859 204.51 48.9659Q201.9 44.3459 201.9 38.4059L201.9 16.4459L208.38 16.4459L208.38 38.1659Q208.38 42.3659 210.33 45.6059Q212.28 48.8459 215.61 50.7059Q218.94 52.5659 223.02 52.5659Q227.34 52.5659 230.73 50.7059Q234.12 48.8459 236.04 45.6059Q237.96 42.3659 237.96 38.1659L237.96 16.4459L244.14 16.4459ZM114 29.4059Q114 32.4059 112.71 34.9559Q111.42 37.5059 109.2 39.3959Q106.98 41.2859 104.16 42.2459L116.46 58.5659L108.36 58.5059L96.72 43.0259L82.32 43.0259L82.32 58.5059L75.84 58.5059L75.84 16.5059L100.38 16.5059Q104.1 16.5059 107.19 18.2159Q110.28 19.9259 112.14 22.8359Q114 25.7459 114 29.4059ZM296.61 18.2159Q293.52 16.5059 289.8 16.5059L265.26 16.5059L265.26 58.5059L271.74 58.5059L271.74 43.0259L288.6 43.0259Q292.62 43.0259 295.98 41.1959Q299.34 39.3659 301.38 36.2759Q303.42 33.1859 303.42 29.4059Q303.42 25.7459 301.56 22.8359Q299.7 19.9259 296.61 18.2159ZM175.02 29.6759Q177.42 33.1259 177.42 37.5059Q177.42 41.8259 175.02 45.3059Q172.62 48.7859 168.39 50.7959Q164.16 52.8059 158.64 52.8059Q153.06 52.8059 148.83 50.7959Q144.6 48.7859 142.23 45.3359Q139.86 41.8859 139.86 37.5059Q139.86 33.1259 142.23 29.6759Q144.6 26.2259 148.83 24.2159Q153.06 22.2059 158.64 22.2059Q164.16 22.2059 168.39 24.2159Q172.62 26.2259 175.02 29.6759ZM98.58 22.7459L82.32 22.7459L82.32 36.7859L98.58 36.7859Q100.92 36.7859 102.84 35.7659Q104.76 34.7459 105.93 33.0659Q107.1 31.3859 107.1 29.4059Q107.1 27.5459 105.93 26.0459Q104.76 24.5459 102.84 23.6459Q100.92 22.7459 98.58 22.7459ZM292.26 35.7659Q290.34 36.7859 288 36.7859L271.74 36.7859L271.74 22.7459L288 22.7459Q290.34 22.7459 292.26 23.6459Q294.18 24.5459 295.35 26.0459Q296.52 27.5459 296.52 29.4059Q296.52 31.3859 295.35 33.0659Q294.18 34.7459 292.26 35.7659Z"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="font-bold mb-5">ABOUT</h3>
+        <p id="copyright">© Léo Corporation</p>
+        <a href="https://peyronnet.group/privacy" class="hover:underline"
+          >Privacy Policy</a
+        >
+        <a href="https://status.leocorporation.dev/" class="hover:underline"
+          >Status</a
+        >
+      </div>
+      <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+        <h3 class="font-bold mb-5">SOCIAL</h3>
+        <div class="flex items-center">
+          <a
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Leo-Corporation/"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluent-systems-filled/48/6b7280/github.png"
+            />
+          </a>
+          <a
+            title="X (Twitter)"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/LeoCorpNews"
+          >
+            <p class="mr-5 text-2xl text-gray-500">𝕏</p>
+          </a>
+          <a
+            title="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/@PeyronnetGroup"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluency-systems-filled/48/6b7280/youtube-play.png"
+            />
+          </a>
+          <a
+          title="TikTok"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://tiktok.com/@leocorporation_"
+        >
+          <img
+            alt="Image"
+            class="h-6 mr-5"
+            src="https://img.icons8.com/fluency-systems-filled/48/6b7280/tiktok.png"
+          />
+        </a>
+          <a
+            title="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.instagram.com/leocorporation_/"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluency-systems-filled/48/6b7280/instagram-new.png"
+            />
+          </a>
+          <a
+            title="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/LeoCorporationSoftwares/"
+          >
+            <img
+              alt="Image"
+              class="h-6 mr-5"
+              src="https://img.icons8.com/fluency-systems-filled/48/6b7280/facebook-new.png"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/copyright.js"></script>
+    <script src="../scripts/scroll.js"></script>
+  </body>
+</html>
