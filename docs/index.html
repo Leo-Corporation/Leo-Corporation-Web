@@ -355,62 +355,36 @@
     </header>
 
     <main>
-      <section id="experience-creator" class="grid grid-cols-1 md:grid-cols-2">
-        <div id="title" class="p-10 flex flex-col justify-center">
-          <h2
-            class="text-6xl font-bold bg-gradient-to-r from-[#da23e7] to-[#8121ff] text-transparent bg-clip-text"
-          >
-            Experience Creator
-          </h2>
-          <h3 class="text-2xl font-semibold">
-            We create apps that will make you more productive.
-          </h3>
-          <div class="flex mt-5">
-            <a
-              class="block btn-arrow p-3 pr-8 my-3 mr-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
-              href="https://leocorporation.dev/store"
-            >
-              <div class="flex justify-center items-center">
-                <p>Browse all apps</p>
-                <p
-                  class="btn-p-arw transition"
-                  style="font-family: FluentIconsRegular"
-                >
-                  
-                </p>
-              </div>
-            </a>
-            <button
-              onclick="scrollFunction1()"
-              class="block btn-arrow p-3 pr-8 my-3 mr-3 dark:text-white hover:-translate-y-2 font-semibold rounded-md shadow-md text-black bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700 transition"
-            >
-              <div class="flex justify-center items-center">
-                <p>Learn More</p>
-                <p
-                  class="btn-p-arw transition"
-                  style="font-family: FluentIconsRegular"
-                >
-                  
-                </p>
-              </div>
-            </button>
-          </div>
+      <style>
+        #experience-creator {
+          background: url('img/Mesh.png');
+          background-size: cover;
+        }
+
+        #new-soft {
+          background: url('img/Mesh2.png');
+          background-size: cover;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          #experience-creator {
+            background: url('img/MeshB.png');
+          }
+
+          #new-soft {
+            background: url('img/Mesh2B.png');
+          }
+        }
+      </style>
+      <section id="experience-creator" class="flex flex-col items-center justify-center text-center rounded-xl h-full-screen">
+        <div class="flex flex-row space-x-5 mb-16">
+          <a class="p-2 border software-item rounded-xl -rotate-[24deg] origin-bottom-right hover:scale-125 transition" href="https://leocorporation.dev/store/permatop"><img class="h-8" src="img/PermaTop.svg" alt="PermaTop Logo"></a>
+          <a class="p-2 border software-item rounded-xl hover:scale-125 transition" href="https://leocorporation.dev/store/daybar"><img class="h-8" src="img/DayBar.svg" alt="PermaTop Logo"></a>
+          <a class="p-2 border software-item rounded-xl rotate-[24deg] origin-bottom-left hover:scale-125 transition" href="https://leocorporation.dev/store/passliss"><img class="h-8" src="img/Passliss.svg" alt="PermaTop Logo"></a>
         </div>
-        <div
-          id="exp-apps-container"
-          class="hidden md:flex flex-col justify-center"
-        >
-          <img
-            src="img/Home.svg"
-            class="dark:hidden"
-            alt="InternetTest Pro Status page."
-          />
-          <img
-            src="img/HomeDark.svg"
-            class="hidden dark:block"
-            alt="InternetTest Pro Status page."
-          />
-        </div>
+        <h2 class="font-bold text-5xl">We create experiences.</h2>
+        <p class="text-md">Léo Corporation create applications to make you more productive and provides solutions to specific needs.</p>
+        <a class="m-2 underline underline-offset-4 self-center text-center" href="#showcase">Learn more</a>
       </section>
       <script
         async
@@ -428,226 +402,188 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
-      <section id="showcase" class="pb-20">
+      <section id="showcase" class="min-h-screen flex flex-col justify-center">
         <h2
-          class="mt-8 animate-move-bg bg-gradient-to-r from-purple-600 via-blue-600 to-purple-600 bg-[length:400%] bg-clip-text text-transparent font-black text-4xl text-center"
+          class="m-8 font-bold text-3xl text-center"
         >
           Our best apps
         </h2>
-        <div class="mx-auto flex lg:flex-nowrap flex-wrap justify-center">
+        <div class="mx-auto flex lg:flex-nowrap flex-wrap justify-center sm:space-x-3">
           <a
-            target="_blank"
+            target="_blank" style="background: url('img/Passliss/cover.png'); background-size: cover; background-position: center;"
             rel="noopener noreferrer"
             href="https://leocorporation.dev/store/passliss"
-            class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl shadow-md hover:shadow-lg p-6 m-6 transition"
+            class="my-[6px] slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
           >
-            <img class="h-32" src="img/Passliss.svg" alt="Passliss logo" />
-            <div class="software-desc transition sm:text-left text-center">
-              <div class="flex sm:flex-row flex-col items-center">
-                <h3 class="font-bold">Passliss</h3>
-                <p
-                  class="bg-gradient-to-r px-3 from-[#0088FF] to-[#2153E0] rounded-xl sm:ml-4 ml-0 my-2 text-white font-bold text-center"
-                >
-                  Web
+            <span class="bg-gradient-to-t from-sky-500 hover:from-sky-600 dark:from-sky-600 dark:hover:from-sky-700 flex flex-col p-4 justify-end h-[400px]">
+              <h3 class="font-bold text-lg">Passliss</h3>
+                <p>
+                  A web application that allows you to generate secure passwords.
                 </p>
-              </div>
-              <p>
-                A web application that allows you to generate secure passwords.
-              </p>
-            </div>
+            </span>
           </a>
           <a
-            target="_blank"
+            target="_blank" style="background: url('img/InternetTest/cover.png'); background-size: cover; background-position: center;"
             rel="noopener noreferrer"
-            href="https://tinyurl.com/DownloadITP7"
-            class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl shadow-md hover:shadow-lg p-6 m-6 transition"
+            href="https://leocorporation.dev/store/internettest"
+            class="my-[6px] slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
           >
-            <img
-              class="h-32"
-              src="img/InternetTest.svg"
-              alt="InternetTest logo"
-            />
-            <div class="software-desc transition sm:text-left text-center">
-              <div class="flex sm:flex-row flex-col items-center">
-                <h3 class="font-bold">InternetTest</h3>
-                <p
-                  class="bg-gradient-to-r px-3 from-[#2153E0] to-blue-500 rounded-xl sm:ml-4 ml-0 my-2 text-white font-bold text-center"
-                >
-                  Pro
+            <span class="bg-gradient-to-t from-blue-600 hover:from-blue-700 flex flex-col p-4 justify-end h-[400px]">
+              <h3 class="font-bold text-lg">InternetTest</h3>
+                <p>
+                  A modern utility to perform checks on the Internet for Windows.
                 </p>
-              </div>
-              <p>
-                A modern utility to perform checks on the Internet for Windows.
-              </p>
-            </div>
+            </span>
           </a>
           <a
-            target="_blank"
+            target="_blank" style="background: url('img/ColorPicker/cover.png'); background-size: cover; background-position: center;"
             rel="noopener noreferrer"
             href="https://leocorporation.dev/store/colorpickermax"
-            class="slideInUpX software-item flex flex-col sm:flex-row items-center max-w-sm bg-opacity-20 backdrop-blur-xl border-[1px] rounded-3xl shadow-md hover:shadow-lg p-6 m-6 transition"
+            class="my-[6px] slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
           >
-            <img
-              class="h-32"
-              src="img/ColorPicker.svg"
-              alt="ColorPicker logo"
-            />
-            <div class="software-desc transition sm:text-left text-center">
-              <div class="flex sm:flex-row flex-col items-center">
-                <h3 class="font-bold">ColorPicker</h3>
-                <p
-                  class="bg-gradient-to-r px-3 from-[#9217FF] to-[#FF3FEC] rounded-xl sm:ml-4 ml-0 my-2 text-white font-bold text-center"
-                >
-                  Max
+            <span class="bg-gradient-to-t from-violet-600 hover:from-violet-700 flex flex-col p-4 justify-end h-[400px]">
+              <h3 class="font-bold text-lg">ColorPicker</h3>
+                <p>
+                  A modern color picking tool for Windows.
                 </p>
-              </div>
-              <p>A modern color picking tool for Windows.</p>
-            </div>
+            </span>
           </a>
         </div>
       </section>
       <section
         id="new-soft"
-        class="min-h-screen flex items-center justify-center flex-col bg-gradient-to-r animate-move-bg-l dark:from-[#000014] dark:via-[#101032] dark:to-[#000014] bg-[length:400%] from-slate-200 via-white to-slate-200"
+        class="min-h-screen flex items-center justify-center flex-col rounded-xl"
       >
         <hgroup>
-          <h2
-            class="mt-8 animate-move-bg bg-gradient-to-r from-blue-600 via-pink-400 to-blue-600 bg-[length:400%] bg-clip-text text-transparent font-black text-4xl text-center"
-          >
-            New applications
-          </h2>
+          <h2 class="font-bold text-center text-3xl flex flex-row items-center justify-center"><span class="text-lg text-white mr-2 bg-gradient-to-tr px-2 rounded-full from-purple-600 to-violet-500">New</span> Applications</h2>
           <p class="mx-8 mb-16">
             We often release new apps. You can see our latest ones below.
           </p>
         </hgroup>
-        <div class="flex flex-col items-center">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:mx-60">
-            <a
-              id="new-soft-item-1"
-              href="https://qrix.leocorporation.dev"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="min-width: 250px"
-              class="brdr-t hover:-translate-y-2 backdrop-blur-xl rounded-3xl m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition"
-            >
-              <img alt="Image" style="height: 100px" src="img/Qrix.svg" />
-              <h3 class="font-bold text-2xl">Qrix</h3>
-            </a>
-            <a
-              id="new-soft-item-2"
-              href="https://tinyurl.com/DayBar"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="min-width: 250px"
-              class="brdr-t hover:-translate-y-2 backdrop-blur-xl rounded-3xl m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition"
-            >
-              <img alt="Image" style="height: 100px" src="img/DayBar.svg" />
-              <h3 class="font-bold text-2xl text-center">DayBar</h3>
-            </a>
-            <a
-              id="new-soft-item-3"
-              href="https://tinyurl.com/PermaTop"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="min-width: 250px"
-              class="brdr-t hover:-translate-y-2 backdrop-blur-xl rounded-3xl m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition"
-            >
-              <img alt="Image" style="height: 100px" src="img/PermaTop.svg" />
-              <h3 class="font-bold text-2xl">PermaTop</h3>
-            </a>
-          </div>
+        <div class="flex flex-wrap items-center justify-center">
           <a
-            class="btn-arrow p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
-            href="popular"
+            target="_blank" style="background: url('img/Qrix/QrixBanner.png'); background-size: cover; background-position: center;"
+            rel="noopener noreferrer"
+            href="https://leocorporation.dev/store/qrix"
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
           >
-            <div class="flex justify-center items-center">
-              <p>See More</p>
-              <p
-                class="btn-p-arw transition"
-                style="font-family: FluentIconsRegular"
-              >
-                
-              </p>
-            </div>
+            <span class="block bg-gradient-to-t from-fuchsia-600 hover:from-purple-700">
+              <span class="flex flex-row justify-end">
+                <img class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end" alt="Qrix Logo" src="img/Qrix.svg">
+              </span>
+              <span class="flex flex-col p-4 justify-end">
+                <h3 class="font-bold text-lg">Qrix</h3>
+                <p>
+                  A simple web app for generating bar and QR codes.
+                </p>
+              </span>
+            </span>
+          </a>
+          <a
+            target="_blank" style="background: url('img/DayBar/DayBarBanner.png'); background-size: cover; background-position: center;"
+            rel="noopener noreferrer"
+            href="https://leocorporation.dev/store/daybar"
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+          >
+            <span class="block bg-gradient-to-t from-lime-400 hover:from-green-500">
+              <span class="flex flex-row justify-end">
+                <img class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end" alt="DayBar Logo" src="img/DayBar.svg">
+              </span>
+              <span class="flex flex-col p-4 justify-end">
+                <h3 class="font-bold text-lg">DayBar</h3>
+                <p>
+                  Monitor and track your progress effortlessly with DayBar.
+                </p>
+              </span>
+            </span>
+          </a>
+          <a
+            target="_blank" style="background: url('img/PermaTop/PermaTopBanner.png'); background-size: cover; background-position: center;"
+            rel="noopener noreferrer"
+            href="https://leocorporation.dev/store/permatop"
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+          >
+            <span class="block bg-gradient-to-t from-orange-600 hover:from-orange-700">
+              <span class="flex flex-row justify-end">
+                <img class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end" alt="PermaTop Logo" src="img/PermaTop.svg">
+              </span>
+              <span class="flex flex-col p-4 justify-end">
+                <h3 class="font-bold text-lg">PermaTop</h3>
+                <p>
+                  PermaTop allows you to pin and manage your windows.
+                </p>
+              </span>
+            </span>
           </a>
         </div>
       </section>
       <section
         id="open-source"
-        class="min-h-screen flex items-center justify-center flex-col bg-gradient-to-r animate-move-bg-l dark:from-[#000014] dark:via-[#080818] dark:to-[#000014] bg-[length:400%] from-blue-50 via-white to-blue-50"
+        class="min-h-screen flex items-center justify-center flex-col bg-blue-50 dark:bg-[#0D1530] rounded-xl"
       >
         <hgroup>
           <h2
-            class="animate-move-bg bg-gradient-to-r from-blue-600 via-green-700 to-blue-600 bg-[length:400%] bg-clip-text text-transparent font-black text-4xl text-center mt-8"
+            class="font-bold text-3xl text-center mt-8"
           >
-            Open source
+            Free and OpenSource
           </h2>
-          <p class="mx-6 sm:mx-48 mb-16">
-            Since 2019, Léo Corporation is contributing to make the code of most
-            of its apps available to everyone by making our software
-            Open-Sourced on
-            <a
-              class="underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/Leo-Corporation"
-              >GitHub</a
-            >. This is how we are improving our software, by contributing
-            regularly to them on GitHub. Thanks to this, we can push an update
-            to all our Open-Sourced projects once a month, and even more! You
-            can find some of our Open-Sourced projects below. Don’t hesitate to
-            help us by contributing to these projects!
-          </p>
+          <p class="mx-6 my-2 text-center"> Léo Corporation believes in the power of open source software to enhance the quality and accessibility of its apps. That’s why, since 2019, we have been sharing the code of most of our apps on 
+            <a class="underline" target="_blank" rel="noopener noreferrer" href="https://github.com/Leo-Corporation" >GitHub</a >. This allows us to update our software regularly and receive feedback from the community. You can find some of our open source projects below and contribute to them if you want to help us make them better! </p>
         </hgroup>
-        <div class="flex flex-col items-center">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:mx-60">
-            <a
-              id="opensource-item-1"
-              href="https://github.com/Leo-Corporation/Gavilya"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="min-width: 250px"
-              class="brdr-t hover:-translate-y-2 backdrop-blur-xl rounded-3xl m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition"
-            >
-              <img alt="Image" style="height: 100px" src="img/Gavilya.svg" />
-              <h3 class="font-bold text-2xl">Gavilya</h3>
-            </a>
-            <a
-              id="opensource-item-2"
-              href="https://github.com/Leo-Corporation/Datalya"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="min-width: 250px"
-              class="brdr-t hover:-translate-y-2 backdrop-blur-xl rounded-3xl m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition"
-            >
-              <img alt="Image" style="height: 100px" src="img/Datalya.svg" />
-              <h3 class="font-bold text-2xl">Datalya</h3>
-            </a>
-            <a
-              id="opensource-item-3"
-              href="https://github.com/Leo-Corporation/Passliss"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="min-width: 250px"
-              class="brdr-t hover:-translate-y-2 backdrop-blur-xl rounded-3xl m-5 flex flex-col items-center shadow-lg p-12 hover:shadow-xl transition"
-            >
-              <img alt="Image" style="height: 100px" src="img/Passliss.svg" />
-              <h3 class="font-bold text-2xl">Passliss</h3>
-            </a>
-          </div>
+        <div class="flex flex-wrap items-center justify-center">
           <a
-            class="btn-arrow p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition"
-            href="https://github.com/Leo-Corporation/"
+            target="_blank" style="background: url('img/Datalya/cover.png'); background-size: cover; background-position: center;"
+            rel="noopener noreferrer"
+            href="https://github.com/Leo-Corporation/Datalya"
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
           >
-            <div class="flex justify-center items-center">
-              <p>Learn more</p>
-              <p
-                class="btn-p-arw transition"
-                style="font-family: FluentIconsRegular"
-              >
-                
-              </p>
-            </div>
+            <span class="block bg-gradient-to-t from-blue-600 hover:from-blue-700">
+              <span class="flex flex-row justify-end">
+                <img class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end" alt="Datalya Logo" src="img/Datalya.svg">
+              </span>
+              <span class="flex flex-col p-4 justify-end">
+                <h3 class="font-bold text-lg">Datalya</h3>
+                <p>
+                  Datalya is a database manager and creator.
+                </p>
+              </span>
+            </span>
+          </a>
+          <a
+            target="_blank" style="background: url('img/Gavilya/cover.png'); background-size: cover; background-position: center;"
+            rel="noopener noreferrer"
+            href="https://github.com/Leo-Corporation/Gavilya"
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+          >
+            <span class="block bg-gradient-to-t from-violet-600 hover:from-purple-700">
+              <span class="flex flex-row justify-end">
+                <img class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end" alt="Gavilya Logo" src="img/Gavilya.svg">
+              </span>
+              <span class="flex flex-col p-4 justify-end">
+                <h3 class="font-bold text-lg">Gavilya</h3>
+                <p>
+                  A simple game launcher for Windows.
+                </p>
+              </span>
+            </span>
+          </a>
+          <a
+            target="_blank" style="background: url('img/Passliss/cover.png'); background-size: cover; background-position: center;"
+            rel="noopener noreferrer"
+            href="https://github.com/Leo-Corporation/Passliss"
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+          >
+            <span class="block bg-gradient-to-t from-sky-500 hover:from-sky-600 dark:from-sky-600 dark:hover:from-sky-700">
+              <span class="flex flex-row justify-end">
+                <img class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end" alt="Passliss Logo" src="img/Passliss.svg">
+              </span>
+              <span class="flex flex-col p-4 justify-end">
+                <h3 class="font-bold text-lg">Passliss</h3>
+                <p>
+                  Passliss is a password generator web app built with Next.js.
+                </p>
+              </span>
+            </span>
           </a>
         </div>
       </section>
