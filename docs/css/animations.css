@@ -1,230 +1,229 @@
 .fadeIn {
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .slideInUp {
-    animation-name: slideInUp;
-    animation-duration: 1s;
-    animation-fill-mode: backwards;
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
 }
 
 .slideInUpX {
-    animation-name: slideInUpX;
-    animation-duration: 1s;
-    animation-fill-mode: backwards;
+  animation-name: slideInUpX;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
 }
 
 .slideInRight {
-    animation-name: slideInRight;
-    animation-duration: 1s;
-    animation-fill-mode: backwards;
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
 }
 
 .slideAndFade {
-    animation-name: slideAndFade;
-    animation-duration: 1s;
-    animation-fill-mode: backwards;
+  animation-name: slideAndFade;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes slideAndFade {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideAndFadeY {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideInRight {
-    0% {
-        transform: translateX(100%);
-    }
+  0% {
+    transform: translateX(100%);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideInUp {
-    0% {
-        transform: translateY(25%);
-        visibility: visible;
-    }
+  0% {
+    transform: translateY(25%);
+    visibility: visible;
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideInUpX {
-    0% {
-        transform: translateY(100%);
-        visibility: visible;
-    }
+  0% {
+    transform: translateY(100%);
+    visibility: visible;
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .delay-1 {
-    animation-delay: 0.12s;
+  animation-delay: 0.12s;
 }
 
 .delay-2 {
-    animation-delay: 0.25s;
+  animation-delay: 0.25s;
 }
 
 .hover-underline-animation {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, rgb(241 245 249), rgb(103 232 249));
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, rgb(241 245 249), rgb(103 232 249));
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .hover-underline-animation:after {
-    background: linear-gradient(to right, rgb(167 139 250), rgb(75 85 99));
+  background: linear-gradient(to right, rgb(167 139 250), rgb(75 85 99));
 }
 
 @media (prefers-color-scheme: dark) {
-    .hover-underline-animation:after {
-        background: linear-gradient(to right, rgb(241 245 249), rgb(103 232 249));
-    }
+  .hover-underline-animation:after {
+    background: linear-gradient(to right, rgb(241 245 249), rgb(103 232 249));
+  }
 }
 
 .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .btn-arrow:hover .btn-p-arw {
-    transform: translateX(16px);
+  transform: translateX(16px);
 }
 
 .btn-dw:hover .btn-download {
-    animation: bounce ease-in-out 0.5s;
+  animation: bounce ease-in-out 0.5s;
 }
 
 .btn-p-arw {
-    transform: translateX(8px);
+  transform: translateX(8px);
 }
 
 .btn-arrow div {
-    transform: translateX(8px);
+  transform: translateX(8px);
 }
 
 .btn-dw div {
-    transform: translateX(8px);
+  transform: translateX(8px);
 }
 
 .rotate {
-    animation: rotate 5s infinite ease-in-out;
+  animation: rotate 5s infinite ease-in-out;
 }
 
 @keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(12deg);
-    }
+  0% {
+    transform: rotate(12deg);
+  }
 
-    50% {
-        transform: rotate(-12deg);
-    }
+  50% {
+    transform: rotate(-12deg);
+  }
 
-    100% {
-        transform: rotate(12deg);
-    }
+  100% {
+    transform: rotate(12deg);
+  }
 }
 
 @keyframes full-rotation {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .ani-t:first-child {
-    animation: slider 12s infinite;
+  animation: slider 12s infinite;
 }
 
 @keyframes slider {
-    0% {
-        margin-top: 0;
-    }
+  0% {
+    margin-top: 0;
+  }
 
-    16% {
-        margin-top: -20px;
-    }
+  16% {
+    margin-top: -20px;
+  }
 
-    33% {
-        margin-top: -40px;
-    }
+  33% {
+    margin-top: -40px;
+  }
 
-    50% {
-        margin-top: -60px;
-    }
+  50% {
+    margin-top: -60px;
+  }
 
-    66% {
-        margin-top: -80px;
-    }
+  66% {
+    margin-top: -80px;
+  }
 
-    82% {
-        margin-top: -100px;
-    }
+  82% {
+    margin-top: -100px;
+  }
 
-    100% {
-        margin-top: 0px;
-    }
+  100% {
+    margin-top: 0px;
+  }
 }

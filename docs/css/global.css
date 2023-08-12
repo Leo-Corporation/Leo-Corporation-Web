@@ -1,14 +1,14 @@
 #header::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    backdrop-filter: blur(16px) saturate(180%);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  backdrop-filter: blur(16px) saturate(180%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .h-full-screen {
-    min-height: calc(100vh - 72px);
+  min-height: calc(100vh - 72px);
 }

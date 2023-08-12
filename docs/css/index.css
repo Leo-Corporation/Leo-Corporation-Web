@@ -1,58 +1,57 @@
 #xalyus-ad {
-    background: url('/img/mesh-gradient.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url("/img/mesh-gradient.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #circle {
-    filter: blur(250px);
-    background-image: url('/img/CircleW.svg');
-    background-position: center;
-    background-size: cover;
+  filter: blur(250px);
+  background-image: url("/img/CircleW.svg");
+  background-position: center;
+  background-size: cover;
 }
 
 @media (min-width: 1024px) {
-
-    #learn-more-btn1 {
-        display: block;
-    }
+  #learn-more-btn1 {
+    display: block;
+  }
 }
 
 .software-item:hover,
 .brdr-t:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .software-item {
-    border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .brdr-t {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
-    }
+  html {
+    color-scheme: dark;
+  }
 
-    .software-item {
-        border-color: rgba(255, 255, 255, .1);
-    }
+  .software-item {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
 
-    .software-item:hover,
-    .brdr-t:hover {
-        background-color: rgba(75, 85, 99, 0.3);
-    }
+  .software-item:hover,
+  .brdr-t:hover {
+    background-color: rgba(75, 85, 99, 0.3);
+  }
 
-    .brdr-t {
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        background-color: rgba(255, 255, 255, 0);
-    }
+  .brdr-t {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0);
+  }
 
-    #circle {
-        background-image: url('/img/Circle.svg');
-    }
+  #circle {
+    background-image: url("/img/Circle.svg");
+  }
 }
