@@ -10,28 +10,28 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://leocorporation.dev/img/CPSocial.png"
+      content="https://leocorporation.dev/img/ColorPicker/social.png"
     />
     <meta
       name="twitter:description"
-      content="Léo Corporation's official website. Software creation for Windows."
+      content="ColorPicker Max - Maximize your creativity."
     />
     <meta name="twitter:title" content="ColorPicker Max | Léo Corporation" />
 
     <!-- Facebook/Linkedin -->
     <meta
       property="og:description"
-      content="Léo Corporation's official website. Software creation for Windows."
+      content="ColorPicker Max - Maximize your creativity."
     />
     <meta
       property="og:image"
-      content="https://leocorporation.dev/img/CPSocial.png"
+      content="https://leocorporation.dev/img/ColorPicker/social.png"
     />
     <meta property="og:title" content="ColorPicker Max | Léo Corporation" />
 
     <meta
       name="description"
-      content="Léo Corporation's official website. Software creation for Windows."
+      content="ColorPicker Max - Maximize your creativity."
     />
 
     <title>ColorPicker Max | Léo Corporation</title>
@@ -363,175 +363,327 @@
 
     <main>
       <section
-        id="title-header"
-        style="background: url(../img/CPMBG.png); background-size: cover"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
+        style="
+          background: url('../img/ColorPicker/ColorPickerBanner.svg');
+          background-size: cover;
+          background-position: top;
+          min-height: calc(100vh - 72px);
+        "
+        class="flex flex-col justify-end items-center"
       >
-        <div class="m-5 fadeIn">
-          <h2 class="text-5xl font-bold">
-            Introducing
-            <span>
-              ColorPicker
-              <span
-                class="ml-2 text-base px-3 rounded-xl font-bold bg-gradient-to-r from-[#9217FF] to-[#FF3FEC] text-white"
-                >Max</span
+        <div
+          class="p-6 bg-white dark:bg-slate-800 m-5 rounded-lg shadow-md sm:grid space-y-2 flex flex-col grid-cols-[auto,1fr,auto] space-x-2 sm:items-start items-center max-w-[1200px]"
+        >
+          <img
+            height="75px"
+            width="75px"
+            alt="ColorPicker Max Logo"
+            src="../img/ColorPicker.svg"
+          />
+          <div class="text-center sm:text-left">
+            <div
+              class="flex flex-row items-center justify-center sm:justify-start space-x-2"
+            >
+              <h2 class="font-bold text-3xl">ColorPicker</h2>
+              <p
+                class="bg-gradient-to-r px-3 from-[#9217FF] to-[#FF3FEC] rounded-xl sm:ml-4 ml-0 my-2 text-white font-bold text-center"
               >
-            </span>
-          </h2>
-          <div class="flex items-center">
-            <p class="text-lg font-semibold">
-              <span>Maximize your</span>
-            </p>
-
-            <div class="ml-2 h-5 overflow-hidden">
-              <div class="ani-t font-semibold leading-5">Creativity</div>
-              <div class="ani-t font-semibold leading-5">Productivity</div>
-              <div class="ani-t font-semibold leading-5">Efficiency</div>
-              <div class="ani-t font-semibold leading-5">Originality</div>
-              <div class="ani-t font-semibold leading-5">Variety</div>
-              <div class="ani-t font-semibold leading-5">Flexibility</div>
+                Max
+              </p>
             </div>
+            <p>
+              ColorPicker Max is a powerful and intuitive color selection and
+              manipulation tool that is designed to make working with color
+              easier and more efficient than ever before. With its wide range of
+              features and tools, ColorPicker Max offers an unprecedented level
+              of control and customization over every aspect of color selection
+              and manipulation.
+            </p>
           </div>
           <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-dw p-3 pr-8 ml-0 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-[#007FFF] hover:bg-blue-600 transition inline-block"
             href="https://tinyurl.com/DownloadColorPickerMax"
+            class="px-4 py-2 m-2 bg-gradient-to-tr from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 rounded-lg font-bold sm:self-center text-white"
+            >Download</a
           >
-            <div class="flex items-center">
-              <p
-                class="btn-download transition mr-2"
-                style="font-family: FluentIconsRegular"
-              >
-                
-              </p>
-              <p>Download</p>
-            </div>
-          </a>
-        </div>
-        <div class="slideInRight">
-          <img
-            src="../img/CPM1.svg"
-            class="dark:hidden"
-            alt="ColorPicker Bookmarks."
-          />
-          <img
-            src="../img/CPM1B.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Bookmarks in dark mode."
-          />
         </div>
       </section>
-
-      <section
-        id="feature-selector"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
-      >
-        <div>
-          <img
-            src="../img/CPM2.svg"
-            class="dark:hidden"
-            alt="ColorPicker Max Selector."
+      <section class="flex sm:grid grid-cols-2 flex-col items-center">
+        <picture>
+          <source
+            srcset="../img/ColorPicker/1B.png"
+            media="(prefers-color-scheme: dark)"
           />
           <img
-            src="../img/CPM2B.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Max Selector in dark mode."
+            src="../img/ColorPicker/1.png"
+            alt="A screenshot of the 'Selector' page of ColorPicker Max"
           />
-        </div>
-        <div class="m-5">
-          <h2 class="font-bold text-3xl">Reimagined Selector</h2>
-          <p>
-            The selector feature of ColorPicker enables you to choose any color
-            from the screen by moving the cursor over it and pressing a keyboard
-            shortcut. The chosen color will be shown in a preview box and its
-            code will be copied to the clipboard in a desired color type.
-          </p>
-        </div>
-      </section>
-
-      <section
-        id="feature-converter"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center grid-flow-dense"
-      >
-        <div class="md:col-[2]">
-          <img
-            src="../img/CPM3.svg"
-            class="dark:hidden"
-            alt="ColorPicker Max Converter."
-          />
-          <img
-            src="../img/CPM3B.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Max Converter in dark mode."
-          />
-        </div>
-        <div class="m-5" class="md:col-end-[-1]">
-          <h2 class="font-bold text-3xl">The most powerful Converter</h2>
-          <p>
-            The converter feature of ColorPicker allows you to convert any color
-            type to another one. The color types are RGB, HEX, HSV, HSL, CMYK,
-            XYZ, YIQ and YUV. You can enter a color code in any of these formats
-            and see the corresponding codes in the other formats.
-          </p>
-        </div>
-      </section>
-
-      <section
-        id="feature-gradient"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
-      >
-        <div>
-          <img
-            src="../img/CPM4.svg"
-            class="dark:hidden"
-            alt="ColorPicker Max Gradient page."
-          />
-          <img
-            src="../img/CPM4B.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Max Gradient page in dark mode."
-          />
-        </div>
-        <div class="m-5">
-          <h2 class="font-bold text-3xl">Unleash your Creativity</h2>
-          <p>
-            The gradient feature of ColorPicker lets you generate random
-            two-stops gradients with a specific rotation angle. You can see a
-            preview of the gradient and its CSS code. You can also export the
-            gradient to CSS code and use it in your web design projects.
-          </p>
-        </div>
-      </section>
-
-      <section id="download" class="min-h-screen text-center items-center">
-        <div class="m-5 flex flex-col justify-center items-center">
-          <img class="max-w-sm" src="../img/ColorPicker.svg" />
-          <h2 class="font-bold text-3xl">Start Now.</h2>
-          <p>
-            Whether you're a graphic designer, web developer, or just someone
-            who loves playing around with colors, ColorPicker Max is the perfect
-            solution for you. With its intuitive interface and easy-to-use
-            features, you'll be able to find the perfect color for your project
-            in no time. So why wait? Download ColorPicker Max today and start
-            exploring the world of colors like never before.
-          </p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-dw p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-[#007FFF] hover:bg-blue-600 transition inline-block"
-            href="https://tinyurl.com/DownloadColorPickerMax"
+        </picture>
+        <div class="m-2 p-2 sm:text-left text-center">
+          <p
+            class="text-[#3FA5FF] text-4xl"
+            style="font-family: FluentIconsRegular"
           >
-            <div class="flex items-center">
-              <p
-                class="btn-download transition mr-2"
-                style="font-family: FluentIconsRegular"
-              >
-                
+            ﴿
+          </p>
+          <h3 class="font-bold text-xl">Color Selector</h3>
+          <p>
+            The app allows you to select a specific color using different
+            sliders, pick a color from a pixel on the screen, or even choose a
+            color randomly. All of the color's details are available in a
+            dedicated panel, including RGB, HEX, HSL, HSV, CMYK, XYZ, YIQ, and
+            YUV values, and hovering over the values reveals a copy button for
+            easy copying to the clipboard.
+          </p>
+        </div>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col-reverse items-center">
+        <div class="m-2 p-2 sm:text-left text-center">
+          <p
+            class="text-[#3FA5FF] text-4xl"
+            style="font-family: FluentIconsRegular"
+          >
+            
+          </p>
+          <h3 class="font-bold text-xl">Color Converter</h3>
+          <p>
+            To help you stay on track and make the most of your time,
+            ColorPicker Max offers customizable notifications. Set intervals
+            that align with your workflow, and receive gentle reminders to
+            assess your progress and evaluate your task management. These
+            notifications serve as valuable nudges, keeping you motivated,
+            focused, and accountable to your goals throughout the day.
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="../img/ColorPicker/2B.png"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img
+            src="../img/ColorPicker/2.png"
+            alt="A screenshot of the 'Converter' page of ColorPicker Max"
+          />
+        </picture>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col items-center">
+        <picture>
+          <source
+            srcset="../img/ColorPicker/5B.png"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img
+            src="../img/ColorPicker/5.png"
+            alt="A screenshot of the 'AI Color Generation' page of ColorPicker Max"
+          />
+        </picture>
+        <div class="m-2 p-2 sm:text-left text-center">
+          <p
+            class="text-[#3FA5FF] text-4xl"
+            style="font-family: FluentIconsRegular"
+          >
+            ﲱ
+          </p>
+          <h3 class="font-bold text-xl">AI Color Generation</h3>
+          <p>
+            In ColorPicker Max, you can use the remarkable capabilities of
+            OpenAI's GPT models to unlock a world of creative possibilities in
+            color generation. With AI Color Generation, you have the power to
+            effortlessly generate colors by simply providing a prompt. Whether
+            you seek a single, standout hue to complement their designs or
+            desire a harmonious palette of five colors, ColorPicker Max can
+            deliver with precision and style.
+          </p>
+        </div>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col-reverse items-center">
+        <div class="m-2 p-2 sm:text-left text-center">
+          <p
+            class="text-[#3FA5FF] text-4xl"
+            style="font-family: FluentIconsRegular"
+          >
+            
+          </p>
+          <h3 class="font-bold text-xl">Color Palettes</h3>
+          <p>
+            Unleash Your Creativity: With our Color Palette Creation feature,
+            you have the power to fine-tune your palette like never before.
+            Explore a world of endless color possibilities by customizing
+            shades, brightness, and hues to craft the perfect palette that truly
+            embodies your unique artistic vision.
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="../img/ColorPicker/3B.png"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img
+            src="../img/ColorPicker/3.png"
+            alt="A screenshot of the 'Color Palette' page of ColorPicker Max"
+          />
+        </picture>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col items-center">
+        <picture>
+          <source
+            srcset="../img/ColorPicker/4B.png"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img
+            src="../img/ColorPicker/4.png"
+            alt="A screenshot of the 'Gradient' page of ColorPicker Max"
+          />
+        </picture>
+        <div class="m-2 p-2 sm:text-left text-center">
+          <p
+            class="text-[#3FA5FF] text-4xl"
+            style="font-family: FluentIconsRegular"
+          >
+            ﴶ
+          </p>
+          <h3 class="font-bold text-xl">Gradient creation</h3>
+          <p>
+            Bring depth and dimension to your designs with ColorPicker Max's
+            gradient generator. With adjustable parameters, you can fine-tune
+            the gradient to suit your artistic vision. And with the handy CSS
+            export option, implementing your gradients in web projects is a
+            breeze.
+          </p>
+        </div>
+      </section>
+      <section class="flex sm:grid grid-cols-2 flex-col-reverse items-center">
+        <div class="m-2 p-2 sm:text-left text-center">
+          <p
+            class="text-[#3FA5FF] text-4xl"
+            style="font-family: FluentIconsRegular"
+          >
+            
+          </p>
+          <h3 class="font-bold text-xl">Text tool</h3>
+          <p>
+            Designers and developers will love ColorPicker Max's text tool.
+            Select your desired font and easily customize the foreground and
+            background colors. What's more, the tool calculates the contrast
+            ratio, ensuring your text is legible and accessible.
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="../img/ColorPicker/6B.png"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img
+            src="../img/ColorPicker/6.png"
+            alt="A screenshot of the 'Text tool' page of ColorPicker Max"
+          />
+        </picture>
+      </section>
+      <section class="min-h-screen flex flex-col justify-center items-center">
+        <h3 class="font-bold text-center text-3xl">Get the app</h3>
+        <p class="text-center">
+          By downloading ColorPicker Max, you acknowledge that the app can have
+          these permissions:
+        </p>
+        <div
+          class="grid sm:grid-cols-[auto,auto] grid-cols-1 m-2 justify-center"
+        >
+          <p class="flex items-center">
+            <span class="mx-2" style="font-family: FluentIconsRegular"></span
+            >Read the registry
+          </p>
+          <p class="flex items-center">
+            <span class="mx-2" style="font-family: FluentIconsRegular"></span
+            >Display notifications
+          </p>
+          <p class="flex items-center">
+            <span class="mx-2" style="font-family: FluentIconsRegular"></span
+            >Connect to the Internet
+          </p>
+          <p class="flex items-center">
+            <span class="mx-2" style="font-family: FluentIconsRegular"></span
+            >Download updates with your consent
+          </p>
+          <p class="flex items-center">
+            <span class="mx-2" style="font-family: FluentIconsRegular"></span
+            >Access your file system
+          </p>
+          <p class="flex items-center">
+            <span class="mx-2" style="font-family: FluentIconsRegular"></span
+            >Store your settings
+          </p>
+        </div>
+        <div class="md:grid grid-cols-2">
+          <div
+            class="flex flex-col items-center bg-white shadow-md dark:bg-transparent m-2 border-slate-200 dark:border-slate-600 border rounded-lg p-4 py-8 transition hover:bg-slate-100 dark:hover:bg-slate-800"
+          >
+            <h4 class="font-bold text-2xl text-center">Setup</h4>
+            <p class="text-center">
+              A complete version of ColorPicker Max (recommended).
+            </p>
+            <div>
+              <p class="flex items-center">
+                <span class="mx-2" style="font-family: FluentIconsRegular"
+                  ></span
+                >Automatic updates
               </p>
-              <p>Download</p>
+              <p class="flex items-center">
+                <span class="mx-2" style="font-family: FluentIconsRegular"
+                  ></span
+                >Installation required
+              </p>
+              <p class="flex items-center">
+                <span class="mx-2" style="font-family: FluentIconsRegular"
+                  ></span
+                >All features of ColorPicker Max
+              </p>
+              <p class="flex items-center">
+                <span class="mx-2" style="font-family: FluentIconsRegular"
+                  ></span
+                >Requires .NET 6 Windows SDK
+              </p>
             </div>
-          </a>
+            <a
+              href="https://tinyurl.com/DownloadColorPickerMax"
+              class="px-4 py-2 mt-2 bg-gradient-to-tr from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 rounded-lg font-bold sm:self-center text-white"
+              >Download</a
+            >
+          </div>
+          <div
+            class="flex flex-col items-center bg-white shadow-md dark:bg-transparent m-2 border-slate-200 dark:border-slate-600 border rounded-lg p-4 py-8 transition hover:bg-slate-100 dark:hover:bg-slate-800"
+          >
+            <h4 class="font-bold text-2xl text-center">Portable</h4>
+            <p class="text-center">
+              A lightweight version of ColorPicker Max, no installation
+              required.
+            </p>
+            <div>
+              <p class="flex items-center">
+                <span class="mx-2" style="font-family: FluentIconsRegular"
+                  ></span
+                >Automatic updates
+              </p>
+              <p class="flex items-center">
+                <span class="mx-2" style="font-family: FluentIconsRegular"
+                  ></span
+                >Installation required
+              </p>
+              <p class="flex items-center">
+                <span class="mx-2" style="font-family: FluentIconsRegular"
+                  ></span
+                >All features of ColorPicker Max
+              </p>
+              <p class="flex items-center">
+                <span class="mx-2" style="font-family: FluentIconsRegular"
+                  ></span
+                >Requires .NET 6 Windows SDK
+              </p>
+            </div>
+            <a
+              href="https://tinyurl.com/DownloadCPMPortable"
+              class="px-4 py-2 mt-2 bg-gradient-to-tr from-sky-400 to-blue-500 hover:from-sky-500 hover:to-blue-600 rounded-lg font-bold sm:self-center text-white"
+              >Download</a
+            >
+          </div>
         </div>
       </section>
     </main>
@@ -661,25 +813,5 @@
 
     <script src="../scripts/copyright.js"></script>
     <script src="../scripts/scroll.js"></script>
-    <script>
-      function animateOnView(elementId, classToApply) {
-        const observer = new IntersectionObserver((entries) => {
-          // Loop over the entries
-          entries.forEach((entry) => {
-            // If the element is visible
-            if (entry.isIntersecting) {
-              // Add the animation class
-              entry.target.classList.add(classToApply);
-            }
-          });
-        });
-        observer.observe(document.getElementById(elementId));
-      }
-
-      animateOnView("feature-selector", "slideInRight");
-      animateOnView("feature-converter", "slideInUpX");
-      animateOnView("feature-gradient", "slideInRight");
-      animateOnView("download", "fadeIn");
-    </script>
   </body>
 </html>
