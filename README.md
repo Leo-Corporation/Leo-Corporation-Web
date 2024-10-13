@@ -10,19 +10,20 @@
   </p>
 </p>
 
-
 ## Introduction
+
 Léo Corporation Web is the new website of Léo Corporation.
 
 It is available under the following URL: https://leocorporation.dev
+
 ## Subdomains
-There are currently 5 subdomains for [leocorporation.dev](https://leocorporation.dev):
+
+There are currently 3 subdomains for [leocorporation.dev](https://leocorporation.dev):
+
 - [blog.leocorporation.dev](https://blog.leocorporation.dev)
 - [datalya.leocorporation.dev](https://datalya.leocorporation.dev/)
 - [gavilya.leocorporation.dev](https://gavilya.leocorporation.dev)
-- [leocorplibrary.leocorporation.dev](https://leocorplibrary.leocorporation.dev/)
-- [privacy.leocorporation.dev](https://privacy.leocorporation.dev)
-- [status.leocorporation.dev](https://status.leocorporation.dev)
 
 ## License
+
 Project under the [MIT](https://github.com/Leo-Corporation/Leo-Corporation-Web/blob/main/LICENSE) License.

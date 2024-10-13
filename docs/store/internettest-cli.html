@@ -10,31 +10,31 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://leocorporation.dev/img/PasslissSocial.png"
+      content="https://leocorporation.dev/img/InternetTestCLI/social.png"
     />
     <meta
       name="twitter:description"
-      content="Léo Corporation's official website. Software creation for Windows."
+      content="InternetTest CLI - Network-related command line tools."
     />
-    <meta name="twitter:title" content="Passliss | Léo Corporation" />
+    <meta name="twitter:title" content="InternetTest CLI | Léo Corporation" />
 
     <!-- Facebook/Linkedin -->
     <meta
       property="og:description"
-      content="Léo Corporation's official website. Software creation for Windows."
+      content="InternetTest CLI - Network-related command line tools."
     />
     <meta
       property="og:image"
-      content="https://leocorporation.dev/img/PasslissSocial.png"
+      content="https://leocorporation.dev/img/InternetTestCLI/social.png"
     />
-    <meta property="og:title" content="Passliss | Léo Corporation" />
+    <meta property="og:title" content="InternetTest CLI | Léo Corporation" />
 
     <meta
       name="description"
-      content="Léo Corporation's official website. Software creation for Windows."
+      content="InternetTest CLI - Network-related command line tools."
     />
 
-    <title>Passliss | Léo Corporation</title>
+    <title>InternetTest CLI | Léo Corporation</title>
     <link href="../css/tailwind.css" rel="stylesheet" />
     <link href="../css/animations.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/global.css" />
@@ -361,253 +361,470 @@
       </div>
     </header>
 
-    <main>
-      <section
-        id="title-header"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
-      >
-        <div class="m-5 fadeIn">
-          <h2 class="text-5xl font-bold">
-            Introducing
-            <span>
-              Passliss
-              <span
-                class="ml-2 text-base px-3 rounded-xl font-bold bg-gradient-to-r from-[#007FFF] to-[#2153E0] text-white"
-                >Web</span
-              >
-            </span>
-          </h2>
-          <div class="flex items-center">
-            <p class="text-lg font-semibold">Power up your security.</p>
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-dw p-2 pr-8 m-2 ml-0 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition inline-block"
-            href="https://passliss.leocorporation.dev"
+    <main class="flex-1">
+      <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        <div class="container px-4 md:px-6 mx-auto">
+          <div
+            class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]"
           >
-            <div class="flex items-center justify-center">
-              <p
-                class="btn-download transition mr-2"
-                style="font-family: FluentIconsRegular"
-              >
-                
-              </p>
-              <p>Launch</p>
+            <div class="flex flex-col order-2 justify-center space-y-4">
+              <div class="space-y-2">
+                <h1
+                  class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                >
+                  InternetTest CLI
+                </h1>
+                <p class="max-w-[600px] md:text-xl">
+                  The ultimate command-line tool for testing your internet
+                  connection. Get detailed insights into your network
+                  performance, IP address, DNS, and more.
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                <a
+                  href="#download"
+                  class="inline-flex h-10 items-center justify-center rounded-md text-white bg-blue-600 px-8 text-sm font-medium shadow transition-colors hover:bg-blue-600/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download CLI
+                </a>
+                <a
+                  href="https://github.com/Leo-Corporation/InternetTestCLI/wiki"
+                  class="inline-flex h-10 items-center justify-center rounded-md border dark:border-slate-800 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                >
+                  View Docs
+                </a>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="slideInRight">
-          <img
-            src="../img/PG2.svg"
-            class="dark:hidden"
-            alt="ColorPicker Bookmarks."
-          />
-          <img
-            src="../img/PG2D.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Bookmarks in dark mode."
-          />
-        </div>
-      </section>
-      <section
-        id="feature-generator"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
-      >
-        <div>
-          <img
-            src="../img/PG.svg"
-            class="dark:hidden"
-            alt="ColorPicker Max Selector."
-          />
-          <img
-            src="../img/PGD.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Max Selector in dark mode."
-          />
-        </div>
-        <div class="m-5">
-          <h2 class="font-bold text-3xl">Generate strong passwords</h2>
-          <p>
-            Passliss for the Web lets you generate passwords by strength or by
-            customizing characters, length, and quantity. You can use a slider,
-            copy buttons, and real-time rating to create easy or unique
-            passwords.
-          </p>
-        </div>
-      </section>
-      <style>
-        #title-header:before {
-          content: " ";
-          display: block;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url("../img/PasslissBg.svg");
-          background-attachment: fixed;
-          background-size: cover;
-          opacity: 0.4;
-          z-index: -2;
-        }
-
-        .uppercase-red {
-          color: #ff2929;
-        }
-
-        .lowercase-blue {
-          color: #3b8aff;
-        }
-
-        .number-green {
-          color: #007f5f;
-        }
-
-        .special-purple {
-          color: #991ef9;
-        }
-
-        @media (prefers-color-scheme: dark) {
-          .number-green {
-            color: #91fa49;
-          }
-
-          #title-header:before {
-            content: " ";
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("../img/PasslissBgD.svg");
-            background-attachment: fixed;
-            background-size: cover;
-            opacity: 0.4;
-            z-index: -2;
-          }
-
-          html {
-            color-scheme: dark;
-          }
-        }
-
-        @media (prefers-reduced-motion) {
-          .treed {
-            transform: none !important;
-          }
-        }
-      </style>
-      <section
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
-      >
-        <div class="m-4">
-          <h2 class="font-bold text-3xl">
-            Test the safety of existing passwords
-          </h2>
-          <p>
-            If you have a doubt about the safety of one of your passwords, you
-            can test its strength using Passliss.
-          </p>
-          <br />
-          <p>
-            The strength can be
-            <span
-              class="m-1 w-auto rounded-full border border-[#00BF07] px-2 text-center font-semibold text-[#00BF07]"
-              >Excellent</span
-            >,
-            <span
-              class="m-1 w-auto rounded-full border border-[#68EA00] px-2 text-center font-semibold text-[#68EA00]"
-              >Good</span
-            >,
-            <span
-              class="m-1 w-auto rounded-full border border-[#FF7B00] px-2 text-center font-semibold text-[#FF7B00]"
-              >Medium</span
-            >, or
-            <span
-              class="m-1 w-auto rounded-full border border-[red] px-2 text-center font-semibold text-[red]"
-              >Low</span
-            >.
-          </p>
-        </div>
-        <div
-          class="slideInRight font-semibold rounded-lg p-5 mx-2 dark:bg-gray-800 bg-white shadow-md"
-        >
-          <h2
-            class="font-bold text-xl m-4 text-center"
-            id="pxrStrengthTxt"
-          ></h2>
-          <div class="grid grid-cols-2">
-            <p class="uppercase-red">Uppercase</p>
-            <p class="uppercase-red" id="uppercaseTxt"></p>
-            <p class="lowercase-blue">Lowercase</p>
-            <p class="lowercase-blue" id="lowercaseTxt"></p>
-            <p class="number-green">Numbers</p>
-            <p class="number-green" id="numbersTxt"></p>
-            <p class="special-purple">Special characters</p>
-            <p class="special-purple" id="specialCharsTxt"></p>
-            <p>Length</p>
-            <p id="lengthTxt"></p>
-          </div>
-          <div class="flex justify-center">
-            <button
-              onclick="colorSyntaxPassword(generatePassword(20))"
-              class="text-center mt-4 relative font-bold mx-auto px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 hover:dark:bg-gray-700"
+            <picture
+              width="550"
+              height="550"
+              class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full order-1 lg:order-last"
             >
-              Refresh
-            </button>
+              <source
+                srcset="../img/InternetTestCLI/Dark.png"
+                media="(prefers-color-scheme: dark)"
+              />
+              <img
+                src="../img/InternetTestCLI/Light.png"
+                alt="InternetTest CLI banner"
+              />
+            </picture>
           </div>
         </div>
       </section>
       <section
-        id="feature-encrypt"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
+        id="features"
+        class="w-full py-12 md:py-24 lg:py-32 bg-slate-100 dark:bg-slate-900"
       >
-        <div>
-          <img
-            src="../img/PG3.svg"
-            class="dark:hidden"
-            alt="ColorPicker Max Selector."
-          />
-          <img
-            src="../img/PG3D.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Max Selector in dark mode."
-          />
-        </div>
-        <div class="m-5">
-          <h2 class="font-bold text-3xl">Encrypt your secrets</h2>
-          <p>
-            Passliss also has another great feature: The encryption page. It
-            allows you to encrypt and decrypt strings using different encryption
-            algorithms, including AES and Triple-DES. These are widely
-            recognized as some of the most secure and reliable encryption
-            algorithms available today.
-          </p>
+        <div class="container px-4 md:px-6 mx-auto">
+          <div
+            class="flex flex-col items-center justify-center space-y-4 text-center"
+          >
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Key Features
+              </h2>
+              <p
+                class="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+              >
+                InternetTest CLI provides a comprehensive set of tools to
+                diagnose and troubleshoot your internet connection.
+              </p>
+            </div>
+          </div>
+          <div
+            class="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-3 lg:gap-12"
+          >
+            <div class="grid gap-1">
+              <div class="flex items-center gap-2">
+                <div class="rounded-full text-white bg-blue-600 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                  >
+                    <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                    <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                    <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                    <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                    <path d="M12 12V8"></path>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-bold">IP Address Lookup</h3>
+              </div>
+              <p class="text-muted-foreground">
+                Get detailed information about your public IP address, including
+                location, ISP, and more.
+              </p>
+              <a
+                class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline underline-offset-4"
+                href="https://github.com/Leo-Corporation/InternetTestCLI/wiki/IP-Commands"
+              >
+                Learn more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="grid gap-1">
+              <div class="flex items-center gap-2">
+                <div class="rounded-full text-white bg-blue-600 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                  >
+                    <line x1="12" x2="12" y1="17" y2="22"></line>
+                    <path
+                      d="M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-bold">Ping Testing</h3>
+              </div>
+              <p class="text-muted-foreground">
+                Measure the latency and packet loss of your internet connection
+                with advanced ping testing capabilities.
+              </p>
+              <a
+                href="https://github.com/Leo-Corporation/InternetTestCLI/wiki/Ping-Command"
+                class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline underline-offset-4"
+              >
+                Learn more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="grid gap-1">
+              <div class="flex items-center gap-2">
+                <div class="rounded-full text-white bg-blue-600 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                  >
+                    <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                    <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                    <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                    <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                    <path d="M12 12V8"></path>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-bold">DNS Information</h3>
+              </div>
+              <p class="text-muted-foreground">
+                Retrieve detailed information about your DNS configuration,
+                including server addresses and response times.
+              </p>
+              <a
+                class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline underline-offset-4"
+                href="https://github.com/Leo-Corporation/InternetTestCLI/wiki/DNS-Command"
+              >
+                Learn more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="grid gap-1">
+              <div class="flex items-center gap-2">
+                <div class="rounded-full text-white bg-blue-600 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                  >
+                    <path d="M12 20h.01"></path>
+                    <path d="M2 8.82a15 15 0 0 1 20 0"></path>
+                    <path d="M5 12.859a10 10 0 0 1 14 0"></path>
+                    <path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-bold">WiFI Passwords</h3>
+              </div>
+              <p class="text-muted-foreground">
+                Recover your WiFi passwords and information previously stored on
+                your Windows device with ease.
+              </p>
+              <a
+                class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline underline-offset-4"
+                href="https://github.com/Leo-Corporation/InternetTestCLI/wiki/WiFi-Command"
+              >
+                Learn more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="grid gap-1">
+              <div class="flex items-center gap-2">
+                <div class="rounded-full text-white bg-blue-600 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                  >
+                    <rect width="20" height="8" x="2" y="14" rx="2"></rect>
+                    <path d="M6.01 18H6"></path>
+                    <path d="M10.01 18H10"></path>
+                    <path d="M15 10v4"></path>
+                    <path d="M17.84 7.17a4 4 0 0 0-5.66 0"></path>
+                    <path d="M20.66 4.34a8 8 0 0 0-11.31 0"></path>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-bold">Traceroute</h3>
+              </div>
+              <p class="text-muted-foreground">
+                Trace the path your internet traffic takes to reach a
+                destination, helping you identify network issues.
+              </p>
+              <a
+                class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline underline-offset-4"
+                href="https://github.com/Leo-Corporation/InternetTestCLI/wiki/Trace-Command"
+              >
+                Learn more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="grid gap-1">
+              <div class="flex items-center gap-2">
+                <div class="rounded-full text-white bg-blue-600 p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                  >
+                    <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                    <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                    <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                    <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                    <path d="M12 12V8"></path>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-bold">Network Diagnostics</h3>
+              </div>
+              <p class="text-muted-foreground">
+                Perform a comprehensive analysis of your network configuration
+                and identify potential issues.
+              </p>
+              <a
+                class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline underline-offset-4"
+                href="https://github.com/Leo-Corporation/InternetTestCLI/wiki/Request-Command"
+              >
+                Learn more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="flex flex-col items-center">
-        <h3 class="font-bold text-2xl text-center mb-2">
-          Increase your security on the web
-        </h3>
-        <p class="text-center">Get started now</p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-dw p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-[#007FFF] hover:bg-blue-600 transition"
-          href="https://passliss.leocorporation.dev"
-        >
-          <div class="flex items-center">
-            <p
-              class="btn-download transition mr-2"
-              style="font-family: FluentIconsRegular"
-            >
-              
-            </p>
-            <p>Launch</p>
+      <section id="download" class="w-full py-12 md:py-24 lg:py-32">
+        <div class="container px-4 md:px-6 mx-auto">
+          <div class="grid gap-10 sm:px-10 md:gap-16 md:grid-cols-2">
+            <div class="space-y-4">
+              <div
+                class="inline-block rounded-lg bg-slate-100 dark:bg-slate-900 px-3 py-1 text-sm"
+              >
+                Download
+              </div>
+              <h2
+                class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]"
+              >
+                Get InternetTest CLI
+              </h2>
+              <p class="max-w-[600px] md:text-xl/relaxed">
+                Download the InternetTest CLI for your platform and start
+                testing your internet connection right away.
+              </p>
+              <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                <a
+                  class="inline-flex h-10 items-center justify-center rounded-md text-white bg-blue-600 px-8 text-sm font-medium shadow transition-colors hover:bg-blue-600/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  href="https://www.mediafire.com/file/ryyi06667u4kwzc/itcli-win-x64.zip/file"
+                >
+                  Windows
+                </a>
+                <a
+                  href="https://www.mediafire.com/file/pv6dg8e62xd1wzm/itcli-osx-x64.zip/file"
+                  class="inline-flex h-10 items-center justify-center rounded-md text-white bg-blue-600 px-8 text-sm font-medium shadow transition-colors hover:bg-blue-600/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                >
+                  macOS
+                </a>
+                <a
+                  href="https://www.mediafire.com/file/rflhxkb1xubgl1x/itcli-linux-x64.tar/file"
+                  class="inline-flex h-10 items-center justify-center rounded-md text-white bg-blue-600 px-8 text-sm font-medium shadow transition-colors hover:bg-blue-600/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Linux
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col items-start space-y-4">
+              <div
+                class="inline-block rounded-lg bg-slate-100 dark:bg-slate-900 px-3 py-1 text-sm"
+              >
+                Open Source
+              </div>
+              <p class="mx-auto max-w-[700px] md:text-xl/relaxed">
+                Explore the GitHub repository to learn more about the features
+                and usage of InternetTest CLI.
+              </p>
+              <a
+                href="https://github.com/Leo-Corporation/InternetTestCLI"
+                class="inline-flex h-9 items-center justify-center rounded-md border dark:border-slate-800 bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              >
+                GitHub Repository
+              </a>
+            </div>
           </div>
-        </a>
+        </div>
+      </section>
+      <section
+        id="docs"
+        class="w-full py-12 md:py-24 lg:py-32 bg-slate-100 dark:bg-slate-900 border-b border-slate-300 dark:border-slate-800"
+      >
+        <div class="container px-4 md:px-6 mx-auto">
+          <div
+            class="flex flex-col items-center justify-center space-y-4 text-center"
+          >
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Explore the Documentation
+              </h2>
+              <p
+                class="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+              >
+                Learn how to use InternetTest CLI to its full potential with our
+                comprehensive documentation.
+              </p>
+            </div>
+            <div class="mx-auto w-full max-w-sm space-y-2">
+              <a
+                href="https://github.com/Leo-Corporation/InternetTestCLI/wiki"
+                class="inline-flex h-10 items-center justify-center rounded-md text-white bg-blue-600 px-8 text-sm font-medium shadow transition-colors hover:bg-blue-600/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              >
+                View Documentation
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -740,9 +957,5 @@
 
     <script src="../scripts/copyright.js"></script>
     <script src="../scripts/scroll.js"></script>
-    <script src="../scripts/passliss.js"></script>
-    <script>
-      colorSyntaxPassword(generatePassword(20));
-    </script>
   </body>
 </html>
