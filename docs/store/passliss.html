@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -361,253 +361,356 @@
       </div>
     </header>
 
-    <main>
+    <main class="flex-1">
       <section
-        id="title-header"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
+        class="relative py-20 md:py-28 bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900"
       >
-        <div class="m-5 fadeIn">
-          <h2 class="text-5xl font-bold">
-            Introducing
-            <span>
-              Passliss
-              <span
-                class="ml-2 text-base px-3 rounded-xl font-bold bg-gradient-to-r from-[#007FFF] to-[#2153E0] text-white"
-                >Web</span
+        <div class="container px-4 md:px-6">
+          <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+            <div class="space-y-4">
+              <div
+                class="inline-block rounded-lg bg-slate-100 px-3 py-1 text-sm dark:bg-slate-800"
               >
-            </span>
-          </h2>
-          <div class="flex items-center">
-            <p class="text-lg font-semibold">Power up your security.</p>
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-dw p-2 pr-8 m-2 ml-0 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition inline-block"
-            href="https://passliss.leocorporation.dev"
-          >
-            <div class="flex items-center justify-center">
+                <span class="font-semibold text-blue-600 dark:text-blue-500"
+                  >Secure. Simple. Smart.</span
+                >
+              </div>
+              <h1
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+              >
+                Password Generation Made
+                <span class="text-blue-600 dark:text-blue-500">Simple</span>
+              </h1>
               <p
-                class="btn-download transition mr-2"
-                style="font-family: FluentIconsRegular"
+                class="max-w-[600px] text-slate-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-slate-300"
               >
-                
+                Generate secure passwords, test their strength, and encrypt
+                sensitive data with Passliss - your all-in-one password
+                solution.
               </p>
-              <p>Launch</p>
+              <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                <a
+                  href="https://passliss.leocorporation.dev/"
+                  class="font-bold text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 rounded-lg p-5 py-2"
+                >
+                  Get Started
+                </a>
+                <a class="font-bold rounded-lg p-5 py-2" href="#">Learn More</a>
+              </div>
             </div>
-          </a>
-        </div>
-        <div class="slideInRight">
-          <img
-            src="../img/PG2.svg"
-            class="dark:hidden"
-            alt="ColorPicker Bookmarks."
-          />
-          <img
-            src="../img/PG2D.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Bookmarks in dark mode."
-          />
-        </div>
-      </section>
-      <section
-        id="feature-generator"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
-      >
-        <div>
-          <img
-            src="../img/PG.svg"
-            class="dark:hidden"
-            alt="ColorPicker Max Selector."
-          />
-          <img
-            src="../img/PGD.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Max Selector in dark mode."
-          />
-        </div>
-        <div class="m-5">
-          <h2 class="font-bold text-3xl">Generate strong passwords</h2>
-          <p>
-            Passliss for the Web lets you generate passwords by strength or by
-            customizing characters, length, and quantity. You can use a slider,
-            copy buttons, and real-time rating to create easy or unique
-            passwords.
-          </p>
-        </div>
-      </section>
-      <style>
-        #title-header:before {
-          content: " ";
-          display: block;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url("../img/PasslissBg.svg");
-          background-attachment: fixed;
-          background-size: cover;
-          opacity: 0.4;
-          z-index: -2;
-        }
-
-        .uppercase-red {
-          color: #ff2929;
-        }
-
-        .lowercase-blue {
-          color: #3b8aff;
-        }
-
-        .number-green {
-          color: #007f5f;
-        }
-
-        .special-purple {
-          color: #991ef9;
-        }
-
-        @media (prefers-color-scheme: dark) {
-          .number-green {
-            color: #91fa49;
-          }
-
-          #title-header:before {
-            content: " ";
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("../img/PasslissBgD.svg");
-            background-attachment: fixed;
-            background-size: cover;
-            opacity: 0.4;
-            z-index: -2;
-          }
-
-          html {
-            color-scheme: dark;
-          }
-        }
-
-        @media (prefers-reduced-motion) {
-          .treed {
-            transform: none !important;
-          }
-        }
-      </style>
-      <section
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
-      >
-        <div class="m-4">
-          <h2 class="font-bold text-3xl">
-            Test the safety of existing passwords
-          </h2>
-          <p>
-            If you have a doubt about the safety of one of your passwords, you
-            can test its strength using Passliss.
-          </p>
-          <br />
-          <p>
-            The strength can be
-            <span
-              class="m-1 w-auto rounded-full border border-[#00BF07] px-2 text-center font-semibold text-[#00BF07]"
-              >Excellent</span
-            >,
-            <span
-              class="m-1 w-auto rounded-full border border-[#68EA00] px-2 text-center font-semibold text-[#68EA00]"
-              >Good</span
-            >,
-            <span
-              class="m-1 w-auto rounded-full border border-[#FF7B00] px-2 text-center font-semibold text-[#FF7B00]"
-              >Medium</span
-            >, or
-            <span
-              class="m-1 w-auto rounded-full border border-[red] px-2 text-center font-semibold text-[red]"
-              >Low</span
-            >.
-          </p>
-        </div>
-        <div
-          class="slideInRight font-semibold rounded-lg p-5 mx-2 dark:bg-gray-800 bg-white shadow-md"
-        >
-          <h2
-            class="font-bold text-xl m-4 text-center"
-            id="pxrStrengthTxt"
-          ></h2>
-          <div class="grid grid-cols-2">
-            <p class="uppercase-red">Uppercase</p>
-            <p class="uppercase-red" id="uppercaseTxt"></p>
-            <p class="lowercase-blue">Lowercase</p>
-            <p class="lowercase-blue" id="lowercaseTxt"></p>
-            <p class="number-green">Numbers</p>
-            <p class="number-green" id="numbersTxt"></p>
-            <p class="special-purple">Special characters</p>
-            <p class="special-purple" id="specialCharsTxt"></p>
-            <p>Length</p>
-            <p id="lengthTxt"></p>
+            <div class="mx-auto lg:order-last"></div>
           </div>
-          <div class="flex justify-center">
-            <button
-              onclick="colorSyntaxPassword(generatePassword(20))"
-              class="text-center mt-4 relative font-bold mx-auto px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 hover:dark:bg-gray-700"
+        </div>
+      </section>
+      <section class="py-12 md:py-20 bg-white dark:bg-slate-950">
+        <div class="container px-4 md:px-6">
+          <div
+            class="flex flex-col items-center justify-center space-y-4 text-center"
+          >
+            <div class="space-y-2">
+              <div
+                class="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm dark:bg-blue-900"
+              >
+                <span class="font-semibold text-blue-600 dark:text-blue-400"
+                  >Powerful Features</span
+                >
+              </div>
+              <h2
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+              >
+                Everything You Need
+              </h2>
+              <p
+                class="max-w-[900px] text-slate-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-slate-300"
+              >
+                Passliss offers a comprehensive suite of tools to manage your
+                passwords and secure your data.
+              </p>
+            </div>
+          </div>
+          <div
+            class="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12"
+          >
+            <div
+              class="flex flex-col items-center space-y-4 rounded-lg border border-slate-200 dark:border-slate-600 p-6 text-center bg-white dark:bg-slate-800 transition-all hover:shadow-md"
             >
-              Refresh
-            </button>
-          </div>
-        </div>
-      </section>
-      <section
-        id="feature-encrypt"
-        class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center"
-      >
-        <div>
-          <img
-            src="../img/PG3.svg"
-            class="dark:hidden"
-            alt="ColorPicker Max Selector."
-          />
-          <img
-            src="../img/PG3D.svg"
-            class="hidden dark:block"
-            alt="ColorPicker Max Selector in dark mode."
-          />
-        </div>
-        <div class="m-5">
-          <h2 class="font-bold text-3xl">Encrypt your secrets</h2>
-          <p>
-            Passliss also has another great feature: The encryption page. It
-            allows you to encrypt and decrypt strings using different encryption
-            algorithms, including AES and Triple-DES. These are widely
-            recognized as some of the most secure and reliable encryption
-            algorithms available today.
-          </p>
-        </div>
-      </section>
-      <section class="flex flex-col items-center">
-        <h3 class="font-bold text-2xl text-center mb-2">
-          Increase your security on the web
-        </h3>
-        <p class="text-center">Get started now</p>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn-dw p-3 pr-8 m-3 text-white hover:-translate-y-2 font-semibold rounded-md shadow-md bg-[#007FFF] hover:bg-blue-600 transition"
-          href="https://passliss.leocorporation.dev"
-        >
-          <div class="flex items-center">
-            <p
-              class="btn-download transition mr-2"
-              style="font-family: FluentIconsRegular"
+              <div class="rounded-full bg-blue-100 p-3 dark:bg-blue-900">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-zap h-10 w-10 text-blue-600"
+                >
+                  <path
+                    d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">Password Generation</h3>
+              <p class="text-slate-700 dark:text-slate-300">
+                Customize character sets, length, and generate multiple secure
+                passwords at once.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-4 rounded-lg border border-slate-200 dark:border-slate-600 p-6 text-center bg-white dark:bg-slate-800 transition-all hover:shadow-md"
             >
-              
-            </p>
-            <p>Launch</p>
+              <div class="rounded-full bg-blue-100 p-3 dark:bg-blue-900">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sparkles h-10 w-10 text-blue-600"
+                >
+                  <path
+                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                  ></path>
+                  <path d="M20 3v4"></path>
+                  <path d="M22 5h-4"></path>
+                  <path d="M4 17v2"></path>
+                  <path d="M5 18H3"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">AI Password Creation</h3>
+              <p class="text-slate-700 dark:text-slate-300">
+                Use AI to create unique, strong, and secure passwords from a
+                simple prompt.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-4 rounded-lg border border-slate-200 dark:border-slate-600 p-6 text-center bg-white dark:bg-slate-800 transition-all hover:shadow-md"
+            >
+              <div class="rounded-full bg-blue-100 p-3 dark:bg-blue-900">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-shield h-10 w-10 text-blue-600"
+                >
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">Strength Testing</h3>
+              <p class="text-slate-700 dark:text-slate-300">
+                Test password strength with detailed analysis and improvement
+                suggestions.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-4 rounded-lg border border-slate-200 dark:border-slate-600 p-6 text-center bg-white dark:bg-slate-800 transition-all hover:shadow-md"
+            >
+              <div class="rounded-full bg-blue-100 p-3 dark:bg-blue-900">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-lock h-10 w-10 text-blue-600"
+                >
+                  <rect
+                    width="18"
+                    height="11"
+                    x="3"
+                    y="11"
+                    rx="2"
+                    ry="2"
+                  ></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">Encryption Tools</h3>
+              <p class="text-slate-700 dark:text-slate-300">
+                Encrypt and decrypt sensitive data using AES or Triple-DES
+                algorithms.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-4 rounded-lg border border-slate-200 dark:border-slate-600 p-6 text-center bg-white dark:bg-slate-800 transition-all hover:shadow-md"
+            >
+              <div class="rounded-full bg-blue-100 p-3 dark:bg-blue-900">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-settings h-10 w-10 text-blue-600"
+                >
+                  <path
+                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                  ></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">Customizable Settings</h3>
+              <p class="text-slate-700 dark:text-slate-300">
+                Personalize themes, language, and default configurations to suit
+                your needs.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-4 rounded-lg border border-slate-200 dark:border-slate-600 p-6 text-center bg-white dark:bg-slate-800 transition-all hover:shadow-md"
+            >
+              <div class="rounded-full bg-blue-100 p-3 dark:bg-blue-900">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-10 w-10 text-blue-600"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold">Import & Export</h3>
+              <p class="text-slate-700 dark:text-slate-300">
+                Easily transfer your settings between devices or create backups.
+              </p>
+            </div>
           </div>
-        </a>
+        </div>
+      </section>
+      <section class="py-12 md:py-20 bg-slate-50 dark:bg-slate-900">
+        <div class="container px-4 md:px-6">
+          <div
+            class="flex flex-col items-center justify-center space-y-4 text-center"
+          >
+            <div class="space-y-2">
+              <div
+                class="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm dark:bg-blue-900"
+              >
+                <span class="font-semibold text-blue-600 dark:text-blue-400"
+                  >Simple Process</span
+                >
+              </div>
+              <h2
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+              >
+                How Passliss Works
+              </h2>
+              <p
+                class="max-w-[900px] text-slate-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-slate-300"
+              >
+                Secure your digital life in just a few simple steps.
+              </p>
+            </div>
+          </div>
+          <div
+            class="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 mt-12"
+          >
+            <div
+              class="flex flex-col items-center space-y-2 border border-slate-200 dark:border-slate-600 rounded-xl p-6 bg-white dark:bg-slate-800"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900"
+              >
+                <span class="font-bold text-blue-600 dark:text-blue-400"
+                  >1</span
+                >
+              </div>
+              <h3 class="text-xl font-bold">Choose Your Tool</h3>
+              <p class="text-center text-slate-700 dark:text-slate-300">
+                Select from password generation, strength testing, or encryption
+                tools.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-2 border border-slate-200 dark:border-slate-600 rounded-xl p-6 bg-white dark:bg-slate-800"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900"
+              >
+                <span class="font-bold text-blue-600 dark:text-blue-400"
+                  >2</span
+                >
+              </div>
+              <h3 class="text-xl font-bold">Customize Options</h3>
+              <p class="text-center text-slate-700 dark:text-slate-300">
+                Adjust settings to match your specific security requirements.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-2 border border-slate-200 dark:border-slate-600 rounded-xl p-6 bg-white dark:bg-slate-800"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900"
+              >
+                <span class="font-bold text-blue-600 dark:text-blue-400"
+                  >3</span
+                >
+              </div>
+              <h3 class="text-xl font-bold">Get Results</h3>
+              <p class="text-center text-slate-700 dark:text-slate-300">
+                Instantly receive secure passwords, strength analysis, or
+                encrypted data.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 md:py-20 bg-blue-600 dark:bg-blue-700">
+        <div class="container px-4 md:px-6">
+          <div
+            class="flex flex-col items-center justify-center space-y-4 text-center text-white"
+          >
+            <div class="space-y-2">
+              <h2
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+              >
+                Ready to Secure Your Passwords?
+              </h2>
+              <p
+                class="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+              >
+                Start using Passliss today and take control of your digital
+                security.
+              </p>
+            </div>
+            <div class="flex flex-col gap-2 min-[400px]:flex-row">
+              <a
+                href="https://passliss.leocorporation.dev/"
+                class="bg-white text-blue-600 hover:bg-slate-100 p-5 py-2 rounded-lg font-bold"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
