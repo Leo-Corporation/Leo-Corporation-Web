@@ -398,7 +398,97 @@
                 <a class="font-bold rounded-lg p-5 py-2" href="#">Learn More</a>
               </div>
             </div>
-            <div class="mx-auto lg:order-last"></div>
+            <div class="mx-auto lg:order-last">
+              <div
+                class="w-full max-w-md rounded-xl border bg-white p-6 shadow-lg dark:bg-slate-800 border-slate-200 dark:border-slate-700"
+              >
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-semibold">Password Generator</h3>
+                    <button
+                      class="rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-slate-700 cursor-pointer"
+                      onclick="generatePassword()"
+                      aria-label="Generate new password"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-refresh-cw h-4 w-4"
+                      >
+                        <path
+                          d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"
+                        ></path>
+                        <path d="M21 3v5h-5"></path>
+                        <path
+                          d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"
+                        ></path>
+                        <path d="M8 16H3v5"></path>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div
+                    class="rounded-lg border bg-slate-50 p-4 font-mono text-lg dark:bg-slate-900 border-slate-200 dark:border-slate-700"
+                  >
+                    <p id="passwordField">{password}</p>
+                  </div>
+
+                  <div class="space-y-2">
+                    <div class="flex justify-between text-sm">
+                      <span>Password Strength</span>
+                      <span id="strengthField">Strong</span>
+                    </div>
+                    <div
+                      class="h-2 w-full rounded-full bg-slate-200 dark:bg-slate-700"
+                    >
+                      <div id="progressBar" class="h-2 rounded-full"></div>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-4 gap-2 text-xs">
+                    <div
+                      class="rounded border p-2 text-center border-slate-200 dark:border-slate-700"
+                    >
+                      <div class="font-semibold">16</div>
+                      <div class="text-slate-500 dark:text-slate-400">
+                        Length
+                      </div>
+                    </div>
+                    <div
+                      class="rounded border p-2 text-center border-slate-200 dark:border-slate-700"
+                    >
+                      <div class="font-semibold">A-Z</div>
+                      <div class="text-slate-500 dark:text-slate-400">
+                        Uppercase
+                      </div>
+                    </div>
+                    <div
+                      class="rounded border p-2 text-center border-slate-200 dark:border-slate-700"
+                    >
+                      <div class="font-semibold">a-z</div>
+                      <div class="text-slate-500 dark:text-slate-400">
+                        Lowercase
+                      </div>
+                    </div>
+                    <div
+                      class="rounded border p-2 text-center border-slate-200 dark:border-slate-700"
+                    >
+                      <div class="font-semibold">!@#</div>
+                      <div class="text-slate-500 dark:text-slate-400">
+                        Symbols
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
