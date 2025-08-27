@@ -362,339 +362,859 @@
     </header>
 
     <main>
-      <section
-        style="
-          background: url('../img/InternetTest/InternetTestBanner.svg');
-          background-size: cover;
-          background-position: top;
-          min-height: calc(100vh - 72px);
-        "
-        class="flex flex-col justify-end items-center"
-      >
-        <div
-          class="p-6 bg-white dark:bg-slate-800 m-5 rounded-lg shadow-md sm:grid space-y-2 flex flex-col grid-cols-[auto_1fr_auto] space-x-2 sm:items-start items-center max-w-[1200px]"
-        >
-          <img
-            height="75px"
-            width="75px"
-            alt="InternetTest Pro Logo"
-            src="../img/InternetTest.svg"
-          />
-          <div class="text-center sm:text-left">
-            <div
-              class="flex flex-row items-center justify-center sm:justify-start space-x-2"
+      <section class="py-20 px-4">
+        <div class="container mx-auto text-center max-w-4xl">
+          <picture class="flex items-center justify-center mb-6">
+            <source
+              srcset="../img/InternetTest/InternetTestD.png"
+              media="(prefers-color-scheme: dark)"
+            />
+            <img
+              src="../img/InternetTest/InternetTest.png"
+              height="120"
+              width="200"
+              alt="A screenshot of the 'WiFi Passwords' page of InternetTest Pro"
+            />
+          </picture>
+          <span
+            data-slot="badge"
+            class="inline-flex items-center bg-slate-100 dark:bg-slate-900 justify-center rounded-md px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 gap-1 transition-[color,box-shadow] overflow-hidden mb-4"
+            >InternetTest Pro 9</span
+          >
+          <h1 class="text-4xl md:text-6xl font-bold text-balance mb-6">
+            Your Internet Tools, in one modern place.
+          </h1>
+          <p
+            class="text-xl text-slate-500 dark:text-slate-300 text-pretty mb-8 max-w-2xl mx-auto"
+          >
+            Comprehensive Windows network utility with DNS tools, WiFi
+            management, ping/traceroute, and geolocation features designed for
+            everyone.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              data-slot="button"
+              href="https://tinyurl.com/DownloadITP7"
+              class="inline-flex items-center justify-center gap-2 font-medium transition-all shrink-0 outline-none focus-visible:ring-[3px] bg-[#2153E0] text-white shadow-sm hover:bg-[#2153E0]/90 h-10 rounded-md text-lg px-8"
             >
-              <h2 class="font-bold text-3xl">InternetTest</h2>
-              <p
-                class="bg-gradient-to-r px-3 from-[#2153E0] to-blue-500 rounded-xl sm:ml-4 ml-0 my-2 text-white font-bold text-center"
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-download mr-2 h-5 w-5"
               >
-                Pro 8
-              </p>
-            </div>
-            <p>
-              InternetTest is a versatile network utility for Windows. It can do
-              many things, such as locating IP addresses, sending ping requests,
-              recovering WiFi passwords, displaying DNS info, tracing routes,
-              and more.
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" x2="12" y1="15" y2="3"></line>
+              </svg>
+              Download Now</a
+            ><a
+              href="#features"
+              data-slot="button"
+              class="inline-flex items-center justify-center gap-2 transition-all shrink-0 outline-none focus-visible:ring-[3px] shadow-sm text-slate-500 border border-slate-100 dark:border-slate-700 dark:text-slate-200 h-10 rounded-md text-lg px-8"
+            >
+              View Features
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        id="features"
+        class="py-20 px-4 dark:bg-slate-800/30 bg-white/30 border-t border-slate-100 dark:border-slate-700"
+      >
+        <div class="container mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Powerful Network Tools
+            </h2>
+            <p
+              class="text-xl text-slate-500 dark:text-slate-300 max-w-2xl mx-auto"
+            >
+              Everything you need to diagnose, monitor, and optimize your
+              network connections
             </p>
           </div>
-          <a
-            href="https://tinyurl.com/DownloadITP7"
-            class="px-4 py-2 m-2 bg-gradient-to-tr from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-lg font-bold sm:self-center text-white"
-            >Download</a
-          >
-        </div>
-      </section>
-      <section class="flex sm:grid grid-cols-2 flex-col items-center">
-        <picture>
-          <source
-            srcset="../img/InternetTest/1B.png"
-            media="(prefers-color-scheme: dark)"
-          />
-          <img
-            src="../img/InternetTest/1.png"
-            alt="A screenshot of the 'Home' page of InternetTest Pro"
-          />
-        </picture>
-        <div class="m-2 p-2 sm:text-left text-center">
-          <p
-            class="text-[#2153E0] text-4xl"
-            style="font-family: FluentIconsRegular"
-          >
-            
-          </p>
-          <h3 class="font-bold text-xl">A new and improved user interface</h3>
-          <p>
-            InternetTest Pro, also called InternetTest 8, offers a new user
-            interface; you will notice a brand-new side bar with “pinned”
-            actions and different menus. You can access your favorite
-            functionalities using this new side bar, or by using the “Home”
-            dashboard; it is a place specially made for you where you can
-            quickly find useful actions and features. We have added subtle
-            animations as well.
-          </p>
-        </div>
-      </section>
-      <section class="flex sm:grid grid-cols-2 flex-col-reverse items-center">
-        <div class="m-2 p-2 sm:text-left text-center">
-          <p
-            class="text-[#2153E0] text-4xl"
-            style="font-family: FluentIconsRegular"
-          >
-            
-          </p>
-          <h3 class="font-bold text-xl">IP Locator</h3>
-          <p>
-            InternetTest Pro IP Locator is a feature that allows you to find out
-            more information about any IP address or website URL. You can enter
-            an IP or a website URL in the search box and get the approximate
-            location and details of the IP, such as the country, region, city,
-            and ISP. You can also see the approximate location of the IP on a
-            map.
-          </p>
-        </div>
-        <picture>
-          <source
-            srcset="../img/InternetTest/2B.png"
-            media="(prefers-color-scheme: dark)"
-          />
-          <img
-            src="../img/InternetTest/2.png"
-            alt="A screenshot of the 'Locate IP' page of InternetTest Pro"
-          />
-        </picture>
-      </section>
-      <section class="flex sm:grid grid-cols-2 flex-col items-center">
-        <picture>
-          <source
-            srcset="../img/InternetTest/3B.png"
-            media="(prefers-color-scheme: dark)"
-          />
-          <img
-            src="../img/InternetTest/3.png"
-            alt="A screenshot of the 'WiFi Passwords' page of InternetTest Pro"
-          />
-        </picture>
-        <div class="m-2 p-2 sm:text-left text-center">
-          <p
-            class="text-[#2153E0] text-4xl"
-            style="font-family: FluentIconsRegular"
-          >
-            
-          </p>
-          <h3 class="font-bold text-xl">Recover your WiFi Passwords</h3>
-          <p>
-            InternetTest Pro also lets you recover the passwords of the wifi
-            networks you have connected to in the past. You can also view basic
-            information about each network, such as the protocol and the SSID.
-            You will see a list of all the wifi networks you have ever connected
-            to. Tap on any network to see its password and details. You can also
-            copy the password to your clipboard.
-          </p>
-        </div>
-      </section>
-      <section class="flex sm:grid grid-cols-2 flex-col-reverse items-center">
-        <div class="m-2 p-2 sm:text-left text-center">
-          <p
-            class="text-[#2153E0] text-4xl"
-            style="font-family: FluentIconsRegular"
-          >
-            
-          </p>
-          <h3 class="font-bold text-xl">Ping Feature</h3>
-          <p>
-            InternetTest Pro Ping feature is a useful tool for testing the
-            connectivity and latency of your network. It lets you run a ping
-            command from your device and see the results in real time. You can
-            choose the target host, the number of packets, and the interval
-            between them. You can also view the statistics of the ping test,
-            such as the minimum, maximum, and average round-trip time, and the
-            packet loss rate.
-          </p>
-        </div>
-        <picture>
-          <source
-            srcset="../img/InternetTest/4B.png"
-            media="(prefers-color-scheme: dark)"
-          />
-          <img
-            src="../img/InternetTest/4.png"
-            alt="A screenshot of the 'Ping' page of InternetTest Pro"
-          />
-        </picture>
-      </section>
-      <section class="flex sm:grid grid-cols-2 flex-col items-center">
-        <picture>
-          <source
-            srcset="../img/InternetTest/5B.png"
-            media="(prefers-color-scheme: dark)"
-          />
-          <img
-            src="../img/InternetTest/5.png"
-            alt="A screenshot of the 'Trace Route' page of InternetTest Pro"
-          />
-        </picture>
-        <div class="m-2 p-2 sm:text-left text-center">
-          <p
-            class="text-[#2153E0] text-4xl"
-            style="font-family: FluentIconsRegular"
-          >
-            
-          </p>
-          <h3 class="font-bold text-xl">Trace route command</h3>
-          <p>
-            The Trace Route feature allows you to execute a tracert command and
-            get the results. A tracert command shows you the route that your
-            data packets take from your device to a destination server. It also
-            displays the time it takes for each hop along the way. This can help
-            you identify and troubleshoot any network issues or bottlenecks that
-            may affect your internet experience.
-          </p>
-        </div>
-      </section>
-      <section class="flex sm:grid grid-cols-2 flex-col-reverse items-center">
-        <div class="m-2 p-2 sm:text-left text-center">
-          <p
-            class="text-[#2153E0] text-4xl"
-            style="font-family: FluentIconsRegular"
-          >
-            
-          </p>
-          <h3 class="font-bold text-xl">Get your IP Config</h3>
-          <p>
-            The IP Config feature is a useful tool that lets you run the
-            ipconfig command and see the output. This command shows you the
-            configuration of your network interfaces, such as IP address, subnet
-            mask, default gateway, and more. You can use this feature to
-            troubleshoot network problems or to check your connection details.
-          </p>
-        </div>
-        <picture>
-          <source
-            srcset="../img/InternetTest/6B.png"
-            media="(prefers-color-scheme: dark)"
-          />
-          <img
-            src="../img/InternetTest/6.png"
-            alt="A screenshot of the 'IP Config' page of InternetTest Pro"
-          />
-        </picture>
-      </section>
-      <section class="min-h-screen flex flex-col justify-center items-center">
-        <h3 class="font-bold text-center text-3xl">Get the app</h3>
-        <p class="text-center">
-          By downloading InternetTest Pro, you acknowledge that the app can have
-          these permissions:
-        </p>
-        <div
-          class="grid sm:grid-cols-[auto_auto] grid-cols-1 m-2 justify-center"
-        >
-          <p class="flex items-center">
-            <span class="mx-2" style="font-family: FluentIconsRegular"></span
-            >Read the registry
-          </p>
-          <p class="flex items-center">
-            <span class="mx-2" style="font-family: FluentIconsRegular"></span
-            >Display notifications
-          </p>
-          <p class="flex items-center">
-            <span class="mx-2" style="font-family: FluentIconsRegular"></span
-            >Connect to the Internet
-          </p>
-          <p class="flex items-center">
-            <span class="mx-2" style="font-family: FluentIconsRegular"></span
-            >Download updates with your consent
-          </p>
-          <p class="flex items-center">
-            <span class="mx-2" style="font-family: FluentIconsRegular"></span
-            >Access your file system
-          </p>
-          <p class="flex items-center">
-            <span class="mx-2" style="font-family: FluentIconsRegular"></span
-            >Execute Windows commands
-          </p>
-        </div>
-        <div class="md:grid grid-cols-2 mt-2">
-          <div
-            class="relative flex flex-col items-center bg-white shadow-md dark:bg-transparent m-2 border-[#2153E0] border rounded-lg p-4 py-8 transition hover:bg-slate-100 dark:hover:bg-slate-800"
-          >
-            <p
-              class="absolute -top-4 px-2 py-1 rounded-full bg-[#2153E0] font-bold text-sm text-white"
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              data-slot="card"
+              class="bg-white dark:bg-slate-900 flex flex-col gap-6 rounded-xl py-6 border-2 border-slate-300 dark:border-slate-700 hover:border-[#2153E0]/50 transition-colors"
             >
-              Recommended
-            </p>
-            <h4 class="font-bold text-2xl text-center">Setup</h4>
-            <p class="text-center">
-              A complete version of InternetTest Pro 8 with all its features.
-            </p>
-            <div>
-              <p class="flex items-center">
-                <span class="mx-2" style="font-family: FluentIconsRegular"
-                  ></span
-                >Automatic updates
-              </p>
-              <p class="flex items-center">
-                <span class="mx-2" style="font-family: FluentIconsRegular"
-                  ></span
-                >Installation required
-              </p>
-              <p class="flex items-center">
-                <span class="mx-2" style="font-family: FluentIconsRegular"
-                  ></span
-                >All features of InternetTest Pro 8
-              </p>
-              <p class="flex items-center">
-                <span class="mx-2" style="font-family: FluentIconsRegular"
-                  ></span
-                >Requires .NET 8 Windows SDK
-              </p>
+              <div
+                data-slot="card-header"
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-globe h-12 w-12 text-[#2153E0] mb-4"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path
+                    d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                  ></path>
+                  <path d="M2 12h20"></path>
+                </svg>
+                <div data-slot="card-title" class="leading-none font-semibold">
+                  DNS Tools
+                </div>
+                <div
+                  data-slot="card-description"
+                  class="text-slate-500 dark:text-slate-300 text-sm"
+                >
+                  Complete DNS lookup, WHOIS information, and local DNS cache
+                  management
+                </div>
+              </div>
+              <div data-slot="card-content" class="px-6">
+                <ul
+                  class="space-y-2 text-sm text-slate-500 dark:text-slate-300"
+                >
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    DNS record lookup
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    WHOIS domain info
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      &
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Cache management
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div
+              data-slot="card"
+              class="bg-white dark:bg-slate-900 flex flex-col gap-6 rounded-xl py-6 border-2 border-slate-300 dark:border-slate-700 hover:border-[#2153E0]/50 transition-colors"
+            >
+              <div
+                data-slot="card-header"
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-wifi h-12 w-12 text-[#2153E0] mb-4"
+                >
+                  <path d="M12 20h.01"></path>
+                  <path d="M2 8.82a15 15 0 0 1 20 0"></path>
+                  <path d="M5 12.859a10 10 0 0 1 14 0"></path>
+                  <path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+                </svg>
+                <div data-slot="card-title" class="leading-none font-semibold">
+                  WiFi Management
+                </div>
+                <div
+                  data-slot="card-description"
+                  class="text-slate-500 dark:text-slate-300 text-sm"
+                >
+                  Comprehensive WiFi utilities including password recovery and
+                  network scanning
+                </div>
+              </div>
+              <div data-slot="card-content" class="px-6">
+                <ul
+                  class="space-y-2 text-sm text-slate-500 dark:text-slate-300"
+                >
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Password recovery
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Network scanning
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Adapter management
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              data-slot="card"
+              class="bg-white dark:bg-slate-900 flex flex-col gap-6 rounded-xl py-6 border-2 border-slate-300 dark:border-slate-700 hover:border-[#2153E0]/50 transition-colors"
+            >
+              <div
+                data-slot="card-header"
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin h-12 w-12 text-[#2153E0] mb-4"
+                >
+                  <path
+                    d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div data-slot="card-title" class="leading-none font-semibold">
+                  IP Geolocation
+                </div>
+                <div
+                  data-slot="card-description"
+                  class="text-slate-500 dark:text-slate-300 text-sm"
+                >
+                  Discover geographical locations of IP addresses and URLs for
+                  network analysis
+                </div>
+              </div>
+              <div data-slot="card-content" class="px-6">
+                <ul
+                  class="space-y-2 text-sm text-slate-500 dark:text-slate-300"
+                >
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    IP location tracking
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Security analysis
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Network diagnostics
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              data-slot="card"
+              class="bg-white dark:bg-slate-900 flex flex-col gap-6 rounded-xl py-6 border-2 border-slate-300 dark:border-slate-700 hover:border-[#2153E0]/50 transition-colors"
+            >
+              <div
+                data-slot="card-header"
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-activity h-12 w-12 text-[#2153E0] mb-4"
+                >
+                  <path
+                    d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+                  ></path>
+                </svg>
+                <div data-slot="card-title" class="leading-none font-semibold">
+                  Ping &amp; Traceroute
+                </div>
+                <div
+                  data-slot="card-description"
+                  class="text-slate-500 dark:text-slate-300 text-sm"
+                >
+                  Advanced network connectivity testing and route analysis tools
+                </div>
+              </div>
+              <div data-slot="card-content" class="px-6">
+                <ul
+                  class="space-y-2 text-sm text-slate-500 dark:text-slate-300"
+                >
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Latency measurement
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Route tracing
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Network hop analysis
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              data-slot="card"
+              class="bg-white dark:bg-slate-900 flex flex-col gap-6 rounded-xl py-6 border-2 border-slate-300 dark:border-slate-700 hover:border-[#2153E0]/50 transition-colors"
+            >
+              <div
+                data-slot="card-header"
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-settings h-12 w-12 text-[#2153E0] mb-4"
+                >
+                  <path
+                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                  ></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <div data-slot="card-title" class="leading-none font-semibold">
+                  IP Configuration
+                </div>
+                <div
+                  data-slot="card-description"
+                  class="text-slate-500 dark:text-slate-300 text-sm"
+                >
+                  Detailed network adapter information and configuration
+                  management
+                </div>
+              </div>
+              <div data-slot="card-content" class="px-6">
+                <ul
+                  class="space-y-2 text-sm text-slate-500 dark:text-slate-300"
+                >
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Adapter details
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Network statistics
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Performance metrics
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              data-slot="card"
+              class="bg-white dark:bg-slate-900 flex flex-col gap-6 rounded-xl py-6 border-2 border-slate-300 dark:border-slate-700 hover:border-[#2153E0]/50 transition-colors"
+            >
+              <div
+                data-slot="card-header"
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-shield h-12 w-12 text-[#2153E0] mb-4"
+                >
+                  <path
+                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                  ></path>
+                </svg>
+                <div data-slot="card-title" class="leading-none font-semibold">
+                  Website Monitoring
+                </div>
+                <div
+                  data-slot="card-description"
+                  class="text-slate-500 dark:text-slate-300 text-sm"
+                >
+                  Real-time website availability checking and network status
+                  monitoring
+                </div>
+              </div>
+              <div data-slot="card-content" class="px-6">
+                <ul
+                  class="space-y-2 text-sm text-slate-500 dark:text-slate-300"
+                >
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Availability checks
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Status monitoring
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check-big h-4 w-4 text-[#2153E0] mr-2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    Issue identification
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 px-4">
+        <div class="container mx-auto">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span
+                data-slot="badge"
+                class="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 gap-1 bg-slate-100 dark:bg-slate-900 transition-[color,box-shadow] overflow-hidden mb-4"
+                >Modern Interface</span
+              >
+              <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Intuitive Dashboard Design
+              </h2>
+              <p class="text-lg text-muted-foreground mb-8">
+                Navigate effortlessly through our modern dashboard with quick
+                access to all essential network tools. Dark mode support ensures
+                comfortable usage in any environment.
+              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-zap h-5 w-5 text-[#2153E0]"
+                  >
+                    <path
+                      d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                    ></path>
+                  </svg>
+                  <span class="text-sm">Fast Performance</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-lock h-5 w-5 text-[#2153E0]"
+                  >
+                    <rect
+                      width="18"
+                      height="11"
+                      x="3"
+                      y="11"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span class="text-sm">Confidential Mode</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-settings h-5 w-5 text-[#2153E0]"
+                  >
+                    <path
+                      d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                    ></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                  <span class="text-sm">Auto Updates</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-languages h-5 w-5 text-[#2153E0]"
+                  >
+                    <path d="m5 8 6 6"></path>
+                    <path d="m4 14 6-6 2-3"></path>
+                    <path d="M2 5h12"></path>
+                    <path d="M7 2h1"></path>
+                    <path d="m22 22-5-10-5 10"></path>
+                    <path d="M14 18h6"></path>
+                  </svg>
+                  <span class="text-sm">Multi-Language</span>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <picture>
+                <source
+                  srcset="../img/InternetTest/1B.png"
+                  media="(prefers-color-scheme: dark)"
+                />
+                <img
+                  src="../img/InternetTest/1.png"
+                  alt="A screenshot of the 'WiFi Passwords' page of InternetTest Pro"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="download" class="py-20 px-4 bg-[#2153E0] text-white">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Optimize Your Network?
+          </h2>
+          <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
+            Download InternetTest Pro today and take control of your network
+            performance with our all-in-one solution.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://tinyurl.com/DownloadITP7"
-              class="px-4 py-2 mt-2 bg-gradient-to-tr from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-lg font-bold sm:self-center text-white"
-              >Download</a
+              data-slot="button"
+              class="inline-flex items-center justify-center gap-2 font-medium transition-all shrink-0 outline-none focus-visible:ring-[3px] bg-white text-[#2153E0] shadow-sm hover:bg-white/90 h-10 rounded-md text-lg px-8"
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-download mr-2 h-5 w-5"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" x2="12" y1="15" y2="3"></line>
+              </svg>
+              Download for Windows</a
+            ><a
+              href="https://github.com/Leo-Corporation/InternetTest/wiki"
+              data-slot="button"
+              class="inline-flex items-center justify-center gap-2 transition-all shrink-0 outline-none focus-visible:ring-[3px] shadow-sm text-white border border-white/30 dark:text-slate-200 h-10 rounded-md text-lg px-8"
+            >
+              View Documentation
+            </a>
           </div>
-          <div
-            class="flex flex-col items-center bg-white shadow-md dark:bg-transparent m-2 border-slate-200 dark:border-slate-600 border rounded-lg p-4 py-8 transition hover:bg-slate-100 dark:hover:bg-slate-800"
+          <a
+            href="http://tinyurl.com/DownloadITPP"
+            data-slot="button"
+            class="inline-flex items-center justify-center gap-2 font-medium mt-5 underline-offset-6 shrink-0 outline-none text-white hover:underline h-10 text-lg px-8"
           >
-            <h4 class="font-bold text-2xl text-center">Portable</h4>
-            <p class="text-center">
-              A lightweight version of InternetTest Pro 8, no installation
-              required.
-            </p>
-            <div>
-              <p class="flex items-center">
-                <span class="mx-2" style="font-family: FluentIconsRegular"
-                  ></span
-                >Automatic updates
-              </p>
-              <p class="flex items-center">
-                <span class="mx-2" style="font-family: FluentIconsRegular"
-                  ></span
-                >Installation required
-              </p>
-              <p class="flex items-center">
-                <span class="mx-2" style="font-family: FluentIconsRegular"
-                  ></span
-                >All features of InternetTest Pro 8
-              </p>
-              <p class="flex items-center">
-                <span class="mx-2" style="font-family: FluentIconsRegular"
-                  ></span
-                >Requires .NET 8 Windows SDK
-              </p>
-            </div>
-            <a
-              href="http://tinyurl.com/DownloadITPP"
-              class="px-4 py-2 mt-2 bg-gradient-to-tr from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 rounded-lg font-bold sm:self-center text-white"
-              >Download</a
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-download mr-2 h-5 w-5"
             >
-          </div>
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" x2="12" y1="15" y2="3"></line>
+            </svg>
+            Download Portable</a
+          >
+          <p class="text-sm opacity-75 mt-4">
+            Compatible with Windows 10 and Windows 11
+          </p>
         </div>
       </section>
     </main>
-
     <footer
       class="grid grid-cols-1 sm:grid-cols-3 p-16 dark:bg-gray-800 bg-gray-100 dark:text-gray-300 text-gray-500"
     >
