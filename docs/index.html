@@ -1,49 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <!-- Social networks meta -->
     <!-- X (Twitter) -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta content="summary_large_image" name="twitter:card" />
     <meta
-      name="twitter:image"
       content="https://leocorporation.dev/img/social.png"
+      name="twitter:image"
     />
     <meta
-      name="twitter:description"
       content="Léo Corporation's official website. Software creation for Windows."
+      name="twitter:description"
     />
-    <meta name="twitter:title" content="Léo Corporation" />
+    <meta content="Léo Corporation" name="twitter:title" />
 
     <!-- Facebook/Linkedin -->
     <meta
-      property="og:description"
       content="Léo Corporation's official website. Software creation for Windows."
+      property="og:description"
     />
     <meta
-      property="og:image"
       content="https://leocorporation.dev/img/social.png"
+      property="og:image"
     />
-    <meta property="og:title" content="Léo Corporation" />
+    <meta content="Léo Corporation" property="og:title" />
 
     <meta
-      name="description"
       content="Léo Corporation's official website. Software creation for Windows."
+      name="description"
     />
     <title>Léo Corporation</title>
     <link href="css/tailwind.css" rel="stylesheet" />
     <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
     ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="icon" href="favicon.png" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="favicon.png" rel="icon" />
+    <link href="css/animations.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -51,9 +51,11 @@
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
+
       function gtag() {
         dataLayer.push(arguments);
       }
+
       gtag("js", new Date());
 
       gtag("config", "G-DY3K4MZKXB");
@@ -61,8 +63,8 @@
 
     <script
       async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
       crossorigin="anonymous"
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
     ></script>
 
     <!-- Clarity tracking code for https://leocorporation.dev/ -->
@@ -83,14 +85,14 @@
   </head>
 
   <body
+    class="bg-white text-black dark:text-white dark:bg-[#000014] overflow-x-hidden"
     id="body"
     style="font-family: Hauora, sans-serif"
-    class="bg-white text-black dark:text-white dark:bg-[#000014] overflow-x-hidden"
   >
     <header
+      class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200"
       id="header"
       style="z-index: 1000"
-      class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200"
     >
       <style>
         @font-face {
@@ -124,33 +126,33 @@
         }
       </style>
       <div
-        x-data="{ open: false }"
         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+        x-data="{ open: false }"
       >
         <div class="p-4 flex flex-row items-center justify-between">
           <a
-            href="#"
             class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center"
+            href="#"
           >
-            <img src="img/Logo.svg" alt="Léo Corporation" class="h-10 w-10" />
+            <img alt="Léo Corporation" class="h-10 w-10" src="img/Logo.svg" />
             <h1>Léo Corporation</h1>
           </a>
           <button
-            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
             @click="open = !open"
+            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
           >
-            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path
-                x-show="!open"
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
                 clip-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                fill-rule="evenodd"
+                x-show="!open"
               ></path>
               <path
-                x-show="open"
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                 clip-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+                x-show="open"
               ></path>
             </svg>
           </button>
@@ -170,27 +172,27 @@
             >
               <span>Apps</span>
               <svg
-                fill="currentColor"
-                viewBox="0 0 20 20"
                 :class="{'rotate-180': open, 'rotate-0': !open}"
                 class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                   clip-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  fill-rule="evenodd"
                 ></path>
               </svg>
             </button>
             <div
+              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
               x-show="open"
               x-transition:enter="transition ease-out duration-100"
-              x-transition:enter-start="transform opacity-0 scale-95"
               x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
               x-transition:leave="transition ease-in duration-75"
-              x-transition:leave-start="transform opacity-100 scale-100"
               x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
+              x-transition:leave-start="transform opacity-100 scale-100"
             >
               <div
                 class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%] backdrop-saturate-[180%]backdrop-saturate-[180%]"
@@ -202,9 +204,9 @@
                 >
                   <div class="flex flex-row items-center">
                     <img
+                      alt="Gavilya Logo"
                       class="h-10 w-10"
                       src="img/Gavilya.svg"
-                      alt="Gavilya Logo"
                     />
                     <div class="ml-4">
                       <h2 class="font-semibold">Gavilya</h2>
@@ -220,9 +222,9 @@
                 >
                   <div class="flex flex-row items-center">
                     <img
+                      alt="ColorPicker Max Logo"
                       class="h-10 w-10"
                       src="img/ColorPicker.svg"
-                      alt="ColorPicker Max Logo"
                     />
                     <div class="ml-4">
                       <h2 class="font-semibold">ColorPicker Max</h2>
@@ -239,9 +241,9 @@
                 >
                   <div class="flex flex-row items-center">
                     <img
+                      alt="Datalya Logo"
                       class="h-10 w-10"
                       src="img/Datalya.svg"
-                      alt="Datalya Logo"
                     />
                     <div class="ml-4">
                       <h2 class="font-semibold">Datalya</h2>
@@ -275,32 +277,32 @@
           >
             <button
               @click="open = !open"
-              style="z-index: 1"
               class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              style="z-index: 1"
             >
               <span>Try now</span>
               <svg
-                fill="currentColor"
-                viewBox="0 0 20 20"
                 :class="{'rotate-180': open, 'rotate-0': !open}"
                 class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                   clip-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  fill-rule="evenodd"
                 ></path>
               </svg>
             </button>
             <div
+              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
               x-show="open"
               x-transition:enter="transition ease-out duration-100"
-              x-transition:enter-start="transform opacity-0 scale-95"
               x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
               x-transition:leave="transition ease-in duration-75"
-              x-transition:leave-start="transform opacity-100 scale-100"
               x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
+              x-transition:leave-start="transform opacity-100 scale-100"
             >
               <div
                 class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]"
@@ -311,9 +313,9 @@
                 >
                   <div class="flex flex-row items-center text-base">
                     <img
+                      alt="Passliss Logo"
                       class="h-10 w-10"
                       src="img/Passliss.svg"
-                      alt="Passliss Logo"
                     />
                     <div class="ml-4">
                       <h2 class="font-semibold">Passliss</h2>
@@ -328,7 +330,7 @@
                   href="https://qrix.leocorporation.dev"
                 >
                   <div class="flex flex-row items-center">
-                    <img class="h-10 w-10" src="img/Qrix.svg" alt="Qrix Logo" />
+                    <img alt="Qrix Logo" class="h-10 w-10" src="img/Qrix.svg" />
                     <div class="ml-4">
                       <h2 class="font-semibold">Qrix</h2>
                       <p class="font-normal text-sm">
@@ -379,24 +381,24 @@
         }
       </style>
       <section
-        id="experience-creator"
         class="flex flex-col items-center justify-center text-center rounded-xl h-full-screen"
+        id="experience-creator"
       >
         <div class="flex flex-row space-x-5 mb-16">
           <a
             class="p-2 border software-item rounded-xl -rotate-[24deg] origin-bottom-right hover:scale-125 transition"
             href="https://leocorporation.dev/store/permatop"
-            ><img class="h-8" src="img/PermaTop.svg" alt="PermaTop Logo"
+            ><img alt="PermaTop Logo" class="h-8" src="img/PermaTop.svg"
           /></a>
           <a
             class="p-2 border software-item rounded-xl hover:scale-125 transition"
             href="https://leocorporation.dev/store/daybar"
-            ><img class="h-8" src="img/DayBar.svg" alt="DayBar Logo"
+            ><img alt="DayBar Logo" class="h-8" src="img/DayBar.svg"
           /></a>
           <a
             class="p-2 border software-item rounded-xl rotate-[24deg] origin-bottom-left hover:scale-125 transition"
             href="https://leocorporation.dev/store/passliss"
-            ><img class="h-8" src="img/Passliss.svg" alt="Passliss Logo"
+            ><img alt="Passliss Logo" class="h-8" src="img/Passliss.svg"
           /></a>
         </div>
         <h2 class="font-bold text-5xl">We create experiences.</h2>
@@ -412,35 +414,35 @@
       </section>
       <script
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
         crossorigin="anonymous"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
       ></script>
       <!-- LeoCorpDevAd1 -->
       <ins
         class="adsbygoogle flex justify-center"
         data-ad-client="ca-pub-7416572564791547"
-        data-ad-slot="3325502618"
         data-ad-format="auto"
+        data-ad-slot="3325502618"
         data-full-width-responsive="true"
       ></ins>
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
-      <section id="showcase" class="min-h-screen flex flex-col justify-center">
+      <section class="min-h-screen flex flex-col justify-center" id="showcase">
         <h2 class="m-8 font-bold text-3xl text-center">Our best apps</h2>
         <div
           class="mx-auto flex lg:flex-nowrap flex-wrap justify-center sm:space-x-3"
         >
           <a
-            target="_blank"
+            class="my-[6px] slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            href="https://leocorporation.dev/store/passliss"
+            rel="noopener noreferrer"
             style="
-              background: url('img/Passliss/cover.png');
+              background: url(&quot;img/Passliss/cover.png&quot;);
               background-size: cover;
               background-position: center;
             "
-            rel="noopener noreferrer"
-            href="https://leocorporation.dev/store/passliss"
-            class="my-[6px] slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            target="_blank"
           >
             <span
               class="bg-gradient-to-t from-sky-500 hover:from-sky-600 dark:from-sky-600 dark:hover:from-sky-700 flex flex-col p-4 justify-end h-[400px]"
@@ -452,15 +454,15 @@
             </span>
           </a>
           <a
-            target="_blank"
+            class="my-[6px] slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            href="https://leocorporation.dev/store/internettest"
+            rel="noopener noreferrer"
             style="
-              background: url('img/InternetTest/cover.png');
+              background: url(&quot;img/InternetTest/cover.png&quot;);
               background-size: cover;
               background-position: center;
             "
-            rel="noopener noreferrer"
-            href="https://leocorporation.dev/store/internettest"
-            class="my-[6px] slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            target="_blank"
           >
             <span
               class="bg-gradient-to-t from-blue-600 hover:from-blue-700 flex flex-col p-4 justify-end h-[400px]"
@@ -472,15 +474,15 @@
             </span>
           </a>
           <a
-            target="_blank"
+            class="my-[6px] slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            href="https://leocorporation.dev/store/colorpickermax"
+            rel="noopener noreferrer"
             style="
-              background: url('img/ColorPicker/cover.png');
+              background: url(&quot;img/ColorPicker/cover.png&quot;);
               background-size: cover;
               background-position: center;
             "
-            rel="noopener noreferrer"
-            href="https://leocorporation.dev/store/colorpickermax"
-            class="my-[6px] slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            target="_blank"
           >
             <span
               class="bg-gradient-to-t from-violet-600 hover:from-violet-700 flex flex-col p-4 justify-end h-[400px]"
@@ -492,8 +494,8 @@
         </div>
       </section>
       <section
-        id="new-soft"
         class="min-h-screen flex items-center justify-center flex-col rounded-xl p-4"
+        id="new-soft"
       >
         <hgroup>
           <h2
@@ -511,24 +513,24 @@
         </hgroup>
         <div class="flex flex-wrap items-center justify-center">
           <a
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            href="https://leocorporation.dev/store/qrix"
             id="new-soft-item-1"
-            target="_blank"
+            rel="noopener noreferrer"
             style="
-              background: url('img/Qrix/QrixBanner.png');
+              background: url(&quot;img/Qrix/QrixBanner.png&quot;);
               background-size: cover;
               background-position: center;
             "
-            rel="noopener noreferrer"
-            href="https://leocorporation.dev/store/qrix"
-            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            target="_blank"
           >
             <span
               class="block bg-gradient-to-t from-fuchsia-600 hover:from-purple-700"
             >
               <span class="flex flex-row justify-end">
                 <img
-                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   alt="Qrix Logo"
+                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   src="img/Qrix.svg"
                 />
               </span>
@@ -539,24 +541,24 @@
             </span>
           </a>
           <a
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            href="https://leocorporation.dev/store/daybar"
             id="new-soft-item-2"
-            target="_blank"
+            rel="noopener noreferrer"
             style="
-              background: url('img/DayBar/DayBarBanner.png');
+              background: url(&quot;img/DayBar/DayBarBanner.png&quot;);
               background-size: cover;
               background-position: center;
             "
-            rel="noopener noreferrer"
-            href="https://leocorporation.dev/store/daybar"
-            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            target="_blank"
           >
             <span
               class="block bg-gradient-to-t from-lime-600 hover:from-green-500"
             >
               <span class="flex flex-row justify-end">
                 <img
-                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   alt="DayBar Logo"
+                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   src="img/DayBar.svg"
                 />
               </span>
@@ -567,24 +569,24 @@
             </span>
           </a>
           <a
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            href="https://leocorporation.dev/store/permatop"
             id="new-soft-item-3"
-            target="_blank"
+            rel="noopener noreferrer"
             style="
-              background: url('img/PermaTop/PermaTopBanner.png');
+              background: url(&quot;img/PermaTop/PermaTopBanner.png&quot;);
               background-size: cover;
               background-position: center;
             "
-            rel="noopener noreferrer"
-            href="https://leocorporation.dev/store/permatop"
-            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            target="_blank"
           >
             <span
               class="block bg-gradient-to-t from-orange-600 hover:from-orange-700"
             >
               <span class="flex flex-row justify-end">
                 <img
-                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   alt="PermaTop Logo"
+                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   src="img/PermaTop.svg"
                 />
               </span>
@@ -609,8 +611,8 @@
         </a>
       </section>
       <section
-        id="open-source"
         class="min-h-screen flex items-center justify-center flex-col bg-blue-50 dark:bg-[#0D1530] rounded-xl"
+        id="open-source"
       >
         <hgroup>
           <h2 class="font-bold text-3xl text-center mt-8">
@@ -622,9 +624,9 @@
             2019, we have been sharing the code of most of our apps on
             <a
               class="underline"
-              target="_blank"
-              rel="noopener noreferrer"
               href="https://github.com/Leo-Corporation"
+              rel="noopener noreferrer"
+              target="_blank"
               >GitHub</a
             >. This allows us to update our software regularly and receive
             feedback from the community. You can find some of our open source
@@ -634,24 +636,24 @@
         </hgroup>
         <div class="flex flex-wrap items-center justify-center">
           <a
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            href="https://github.com/Leo-Corporation/Datalya"
             id="opensource-item-1"
-            target="_blank"
+            rel="noopener noreferrer"
             style="
-              background: url('img/Datalya/cover.png');
+              background: url(&quot;img/Datalya/cover.png&quot;);
               background-size: cover;
               background-position: center;
             "
-            rel="noopener noreferrer"
-            href="https://github.com/Leo-Corporation/Datalya"
-            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            target="_blank"
           >
             <span
               class="block bg-gradient-to-t from-blue-600 hover:from-blue-700"
             >
               <span class="flex flex-row justify-end">
                 <img
-                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   alt="Datalya Logo"
+                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   src="img/Datalya.svg"
                 />
               </span>
@@ -662,24 +664,24 @@
             </span>
           </a>
           <a
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            href="https://github.com/Leo-Corporation/Gavilya"
             id="opensource-item-2"
-            target="_blank"
+            rel="noopener noreferrer"
             style="
-              background: url('img/Gavilya/cover.png');
+              background: url(&quot;img/Gavilya/cover.png&quot;);
               background-size: cover;
               background-position: center;
             "
-            rel="noopener noreferrer"
-            href="https://github.com/Leo-Corporation/Gavilya"
-            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            target="_blank"
           >
             <span
               class="block bg-gradient-to-t from-violet-600 hover:from-purple-700"
             >
               <span class="flex flex-row justify-end">
                 <img
-                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   alt="Gavilya Logo"
+                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   src="img/Gavilya.svg"
                 />
               </span>
@@ -690,24 +692,24 @@
             </span>
           </a>
           <a
+            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            href="https://github.com/Leo-Corporation/Passliss"
             id="opensource-item-3"
-            target="_blank"
+            rel="noopener noreferrer"
             style="
-              background: url('img/Passliss/cover.png');
+              background: url(&quot;img/Passliss/cover.png&quot;);
               background-size: cover;
               background-position: center;
             "
-            rel="noopener noreferrer"
-            href="https://github.com/Leo-Corporation/Passliss"
-            class="m-1 slideInUpX software-item rounded-xl max-w-[300px] border-0 overflow-hidden text-white shadow-md hover:scale-110 hover:shadow-lg transition"
+            target="_blank"
           >
             <span
               class="block bg-gradient-to-t from-sky-500 hover:from-sky-600 dark:from-sky-600 dark:hover:from-sky-700"
             >
               <span class="flex flex-row justify-end">
                 <img
-                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   alt="Passliss Logo"
+                  class="h-12 m-2 p-2 bg-[#FFFFFF40] border border-[rgba(255,255,255,0.1)] shadow-md backdrop-blur-lg rounded-lg justify-end"
                   src="img/Passliss.svg"
                 />
               </span>
@@ -723,15 +725,15 @@
       </section>
       <script
         async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
         crossorigin="anonymous"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
       ></script>
       <!-- LeoCorpDevAd2 -->
       <ins
         class="adsbygoogle flex justify-center"
         data-ad-client="ca-pub-7416572564791547"
-        data-ad-slot="1585524463"
         data-ad-format="auto"
+        data-ad-slot="1585524463"
         data-full-width-responsive="true"
       ></ins>
       <script>
@@ -745,21 +747,21 @@
       <div class="flex flex-col">
         <h3 class="font-bold mb-5">ABOUT</h3>
         <p id="copyright">© Léo Corporation</p>
-        <a href="https://peyronnet.group/privacy" class="hover:underline"
+        <a class="hover:underline" href="https://privacy.leocorporation.dev"
           >Privacy Policy</a
         >
-        <a href="https://status.peyronnet.group/" class="hover:underline"
+        <a class="hover:underline" href="https://status.peyronnet.group/"
           >Status</a
         >
       </div>
-      <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+      <div class="flex flex-col mt-4 sm:mt-0" id="social-networks">
         <h3 class="font-bold mb-5">SOCIAL</h3>
         <div class="flex items-center">
           <a
-            title="GitHub"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://github.com/Leo-Corporation/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="GitHub"
           >
             <img
               alt="Image"
@@ -768,10 +770,10 @@
             />
           </a>
           <a
-            title="X (Twitter)"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://twitter.com/LeoCorpNews"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="X (Twitter)"
           >
             <img
               alt="Image"
@@ -780,10 +782,10 @@
             />
           </a>
           <a
-            title="YouTube"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://www.youtube.com/@PeyronnetGroup"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="YouTube"
           >
             <img
               alt="Image"
@@ -792,10 +794,10 @@
             />
           </a>
           <a
-            title="TikTok"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://tiktok.com/@peyronnetgroup"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="TikTok"
           >
             <img
               alt="Image"
@@ -804,10 +806,10 @@
             />
           </a>
           <a
-            title="Instagram"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://www.instagram.com/leocorporation_/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Instagram"
           >
             <img
               alt="Image"
@@ -816,10 +818,10 @@
             />
           </a>
           <a
-            title="Facebook"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://www.facebook.com/LeoCorporationSoftwares/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Facebook"
           >
             <img
               alt="Image"

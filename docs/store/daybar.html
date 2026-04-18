@@ -1,50 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <!-- Social networks meta -->
     <!-- X (Twitter) -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta content="summary_large_image" name="twitter:card" />
     <meta
-      name="twitter:image"
       content="https://leocorporation.dev/img/DayBar/social.png"
+      name="twitter:image"
     />
     <meta
-      name="twitter:description"
       content="DayBar - Revolutionizing Time Management with a Passion for Productivity."
+      name="twitter:description"
     />
-    <meta name="twitter:title" content="DayBar | Léo Corporation" />
+    <meta content="DayBar | Léo Corporation" name="twitter:title" />
 
     <!-- Facebook/Linkedin -->
     <meta
-      property="og:description"
       content="DayBar - Revolutionizing Time Management with a Passion for Productivity."
+      property="og:description"
     />
     <meta
-      property="og:image"
       content="https://leocorporation.dev/img/DayBar/social.png"
+      property="og:image"
     />
-    <meta property="og:title" content="DayBar | Léo Corporation" />
+    <meta content="DayBar | Léo Corporation" property="og:title" />
 
     <meta
-      name="description"
       content="DayBar - Revolutionizing Time Management with a Passion for Productivity."
+      name="description"
     />
 
     <title>DayBar | Léo Corporation</title>
     <link href="../css/tailwind.css" rel="stylesheet" />
     <link href="../css/animations.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/global.css" />
+    <link href="../css/global.css" rel="stylesheet" />
 
     <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
     ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="icon" href="../favicon.png" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="../favicon.png" rel="icon" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -52,9 +52,11 @@
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
+
       function gtag() {
         dataLayer.push(arguments);
       }
+
       gtag("js", new Date());
 
       gtag("config", "G-DY3K4MZKXB");
@@ -62,8 +64,8 @@
 
     <script
       async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
       crossorigin="anonymous"
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7416572564791547"
     ></script>
 
     <!-- Clarity tracking code for https://leocorporation.dev/ -->
@@ -84,20 +86,21 @@
   </head>
 
   <body
+    class="bg-white text-black dark:text-white dark:bg-[#000014]"
     id="body"
     style="font-family: Hauora, sans-serif"
-    class="bg-white text-black dark:text-white dark:bg-[#000014]"
   >
     <header
+      class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200"
       id="header"
       style="z-index: 1000"
-      class="w-full sticky top-0 text-gray-700 dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.1)] dark:text-gray-200"
     >
       <style>
         @font-face {
           font-family: "FluentIconsRegular";
           src: url("../fonts/FluentSystemIcons-Regular.ttf");
         }
+
         @font-face {
           font-family: "Hauora";
           src: url("../fonts/Hauora-Regular.ttf") format("truetype");
@@ -124,37 +127,37 @@
         }
       </style>
       <div
-        x-data="{ open: false }"
         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+        x-data="{ open: false }"
       >
         <div class="p-4 flex flex-row items-center justify-between">
           <a
-            href="https://leocorporation.dev/"
             class="text-lg font-bold text-gray-900 flex rounded-lg dark:text-white focus:outline-none focus:shadow-outline items-center"
+            href="https://leocorporation.dev/"
           >
             <img
-              src="../img/Logo.svg"
               alt="Léo Corporation"
               class="h-10 w-10"
+              src="../img/Logo.svg"
             />
             <p>Léo Corporation</p>
           </a>
           <button
-            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
             @click="open = !open"
+            class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
           >
-            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path
-                x-show="!open"
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
                 clip-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                fill-rule="evenodd"
+                x-show="!open"
               ></path>
               <path
-                x-show="open"
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                 clip-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+                x-show="open"
               ></path>
             </svg>
           </button>
@@ -174,27 +177,27 @@
             >
               <span>Apps</span>
               <svg
-                fill="currentColor"
-                viewBox="0 0 20 20"
                 :class="{'rotate-180': open, 'rotate-0': !open}"
                 class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                   clip-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  fill-rule="evenodd"
                 ></path>
               </svg>
             </button>
             <div
+              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
               x-show="open"
               x-transition:enter="transition ease-out duration-100"
-              x-transition:enter-start="transform opacity-0 scale-95"
               x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
               x-transition:leave="transition ease-in duration-75"
-              x-transition:leave-start="transform opacity-100 scale-100"
               x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
+              x-transition:leave-start="transform opacity-100 scale-100"
             >
               <div
                 class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]"
@@ -205,9 +208,9 @@
                 >
                   <div class="flex flex-row items-center">
                     <img
+                      alt="Gavilya Logo"
                       class="h-10 w-10"
                       src="../img/Gavilya.svg"
-                      alt="Gavilya Logo"
                     />
                     <div class="ml-4">
                       <h2 class="font-semibold">Gavilya</h2>
@@ -223,9 +226,9 @@
                 >
                   <div class="flex flex-row items-center">
                     <img
+                      alt="ColorPicker Max Logo"
                       class="h-10 w-10"
                       src="../img/ColorPicker.svg"
-                      alt="ColorPicker Max Logo"
                     />
                     <div class="ml-4">
                       <h2 class="font-semibold">ColorPicker Max</h2>
@@ -242,9 +245,9 @@
                 >
                   <div class="flex flex-row items-center">
                     <img
+                      alt="Datalya Logo"
                       class="h-10 w-10"
                       src="../img/Datalya.svg"
-                      alt="Datalya Logo"
                     />
                     <div class="ml-4">
                       <h2 class="font-semibold">Datalya</h2>
@@ -278,32 +281,32 @@
           >
             <button
               @click="open = !open"
-              style="z-index: 1"
               class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+              style="z-index: 1"
             >
               <span>Try now</span>
               <svg
-                fill="currentColor"
-                viewBox="0 0 20 20"
                 :class="{'rotate-180': open, 'rotate-0': !open}"
                 class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+                fill="currentColor"
+                viewBox="0 0 20 20"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                   clip-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  fill-rule="evenodd"
                 ></path>
               </svg>
             </button>
             <div
+              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
               x-show="open"
               x-transition:enter="transition ease-out duration-100"
-              x-transition:enter-start="transform opacity-0 scale-95"
               x-transition:enter-end="transform opacity-100 scale-100"
+              x-transition:enter-start="transform opacity-0 scale-95"
               x-transition:leave="transition ease-in duration-75"
-              x-transition:leave-start="transform opacity-100 scale-100"
               x-transition:leave-end="transform opacity-0 scale-95"
-              class="absolute w-full md:w-96 mt-2 origin-top-right rounded-md shadow-lg z-50"
+              x-transition:leave-start="transform opacity-100 scale-100"
             >
               <div
                 class="px-2 py-2 rounded-md shadow dark:bg-[rgba(31,41,55,0.5)] bg-[rgba(255,255,255,0.3)] backdrop-blur-lg backdrop-saturate-[180%]"
@@ -314,9 +317,9 @@
                 >
                   <div class="flex flex-row items-center text-base">
                     <img
+                      alt="Passliss Logo"
                       class="h-10 w-10"
                       src="../img/Passliss.svg"
-                      alt="Passliss Logo"
                     />
                     <div class="ml-4">
                       <h2 class="font-semibold">Passliss</h2>
@@ -332,9 +335,9 @@
                 >
                   <div class="flex flex-row items-center">
                     <img
+                      alt="Qrix Logo"
                       class="h-10 w-10"
                       src="../img/Qrix.svg"
-                      alt="Qrix Logo"
                     />
                     <div class="ml-4">
                       <h2 class="font-semibold">Qrix</h2>
@@ -363,22 +366,22 @@
 
     <main>
       <section
+        class="flex flex-col justify-end items-center"
         style="
-          background: url('../img/DayBar/DayBarBanner.svg');
+          background: url(&quot;../img/DayBar/DayBarBanner.svg&quot;);
           background-size: cover;
           background-position: top;
           min-height: calc(100vh - 72px);
         "
-        class="flex flex-col justify-end items-center"
       >
         <div
           class="p-6 bg-white dark:bg-slate-800 m-5 rounded-lg shadow-md sm:grid space-y-2 flex flex-col grid-cols-[auto_1fr_auto] space-x-2 sm:items-start items-center max-w-[1200px]"
         >
           <img
-            height="75px"
-            width="75px"
             alt="DayBar Logo"
+            height="75px"
             src="../img/DayBar.svg"
+            width="75px"
           />
           <div class="text-center sm:text-left">
             <h2 class="font-bold text-3xl">DayBar</h2>
@@ -391,8 +394,8 @@
             </p>
           </div>
           <a
-            href="https://tinyurl.com/DayBar"
             class="px-4 py-2 m-2 bg-gradient-to-tr from-lime-400 to-green-500 hover:from-lime-500 hover:to-green-600 rounded-lg font-bold sm:self-center text-white"
+            href="https://tinyurl.com/DayBar"
             >Download</a
           >
         </div>
@@ -400,12 +403,12 @@
       <section class="flex sm:grid grid-cols-2 flex-col items-center">
         <picture>
           <source
-            srcset="../img/DayBar/1B.png"
             media="(prefers-color-scheme: dark)"
+            srcset="../img/DayBar/1B.png"
           />
           <img
-            src="../img/DayBar/1.png"
             alt="A screenshot of the 'Home' page of DayBar"
+            src="../img/DayBar/1.png"
           />
         </picture>
         <div class="m-2 p-2 sm:text-left text-center">
@@ -446,24 +449,24 @@
         </div>
         <picture>
           <source
-            srcset="../img/DayBar/2B.png"
             media="(prefers-color-scheme: dark)"
+            srcset="../img/DayBar/2B.png"
           />
           <img
-            src="../img/DayBar/2.png"
             alt="A screenshot of the 'Notifications' page of DayBar"
+            src="../img/DayBar/2.png"
           />
         </picture>
       </section>
       <section class="flex sm:grid grid-cols-2 flex-col items-center">
         <picture>
           <source
-            srcset="../img/DayBar/3B.png"
             media="(prefers-color-scheme: dark)"
+            srcset="../img/DayBar/3B.png"
           />
           <img
-            src="../img/DayBar/3.png"
             alt="A screenshot of the 'Theme' page of DayBar"
+            src="../img/DayBar/3.png"
           />
         </picture>
         <div class="m-2 p-2 sm:text-left text-center">
@@ -503,12 +506,12 @@
         </div>
         <picture>
           <source
-            srcset="../img/DayBar/4B.png"
             media="(prefers-color-scheme: dark)"
+            srcset="../img/DayBar/4B.png"
           />
           <img
-            src="../img/DayBar/4.png"
             alt="A screenshot of the 'Notifications' page of DayBar"
+            src="../img/DayBar/4.png"
           />
         </picture>
       </section>
@@ -547,8 +550,8 @@
           </p>
         </div>
         <a
-          href="https://tinyurl.com/DayBar"
           class="px-4 py-2 m-2 bg-gradient-to-tr from-lime-400 to-green-500 hover:from-lime-500 hover:to-green-600 rounded-lg font-bold sm:self-center text-white"
+          href="https://tinyurl.com/DayBar"
           >Download</a
         >
       </section>
@@ -560,21 +563,21 @@
       <div class="flex flex-col">
         <h3 class="font-bold mb-5">ABOUT</h3>
         <p id="copyright">© Léo Corporation</p>
-        <a href="https://peyronnet.group/privacy" class="hover:underline"
+        <a class="hover:underline" href="https://privacy.leocorporation.dev"
           >Privacy Policy</a
         >
-        <a href="https://status.peyronnet.group/" class="hover:underline"
+        <a class="hover:underline" href="https://status.peyronnet.group/"
           >Status</a
         >
       </div>
-      <div id="social-networks" class="flex flex-col mt-4 sm:mt-0">
+      <div class="flex flex-col mt-4 sm:mt-0" id="social-networks">
         <h3 class="font-bold mb-5">SOCIAL</h3>
         <div class="flex items-center">
           <a
-            title="GitHub"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://github.com/Leo-Corporation/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="GitHub"
           >
             <img
               alt="Image"
@@ -583,10 +586,10 @@
             />
           </a>
           <a
-            title="X (Twitter)"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://twitter.com/LeoCorpNews"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="X (Twitter)"
           >
             <img
               alt="Image"
@@ -595,10 +598,10 @@
             />
           </a>
           <a
-            title="YouTube"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://www.youtube.com/@PeyronnetGroup"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="YouTube"
           >
             <img
               alt="Image"
@@ -607,10 +610,10 @@
             />
           </a>
           <a
-            title="TikTok"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://tiktok.com/@peyronnetgroup"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="TikTok"
           >
             <img
               alt="Image"
@@ -619,10 +622,10 @@
             />
           </a>
           <a
-            title="Instagram"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://www.instagram.com/leocorporation_/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Instagram"
           >
             <img
               alt="Image"
@@ -631,10 +634,10 @@
             />
           </a>
           <a
-            title="Facebook"
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://www.facebook.com/LeoCorporationSoftwares/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Facebook"
           >
             <img
               alt="Image"

@@ -3,15 +3,15 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        'move-bg': {
+        "move-bg": {
           to: {
-            backgroundPosition: '400% 0',
+            backgroundPosition: "400% 0",
           },
         },
       },
       animation: {
-        'move-bg': 'move-bg 8s infinite linear',
-        'move-bg-l': 'move-bg 16s infinite linear',
+        "move-bg": "move-bg 8s infinite linear",
+        "move-bg-l": "move-bg 16s infinite linear",
       },
       fontWeight: {
         bold: 900,
@@ -19,4 +19,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
